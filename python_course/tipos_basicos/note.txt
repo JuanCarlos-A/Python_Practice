@@ -1,0 +1,42 @@
+Variables 
+
+En python las variables son espacios de memoria establecidos para almacenar un valor, si una varaible tiene el mismo valor que otra variable
+entonces son almacenadas en el mismo espacio de memoria.
+
+Estas variables son almacenadas en la memoria RAM, este espacio es referido mediante el nombre de la variable.
+
+No se puede comenzar el nombre de la variable con un numero
+
+
+Tipos de Datos
+
+Estos tipos son definidos principalmente por python
+
+    Los Numeros: Dentro de esta categoria estan los int, float y los complejos
+
+    Booleans: Estos tipos de datos implican una comparación o evaluación logica, esta True y False
+
+    Secuencias: Son los datos ordenados. Aqui estan los:
+        str o Strings = son cadenas de texto
+        list = Con colecciones ordenadas y mutables []
+        tuple = Son tuplas y su caracteristica es ser inmutables y ordenadas ()
+
+    Conjuntos: Son colecciones de datos no ordenados
+        Sets: Son colecciones de datos no ordenados {1,3,4},{"sasdad", "sa"}
+        frozenSet: Son colecciones de datos no ordenadas e inmutables
+            frozenset([1,2,4])
+
+    Diccionarios: Son mapeos, tienen una llave y un valor que es representado por la llave
+        dict = {}
+
+    NoneType: Representa la ausencia del valor o valores nulos
+
+
+Argumentos
+
+Los argumentos son los valores que le entregamos a una funcion y que esta pueda utilizarlos para devolver o ejecutar una accion
+
+
+Slicing
+
+Es una herramienta de python que permite traer subpartes de una secuencia.
