@@ -1,0 +1,65 @@
+01 March 2024
+Text Editor
+
+Un editor de texto es una herraminta que nos permitira escribir 
+codigo, se necsita uan herramienta que no genero codigo oculto.
+
+
+IDE (Integrated Development Enviorement)
+
+Una herramienta mucho mejor para la programacion de codigo, la 
+cual cuenta con muchas mas herramientas para poder digitar codigo, 
+dichas herramientas son un 
+    *Autocompletado: Ayuda a autocompletar el codigo para facilitar
+    *Debbuging: Una herramienta que nos permite encontrar los errores 
+    de nuestro codigo
+    *Testing: Permitira ejecutar nuestra suit de text en nuestro IDE
+    *Code Snnipets: Es una forma de scribir codigo con atajos
+    *Liting: Permite encontrar erroes en el codigo de unicamente por la forma como lo escribimos
+
+
+Funciones de Python
+
+Pueden ser las intrucciones que ya vienen definidas dentro de un ambiente,
+permitiendo realizar una accion.
+
+
+PEP (Python Enhancement Proposal):
+
+Son propuestas documentadas para la mejora del lenguaje, ya sea por legibilidad,
+o mejoras a la forma de ejecutar ciertas acciones.
+
+
+DocStrings
+
+Los DocStrings son mensajes que el proramador deja para mejorar la legibilidad,
+mantenimiento o mejora de un cosigo, ya que con esta documentacion se empapan
+de la logica del proyecto.
+
+
+REPL (Read, Enviorement, Proposal, Loop):
+
+Es una herramienta que se mantiene en un loop de leer, evaluar e imprimir.
+Conectando directamente con el interprete de python.
+
+
+Python:
+
+Un lenguaje es un set de reglas que establecen una forma de escribir,
+este set es necesario para que se entienda que es un lenguaje de programacion.
+
+Esto es debido a que ´Python es un lenguaje de alto nivel' que luego es
+pasado un lenguaje de maquina en archivos de bytes 001101.
+
+
+Lenguaje de alto nivel:
+
+Un lenguaje de alto nivel permite que el lengueja e de maquina producido pueda
+ser ejecutado sin importar el sistema operativo en el que se ejecute
+
+Implementaciones en python
+
+Las implementaciones en python son programas o codigos que fueron escritos
+por un grupo de programadores que permiten ejecutar codigos de python en diferentes 
+ambientes, por ejemplo esta el CPython (Oficial) que esta escrita en C y es la que permite la 
+ejecucion de programas python en la terminal al ejecutar el comando de python
