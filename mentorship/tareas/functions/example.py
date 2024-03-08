@@ -11,6 +11,10 @@ class Animal:
     def info(self) -> str:
         a = f"Nombre: {self.nombre}, Raza: {self.raza}"
         return a
+    
+# ani2 = Animal("Lina")
+
+# print(ani2.info())
 
 ani = Animal("Luna", "Pastor Aleman")
 
