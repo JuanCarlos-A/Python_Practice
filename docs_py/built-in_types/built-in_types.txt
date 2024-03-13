@@ -1,0 +1,23 @@
+Operators
+
+
+Booleans o Logicos
+
+There are three Booleans Operators, for example:
+    x OR y : This is a short-cuit operator, so it only evaluates the second argument if the first one is False
+    x AND y : This is a short-cuit operator, so it only evaluates the second argument if the first one is True
+    NOT has a lower priority than non-Booleans Operators, so not a == b is interpreted as not (a == b), and a == not b is a sintax error.
+
+
+Comparisons o Relacion
+
+There are eight comparison operations in python. They all have the same priority, which is higher than that the boolean Operators. These are:
+    < : Strictly less than
+    <= : Less than or equal
+    > : Strictly greater than
+    >= : Greater than or equal
+    == : Equal 
+    != : Not equal
+    is : Object identity
+    is not : Negated object identity
+Objects of different types, except different numeric types, never compare equal
