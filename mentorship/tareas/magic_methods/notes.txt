@@ -1,0 +1,37 @@
+Magic Methods, Dunder Methods or Special Methods
+
+Los metodos magicos son necesarios para proveer una configuracion a las clases, dando comportamientos especiales
+Estos metodos son llamados automaticamente cuando una instancia es usada.
+
+La palabra dunder es una abreviacion de "double underscores" tanto al principio como el final del nombre del metodo.Esto
+da una forma de llamar los metodos como el __str__() a dunder str.
+
+La practica de ponder double underscore tiene el objetivo de evitar la colision con los metodos de la clase.Algunos ejemplos son:
+    .__init__() : Provee de un inicializador de los atributos del objeto de la clase de Python
+    .__str__() and .__repr__() : Provee una representacion de del objeto en un tipo de varable de secuencia String
+    .__len__() : Es un soporte cuando la instancia llame el metodo de len()
+
+Estos metodos dan un soporte del nucleo de Python y el Paradigma POO
+
+Los metodos magicos son llamados implicitamente por python al ejecutar ciertas operaciones.
+
+
+Ejemplos:
+
+Cuando en un REPL nosotros hacemos la sigiente operacion 5 + 2, internamente python corre el siguiente metodo
+>>> (5).__add__(2)
+7
+>>> 5 + 2
+7
+
+
+Los magic methods existen por muchas razones, todos estos metodos soportan las caracteristicas de los de los tipos integrados, por ejemplo
+las listas, strings y los diccionarios implementan la mayoria funcionalidades principales usando los metods magicos.
+
+Los metodos magicos son fundamentales para el modelo de datos en Python y son una parte fundamental de la Object Oriented Programming.
+Los Metodos magicos mas conocidos son:
+
+    .__init__()
+    .__new__() : Tienen una parte importante en la instaciacion de una clase. Cuida de la creacionde nuevas instancias.
+                 Cuando se crea la instnacia de una clase, python automaticamente llama este metodo para devolver un objeto vacio y listo para  
+                 para recibir los atributos de __init__
