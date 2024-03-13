@@ -1,3 +1,4 @@
+#Las listas son typos de datos secuenciales, es decir, que se pueden recorrer de principio a fin.
 lista_normal = [2, 1, 3]
 lista_normal.append(6) # [2, 1, 3, 6]
 lista_normal.pop(0) # [1, 3, 6]
