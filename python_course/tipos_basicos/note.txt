@@ -40,3 +40,12 @@ Los argumentos son los valores que le entregamos a una funcion y que esta pueda 
 Slicing
 
 Es una herramienta de python que permite traer subpartes de una secuencia.
+
+
+Strings
+
+Recordar que un string es un array de caracteres, significa que podemos extraer el caracter con el indice []
+
+Format 
+
+Esta es una herramienta que permite mostrar los strings de una manera agradable, evitando la tipica concatenacion con +
