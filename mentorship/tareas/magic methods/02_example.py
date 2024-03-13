@@ -13,7 +13,7 @@ class Persona:
         return self.edad < other.edad
 
     def __len__(self): # Método para obtener la longitud del objeto
-        return self.edad
+        return self.nombre
 
 p1 = Persona("Juan", 25)
 p2 = Persona("Maria", 30)
@@ -21,4 +21,4 @@ p2 = Persona("Maria", 30)
 print(p1)  # Salida: Persona: Juan, Edad: 25
 print(p1 == p2)  # Salida: False
 print(p1 < p2)  # Salida: True
-print(len(p1))  # Salida: 25
+print(len(p1)) # Salida: 4

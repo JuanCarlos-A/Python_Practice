@@ -4,9 +4,9 @@ class Rectabgulo:
         self.height = height
         self.width = width
     
-    #Esto es un ejemplo de lo que el PEP 484 sugiere
+    # Método para representar el objeto como string
     def __str__(self) -> str:
         return f'Rectangle({self.height}, {self.width})'
     
-    def __eq__(self, __value: object) -> bool:
-        pass
+    def __eq__(self, object: object) -> bool: # Método para comparar si dos objetos son iguales
+        return self.height == object.height and self.width == object.width
