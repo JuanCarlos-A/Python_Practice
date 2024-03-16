@@ -2,7 +2,7 @@
 lista_normal = [2, 1, 3]
 lista_normal.append(6) # [2, 1, 3, 6]
 lista_normal.pop(0) # [1, 3, 6]
-lista_normal.remove(3) # [1, 6]
+lista_normal.remove(3) # [1, 6] 
 lista_normal.insert(0, 1) # [1, 1, 6]
 lista_normal.sort() # [1, 1, 6]
 

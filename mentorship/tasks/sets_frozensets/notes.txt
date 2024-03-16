@@ -1,0 +1,13 @@
+Colecciones en Python (Set)
+
+En python existen colecciones como lo son list, dictionary y tuples. Los set son declarados con parentesis rizados o "curly brackets".
+
+Los set son colecciones desordenadas, significa que no cuentan con un orden al momento de usarse, tambien no permiten valores duplicados. Se puede
+alterar el set agregando o eliminando items pero no puedes editar los existentes dentro del set, no existen los indices en el uso de sets.
+
+Set no permite tener items de un mismo valor, esto siginifica que si en un set hay dos numeros con igual valor, solo se tomara y almacenara un numero 
+de ese valor
+
+Set toma valores boolean y si su representacion en byte se encuentra en el set entonces no los tiene en cuenta
+    my_set = {True, 2, 1} #True = 1
+    my_set = {False, 2, 0} #False = 0
