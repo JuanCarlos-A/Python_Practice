@@ -27,3 +27,18 @@ for clave, values in dic.items():
 print("Uno" in dic) #True
 
 print("Diez" in dic) #False
+
+
+set2 = {c:c for c in range(10)}
+
+dic1 = {} 
+
+set1 = {}#Tarea: Crear un set vacio
+
+
+print(type(set1))
+
+dic4 = {"dos" : 2, "tres" : 3}
+
+dic4["Cuatro"]
+print(type(set2)) 
