@@ -49,3 +49,26 @@ Recordar que un string es un array de caracteres, significa que podemos extraer 
 Format 
 
 Esta es una herramienta que permite mostrar los strings de una manera agradable, evitando la tipica concatenacion con +
+
+
+Comprehensions
+
+Es una forma que tiene python en la cual te permite precesar todos o una parte de de los iterables de un objeto
+
+
+Listas
+
+Las listas en python son colecciones ordenadas de datos que pueden ser alteradas, estos elementos dentro de una lista 
+tienen un indice loque te dice que tienen una posicion dentro de la lista, la enumeracion es en orden ascendente comenzando
+desde el numero 0.
+
+
+Strings
+
+Al ser los strings cadens de caracters, esta cuenta con funciones o metodos ya que python no utiliza la terminologia de funcion
+sino la de metodo. Dentro de estos metodos se encuentran los siguientes:
+    upper() : Toma la cadena de String y devuelve un String en mayuscula
+    lower() : Toma la cadena de Strings y devuelve un String en minuscula
+    capitalize() : Toma la cadena de String y devuelve un String con el primer caracter en mayuscula
+    title() : Toma una secuencia de String y por cada comienzo de palabra la devuelve en mayuscula la primera letra
+    strip() : Elimina todos los espacios a la izquierda y derecha del string
