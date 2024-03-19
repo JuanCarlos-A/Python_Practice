@@ -33,7 +33,7 @@ o mejoras a la forma de ejecutar ciertas acciones.
 DocStrings
 
 Los DocStrings son mensajes que el proramador deja para mejorar la legibilidad,
-mantenimiento o mejora de un cosigo, ya que con esta documentacion se empapan
+mantenimiento o mejora de un codigo, ya que con esta documentacion se empapan
 de la logica del proyecto.
 
 

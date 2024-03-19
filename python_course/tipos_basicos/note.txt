@@ -76,4 +76,14 @@ sino la de metodo. Dentro de estos metodos se encuentran los siguientes:
 
 Modulos
 
-Un modulo es un archivo externo a python con codigo que se puede utilizar en otro modulo mediante una importacion
+Un modulo es un archivo externo a python con codigo que se puede utilizar en otro modulo mediante una importacion.
+
+
+Castear
+
+Se realiza un casteo teniendo una variable de un tipo y pasandola a otro tipo de variable.
+
+
+Metodo input()
+
+Un metodo de python el cual permite interactuar a travez de la consola, los datos que toma regresan como un String o cadena de caracteres
