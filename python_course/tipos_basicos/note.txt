@@ -87,3 +87,16 @@ Se realiza un casteo teniendo una variable de un tipo y pasandola a otro tipo de
 Metodo input()
 
 Un metodo de python el cual permite interactuar a travez de la consola, los datos que toma regresan como un String o cadena de caracteres
+
+
+Metodos Nativos
+
+Estos metodos se encuentran implicitos en los modulos estandar de python, esto siginifica que no es necesrio implementarlos en un modulo ya que python
+te permite usarlos de manera simple
+
+
+Metodo Nativo bool()
+
+Este metodo Nativo de python tiene un problema ya que separa los datos en dos clases o representaciones, las cuales son truthy and Falsy
+    Falsy : Todos los datos que se reconoscan como falsy retornan false, como lo son cadenas vacias "" {} o Numeros 0 y los objetos de tipo none
+    Truthy : El resto de datos son tomados como truthy
