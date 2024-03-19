@@ -1,0 +1,12 @@
+Object, Values and Types
+
+In python the objects are representation of data in abstract way, all the data in Python program is represented by 
+objects or relations between objects.
+
+Every object has an identity, a type and a values. An object's identity never change once it has been created.
+
+For a comparation between two object's identity we have the 'is' operator. Now if you want to identify the the identity of 
+an object in python we have the id() method which return a value integer.
+
+    CPython implementation detail: For CPython, id(x) is the memory address where x is stored.
+
