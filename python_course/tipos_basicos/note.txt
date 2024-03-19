@@ -72,3 +72,8 @@ sino la de metodo. Dentro de estos metodos se encuentran los siguientes:
     capitalize() : Toma la cadena de String y devuelve un String con el primer caracter en mayuscula
     title() : Toma una secuencia de String y por cada comienzo de palabra la devuelve en mayuscula la primera letra
     strip() : Elimina todos los espacios a la izquierda y derecha del string
+
+
+Modulos
+
+Un modulo es un archivo externo a python con codigo que se puede utilizar en otro modulo mediante una importacion
