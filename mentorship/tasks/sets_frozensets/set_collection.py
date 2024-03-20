@@ -69,3 +69,5 @@ print(type(set6))
 
 
 print(10 in set1)
+
+
