@@ -58,3 +58,14 @@ set4 = {c for c in 'abracadabra' if c not in 'abc'} # comprehension
 print(set4) # {'r', 'd'}
 
 
+#Tarea: Crear un set vacio
+
+set5 = set()
+print(type(set5))
+
+
+set6 = frozenset()
+print(type(set6))
+
+
+print(10 in set1)
