@@ -1,0 +1,4 @@
+Classes in python
+
+Las clases en python son la forma como el lenguaje crea una estructura que representa el comportamiento y las caracteristicas de un objeto.
+Una clase es una representacion abstracta de un objeto
