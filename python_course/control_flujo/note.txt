@@ -1,0 +1,5 @@
+Control de Flujo
+
+Para lograr un control en el flujo de la ejecucion de codigo, nostros utilizamos los operadores logicos y operadores de comparacion o relacion,
+se les dice de relacion porque evaluan la relacion entre los dos objetos que comparan, los logicos comparan los valores booleans para saber
+si las relaciones entre varios objetos es cierta o falsa.
