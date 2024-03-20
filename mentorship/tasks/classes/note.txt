@@ -1,4 +1,17 @@
 Classes in python
 
 Las clases en python son la forma como el lenguaje crea una estructura que representa el comportamiento y las caracteristicas de un objeto.
-Una clase es una representacion abstracta de un objeto
+Una clase es una representacion abstracta de un objeto.
+
+Cuando se crea una clase se pueden crear varios objetos que sean instancias de esa clase. Cada objeto de una clase puede tener sus propios atributos
+y metodos dependiendo de como se estructure la clase.
+
+La ventaja de python es que se puede crear una clase con una sintaxis minima y entendible y estas clases tendran todas las caracteristicas del 
+paradigma de OOP.
+
+Los objetos pueden tener una cantidad enorme de informacion, asi como las clases derivadas pueden tener sobre escribir metodos.
+
+
+Objects in python
+
+Cada objeto cuenta con su propia personalidad, ya sea por metodos o atributos
