@@ -40,3 +40,10 @@ dic4 = {"dos" : 2, "tres" : 3}
 dic4["Cuatro"] = 2
 
 print(dic4) # {'dos': 2, 'tres': 3, 'Cuatro': 2}
+
+state = ['Gujarat', 'Maharashtra', 'Rajasthan']
+capital = ['Gandhinagar', 'Mumbai', 'Jaipur']
+
+output_dict = {key: value for (key, value) in zip(state, capital)}
+
+print("Output Dictionary using for loop:",output_dict)
