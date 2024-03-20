@@ -54,7 +54,7 @@ print(set3)
 my_set.clear()
 
 
-set4 = {c for c in 'abracadabra' if c not in 'abc'} # comprehension
+set4 = {c if c not in 'abc' else "s" for c in 'abracadabra'} # comprehension
 print(set4) # {'r', 'd'}
 
 
@@ -71,3 +71,5 @@ print(type(set6))
 print(10 in set1)
 
 
+set7 = {x if x % 2 == 0 else -x for x in range(10)}
+print(set7)  # {0, 2, 4, 6, 8, -9, -7, -5, -3, -1}
