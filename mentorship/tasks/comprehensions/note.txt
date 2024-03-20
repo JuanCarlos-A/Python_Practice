@@ -1,0 +1,7 @@
+Comprehensions
+
+En python existe una forma de evaluar en su totalidad o en parte los items o elementos de una lista, retornando un iterable con los resultados. Esras comprehensions se 
+pueden dividir en cuatro tipos, las listas, diccioinarios, conjuntos o sets y generadores.
+
+La forma como los comprehensions reciben valores para poder ser comprehensions es la siguiente:
+    comprehension(target, iter, ifs, is_async)
