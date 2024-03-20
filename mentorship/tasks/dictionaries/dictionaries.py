@@ -29,16 +29,14 @@ print("Uno" in dic) #True
 print("Diez" in dic) #False
 
 
-set2 = {c:c for c in range(10)}
+dic5 = {c:c for c in range(10)} #Comprehension
+print(type(dic5)) 
 
-dic1 = {} 
-
-set1 = {}#Tarea: Crear un set vacio
-
-
-print(type(set1))
+dic1 = {}
+print(type(dic1)) 
 
 dic4 = {"dos" : 2, "tres" : 3}
 
-dic4["Cuatro"]
-print(type(set2)) 
+dic4["Cuatro"] = 2
+
+print(dic4) # {'dos': 2, 'tres': 3, 'Cuatro': 2}
