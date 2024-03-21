@@ -60,6 +60,9 @@ La funcion de los ciclos es poder iterar por cada elemento de una lista, tomando
         Cuando un ciclo while es infinito este se ejecutara hasta acabar con la memoria de la maquina o hasta que el sistema operativo detecte que esta consumientdo muchos recursos
         y mate la aplicacion.
 
+    Ciclos Anidados:
+        Los ciclos anidados permiten recorrer con un dato otros datos, permitiendo por ejemplo comparar un elemento de una lista con otros elementos.
+
 Iterables
 
 Permite tener varios elementos dentro de un elemento para que esteos pueden ser utilizados por lso ciclos.
