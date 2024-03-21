@@ -26,3 +26,15 @@ Pero tambien existen forma de declararlo dentro de una linea usando el operador 
 Tambien se puede crear dentro de una declaracion de variable (En python las variables son en realidad nombres para referirse a un objeto de una clase, si un objeto es igual a otro entonces se guardan dentro de un mismo espacio)
 
     variable = (result) if condition else (result)
+
+
+Operadores logicos
+
+Estos operadores evaluan si las comparaciones realizadas con los operadores de comparacion son verdaderas o en parte son verdaderas, cabe aclarar que si una logica dentro
+de un condicional se cumple, entonces el resto de la logica no es evaluada. A estas operaciones se les conoce como operaciones de corto circuito.
+
+
+Operaciones de Corto circuito
+
+Esto indica que la operacion solo se ejecutara hasta donde el interprete entienda que es necesario evaluar por ejemplo en un operador logico como lo es and, si la condicion o 
+el objeto de la izquierda es False entonces no se ejecutara el resto de la condicion.
