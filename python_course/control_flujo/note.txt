@@ -57,6 +57,8 @@ La funcion de los ciclos es poder iterar por cada elemento de una lista, tomando
     While:
         Este es un ciclo que se ejecutara hasta que una condicion sea verdadera, lo que tambien hace que si la condicion al comienzo no es verdadera, este bucle no comenzara.
 
+        Cuando un ciclo while es infinito este se ejecutara hasta acabar con la memoria de la maquina o hasta que el sistema operativo detecte que esta consumientdo muchos recursos
+        y mate la aplicacion.
 
 Iterables
 
