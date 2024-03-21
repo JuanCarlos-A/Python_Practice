@@ -3,3 +3,26 @@ Control de Flujo
 Para lograr un control en el flujo de la ejecucion de codigo, nostros utilizamos los operadores logicos y operadores de comparacion o relacion,
 se les dice de relacion porque evaluan la relacion entre los dos objetos que comparan, los logicos comparan los valores booleans para saber
 si las relaciones entre varios objetos es cierta o falsa.
+
+
+Dentro de las keywords de python entran los condicionales, estos condicionales son if, elif, else, switch, con estas palabras claves o keywords tu puedes
+decirle al interprete de python que ejecute ciertas cantidades de codigo se gun la comparacion que se realice dentro del statement. Es muy importante el orden en como 
+se comparan los objetos ya que si no se tiene una coherencia en el orden de ejecucion se pueden descartar automaicamente algunas lineas de codigo.
+
+Dentro de los tipos de declaracion de estos ternarios esta la forma larga
+    if condition:
+        result
+    elif condition:
+        result
+    else:
+        result
+
+Pero tambien existen forma de declararlo dentro de una linea usando el operador ternario
+
+    Result in case A + condition + Result in case B
+
+    print(result) if condition else print(result)
+
+Tambien se puede crear dentro de una declaracion de variable (En python las variables son en realidad nombres para referirse a un objeto de una clase, si un objeto es igual a otro entonces se guardan dentro de un mismo espacio)
+
+    variable = (result) if condition else (result)
