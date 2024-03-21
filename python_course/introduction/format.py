@@ -3,7 +3,7 @@
 import dataclasses
 
 CHANCHITO = "feliz" #Representacion de una constante en mayusculas
-A = 12
+A = 12 #Representacion de una constante en mayusculas
 B = 13
 
 #Decorador para que automaticamente se generen los metodos de una clase, ejemplo Contructor __init
@@ -15,4 +15,4 @@ class Example:
 
     def execute(self):
         """ Method to execute a sum"""
-        print(self.a + self.b)
+        print(self.a + self.b, A) #Se puede acceder a las variables globales

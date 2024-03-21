@@ -54,6 +54,9 @@ La funcion de los ciclos es poder iterar por cada elemento de una lista, tomando
         Con el iterador de for puedes recorrer una lista por cada elemento. Y si dentro del for no ejecutas un break, puedes dar un else, para que por defecto
         se ejecute un bloque de codigo. 
 
+    While:
+        Este es un ciclo que se ejecutara hasta que una condicion sea verdadera, lo que tambien hace que si la condicion al comienzo no es verdadera, este bucle no comenzara.
+
 
 Iterables
 
