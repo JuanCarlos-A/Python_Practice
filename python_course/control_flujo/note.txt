@@ -38,3 +38,8 @@ Operaciones de Corto circuito
 
 Esto indica que la operacion solo se ejecutara hasta donde el interprete entienda que es necesario evaluar por ejemplo en un operador logico como lo es and, si la condicion o 
 el objeto de la izquierda es False entonces no se ejecutara el resto de la condicion.
+
+
+Encadenar los operadores de comparacion
+
+Cuando encadenamos los operadores de comparacion podemos resumir una comparacion haciendo innecesario el uso de operadores logicos ya que podemos comparar en una expresion.
