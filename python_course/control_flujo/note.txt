@@ -43,3 +43,18 @@ el objeto de la izquierda es False entonces no se ejecutara el resto de la condi
 Encadenar los operadores de comparacion
 
 Cuando encadenamos los operadores de comparacion podemos resumir una comparacion haciendo innecesario el uso de operadores logicos ya que podemos comparar en una expresion.
+
+
+Ciclo
+
+La funcion de los ciclos es poder iterar por cada elemento de una lista, tomando estos elementos y realizar operaciones con ellos, ya sea creando algo o actualizarlo
+(dependiendo si el array es mutable). En estos ciclos se utilizan los operadores de pertenencia in o in not
+
+    For:
+        Con el iterador de for puedes recorrer una lista por cada elemento. Y si dentro del for no ejecutas un break, puedes dar un else, para que por defecto
+        se ejecute un bloque de codigo. 
+
+
+Iterables
+
+Permite tener varios elementos dentro de un elemento para que esteos pueden ser utilizados por lso ciclos.
