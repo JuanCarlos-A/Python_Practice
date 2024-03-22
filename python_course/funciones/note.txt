@@ -21,3 +21,5 @@ tu puedes iterarlas y obtener cada argumento dado y trabajar con los parametros 
     # def suma(*numeros :float) -> None: # *numeros es una tupla
     #     print(sum(x for x in numeros))  # sum() es una función que suma los elementos de un iterable (lista, tupla, etc)
 
+
+Los argumentos de tipo de Kwargs nos permiten al igual que los 
