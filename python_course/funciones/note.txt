@@ -1,4 +1,14 @@
 Funcions en Python
 
 Las funciones en python son bloques de codigo que designamos para un proposito, estas funcciones son bloques de codigo 
-abstractos que permitiran delimitar la cantidad de lineas de codigo, permitiendo una mejor organizacion
+abstractos que permitiran delimitar la cantidad de lineas de codigo, permitiendo una mejor organizacion.
+
+Se trabaja con variables ya sea dentro de la misma funcion o variables enviadas en el llamado de la funcion, cuando es este ultimo caso
+lo que se recibe son parametros y lo que se recibe en el llamado son argumentos.
+
+Se pueden utilizar parametros opcionales al momento de pedir los argumentos podemos usar valores por defecto.
+
+Tambien podemos nombrar los argumentos en caso de que no sepamos, para lograr esto podemos nombrar los argumentos como si crearamos una variable,
+asi le decimos a python que argumentos son cuale parametros.
+
+    En caso de que sean multiples parametros, podemos usar los xargs dentro de la funcion para especifica en que orden toma los argumentos
