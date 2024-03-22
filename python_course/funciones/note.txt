@@ -18,8 +18,29 @@ Argumentos
 
 Los argumentos de tipo xarg nos permiten recibir multiples elementos dentro de una funcion, en si los toma y los guarda dentro de una tupla en la cual
 tu puedes iterarlas y obtener cada argumento dado y trabajar con los parametros de la funcion. Un ejemplo es el siguiente:
-    # def suma(*numeros :float) -> None: # *numeros es una tupla
+    # def suma(*numeros :tuple) -> None: # *numeros es una tupla
     #     print(sum(x for x in numeros))  # sum() es una función que suma los elementos de un iterable (lista, tupla, etc)
 
 
-Los argumentos de tipo de Kwargs nos permiten al igual que los 
+Los argumentos de tipo de Kwargs nos permiten al igual que los xargs poder recibir varios argumentos para un funcion, con esto los parametros son almacenados
+dentro de un diccionario, esto genera que al momento de pasar un argumento se necesite especificar su key and value. Un ejemplo es el siguiente:
+    def suma(**datos :dict) -> None :
+        print({x : y for x, y in datos.items()})
+
+
+Alcance de las variables
+
+Cuando se habla del alcance de las variables, se habla si es de nivel global o local, trabajar con variables globales es una MALA PRACTICA ya que puede generar 
+confusion en codigos extensos al sobreescribir valores. Pero aun asi Python tiene una forma de declarar variables globales. Este es un ejemplo del uso de variables.
+
+saludo = "Hello"
+
+def cambiar() -> None:
+    global saludo
+    saludo = "Bye"
+
+print(saludo) # Hello
+
+cambiar()
+
+print(saludo) # Bye
