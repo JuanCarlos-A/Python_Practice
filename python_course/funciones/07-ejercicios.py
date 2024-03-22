@@ -18,3 +18,14 @@ class Solucion():
 solu = Solucion("Ama")
 
 print(solu.palindrome())
+
+
+
+def no_space(texto :str) -> str:
+    return texto.replace(" ", "")
+
+def palindrome(texto :str) -> bool:
+    return no_space(texto).lower() == no_space(texto)[::-1].lower()
+
+
+print(palindrome("osso"))
