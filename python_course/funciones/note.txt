@@ -44,3 +44,9 @@ print(saludo) # Hello
 cambiar()
 
 print(saludo) # Bye
+
+
+Depuraciones o Debuggers
+
+Con esta herramienta tu puedes revisar linea por line e incluso entrar a funciones y revisar como es el flujo de ejecucion, las variables que cambian, el resultado que se 
+retorna.
