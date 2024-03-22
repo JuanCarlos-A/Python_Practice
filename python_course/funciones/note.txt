@@ -1,0 +1,4 @@
+Funcions en Python
+
+Las funciones en python son bloques de codigo que designamos para un proposito, estas funcciones son bloques de codigo 
+abstractos que permitiran delimitar la cantidad de lineas de codigo, permitiendo una mejor organizacion
