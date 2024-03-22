@@ -6,6 +6,7 @@ def saludar():
 
 def saludaChanchito():
     saludo = "Hola Chanchito Feliz"
+    return saludo
 
 
 print(saludo)
