@@ -12,3 +12,12 @@ Tambien podemos nombrar los argumentos en caso de que no sepamos, para lograr es
 asi le decimos a python que argumentos son cuale parametros.
 
     En caso de que sean multiples parametros, podemos usar los xargs dentro de la funcion para especifica en que orden toma los argumentos
+
+
+Argumentos 
+
+Los argumentos de tipo xarg nos permiten recibir multiples elementos dentro de una funcion, en si los toma y los guarda dentro de una tupla en la cual
+tu puedes iterarlas y obtener cada argumento dado y trabajar con los parametros de la funcion. Un ejemplo es el siguiente:
+    # def suma(*numeros :float) -> None: # *numeros es una tupla
+    #     print(sum(x for x in numeros))  # sum() es una función que suma los elementos de un iterable (lista, tupla, etc)
+
