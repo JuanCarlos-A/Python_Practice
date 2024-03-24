@@ -47,3 +47,9 @@ Metodo sorted()
 Tiene la misma funcion que el metodo sort() de devolver una lista con los elementos ordenados,
 pero en diferencia al metodo sort(), este metodo crea una nueva lista NO altera la lista que le
 entregaron
+
+
+Comprehensions
+
+Los comprehensions son formas que nos permiten recorrer elementos filtrados o cierta parte de 
+elementos que ya hayan existido en un lista, asi generando otra.
