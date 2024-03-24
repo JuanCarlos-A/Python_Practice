@@ -38,9 +38,8 @@ la lista.
 Metodos sort()
 
 Este metodo toam una lista y la devuelve en orden de menor a mayor, en caso de que quieres que el
-valor sea al contrario, nosotros debemos enviar un argumento (reverse = True), si queremos
-que la lista que altere sea alterada tomando un valor, pordemo espesificarlos con el argumento de
-key.
+valor sea al contrario, nosotros debemos enviar un argumento (reverse = True), el valor enviado
+en el argumento de key determinara como se realiza la clasificacion
 
 
 Metodo sorted()
