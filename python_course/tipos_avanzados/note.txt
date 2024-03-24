@@ -1,0 +1,24 @@
+Listas, Diccionarios, Tuplas, Sets, Frozensets, Strings 
+
+Estos son tipos de datos que permiten guardar multiples datos en dentro de una agrupacion, 
+cada tipo de dato tiene susu caracteristicas que los vuelve unicos y utiles en ciertas
+ocasiones.
+
+Listas = []
+Diccionarios = {}
+Sets = set()
+Frozensets = frozensets()
+Tuplas = ()
+
+Una caracteristica en comun es que son iterables. Y se pueden recorrer con los ciclos en Python,
+lo mas comun son con el ciclo for por temas de facilidad.
+
+
+Metodo enumerate()
+
+Es un metodo que permite traer los valores del indice de un elemento dentro de una lista asi
+como el valor que es representado, un ejemplo:
+
+lista = [1, 2, 6, 8]
+for indice, valor in lista:
+    print(indice, valor)
