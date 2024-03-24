@@ -22,3 +22,29 @@ como el valor que es representado, un ejemplo:
 lista = [1, 2, 6, 8]
 for indice, valor in lista:
     print(indice, valor)
+
+
+Metodo count()
+
+Es un metodo para que se pueda conocer la cantidad de mismos elementos estan en una lista.
+
+
+Metodo index()
+
+Es un metodo de corto circuito, que encuentra un elemento y extrae el indice del elementod dentro de
+la lista.
+
+
+Metodos sort()
+
+Este metodo toam una lista y la devuelve en orden de menor a mayor, en caso de que quieres que el
+valor sea al contrario, nosotros debemos enviar un argumento (reverse = True), si queremos
+que la lista que altere sea alterada tomando un valor, pordemo espesificarlos con el argumento de
+key.
+
+
+Metodo sorted()
+
+Tiene la misma funcion que el metodo sort() de devolver una lista con los elementos ordenados,
+pero en diferencia al metodo sort(), este metodo crea una nueva lista NO altera la lista que le
+entregaron
