@@ -21,4 +21,6 @@ tienen las mismas caracteristicas definidas por la clase.
 Atributos 
 
 Las clases en python tienen sus atributos que definenen las caracteristicas, estos atributos
-tienen distintos niveles de visibilidad
+tienen distintos niveles de visibilidad. Estos atributos privados se definenen de la siguiente
+manera.
+    __atributo_privado
