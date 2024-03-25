@@ -1,1 +1,7 @@
-Inher
+Inheritance o Herencia 
+
+En python nosotros podemos realizar una herencia de multiples clases. Las clases hijas 
+heredan todos los atributos y metodos publicos de las clases hijas.
+
+Para que una clase pueda heredar multiples clases es necesario poner el nombre de las clases
+o la palabra que las representa dentro de los parentesis de la clase hija.
