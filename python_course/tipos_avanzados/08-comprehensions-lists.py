@@ -13,3 +13,8 @@ print(names)
 
 users = [x if x[1] % 2 == 0 else False for x in usuarios]
 print(users)
+
+
+nombres = list(map(lambda x: x[0], usuarios))
+
+usuarios = list(filter(lambda x: x[1] > 2, usuarios))

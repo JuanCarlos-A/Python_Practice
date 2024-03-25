@@ -53,3 +53,18 @@ Comprehensions
 
 Los comprehensions son formas que nos permiten recorrer elementos filtrados o cierta parte de 
 elementos que ya hayan existido en un lista, asi generando otra.
+
+
+Metodo map()
+
+Los metodos de map() tienen que ver con la programacion funcional. Esto nos permite recorrer una
+lista y extraer algunos elementos de la lista. Dentro de la funcion debemos poner la funcion que
+especificara que elementos abstraer y luego la lista. Lo que hace es iterar sobre una lista hasta
+que el iterador se acabe.
+
+
+Metodo filter()
+
+El metodo filter() es de la programacion funcional. La funcion de filter() tiene la funcion de 
+pasar por los elementos de una lista y realiza una comparacion que si resulta cierta devuelve el 
+elemento para ser utilizado.
