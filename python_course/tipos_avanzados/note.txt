@@ -75,3 +75,10 @@ Tuplas
 Son un tipo de coleccion que nos permite guardar datos que no podran ser alterados o cambiados, 
 asegurandonos de que no se alteren ciertos datos. Pero si puedes utilizar tuplas ya existentes
 para crear una nueva tupla.
+
+
+Sets
+
+Son un conjunto o coleccion de datos que no se encuentra ordenada, tampoco toma valores ya 
+existentes en el set, los sets son editables lo que significa que puedes agregar datos o eliminar
+los existentes.
