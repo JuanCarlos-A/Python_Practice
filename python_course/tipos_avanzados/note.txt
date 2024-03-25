@@ -68,3 +68,10 @@ Metodo filter()
 El metodo filter() es de la programacion funcional. La funcion de filter() tiene la funcion de 
 pasar por los elementos de una lista y realiza una comparacion que si resulta cierta devuelve el 
 elemento para ser utilizado.
+
+
+Tuplas
+
+Son un tipo de coleccion que nos permite guardar datos que no podran ser alterados o cambiados, 
+asegurandonos de que no se alteren ciertos datos. Pero si puedes utilizar tuplas ya existentes
+para crear una nueva tupla.
