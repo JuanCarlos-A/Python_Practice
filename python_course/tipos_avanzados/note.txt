@@ -82,3 +82,25 @@ Sets
 Son un conjunto o coleccion de datos que no se encuentra ordenada, tampoco toma valores ya 
 existentes en el set, los sets son editables lo que significa que puedes agregar datos o eliminar
 los existentes.
+
+
+Diccionarios
+
+Son coleciones de datos que se encuentran agrupados por un valor y una llave, estos pueden cambiar
+o ser alterados. Esto significa que los diccionarios almacenan datos que se van a ver almacenados
+con un referente que va a ser las llaves.
+
+
+Metodo values()
+
+Este metodo trae los valores de un diccionario, sin sus llaves.
+
+
+Metodo items()
+
+Trae los valores y sus llaves pero en variables separadas.
+
+
+Metodo keys()
+
+Trae las llaves de los diccionario.
