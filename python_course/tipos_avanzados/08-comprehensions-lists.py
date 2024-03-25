@@ -18,3 +18,4 @@ print(users)
 nombres = list(map(lambda x: x[0], usuarios))
 
 usuarios = list(filter(lambda x: x[1] > 2, usuarios))
+
