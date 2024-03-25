@@ -14,4 +14,10 @@ Los objetos pueden tener una cantidad enorme de informacion, asi como las clases
 
 Objects in python
 
-Cada objeto cuenta con su propia personalidad, ya sea por metodos o atributos
+Cada objeto cuenta con su propia personalidad, ya sea por metodos o atributos, estos objetos
+tienen las mismas caracteristicas definidas por la clase.
+
+
+Atributos 
+
+Las clses en python tienen sus atributos que definenen las caracteristicas
