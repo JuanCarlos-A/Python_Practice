@@ -104,3 +104,9 @@ Trae los valores y sus llaves pero en variables separadas.
 Metodo keys()
 
 Trae las llaves de los diccionario.
+
+
+Metodo de get()
+
+El metodo de get() hace una revision en las llaves de los diccionarios y si no la encuentra
+devuelve un valor por defecto.
