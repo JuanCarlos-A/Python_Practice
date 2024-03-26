@@ -122,4 +122,5 @@ varios argumentos.
 Filas FIFO
 
 Las siglas de fifo son first in y first of, esto hace referencia que en el momento que el objeto
-es considerado acabado se descarta.
+es considerado acabado se descarta. Para poder trabaja con las filas nosotros debemos importar 
+del modulo de collections la clase de deque.
