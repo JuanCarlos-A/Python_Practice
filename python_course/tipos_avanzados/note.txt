@@ -124,3 +124,9 @@ Filas FIFO
 Las siglas de fifo son first in y first of, esto hace referencia que en el momento que el objeto
 es considerado acabado se descarta. Para poder trabaja con las filas nosotros debemos importar 
 del modulo de collections la clase de deque.
+
+
+Filas LIFO
+
+Estas listas siguen un diferente tipo de marco de pensamiento ya que el primero en salir es el ultimo en entrar o como sus
+siglas indican, Last in first out
