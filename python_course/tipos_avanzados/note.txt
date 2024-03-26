@@ -110,3 +110,16 @@ Metodo de get()
 
 El metodo de get() hace una revision en las llaves de los diccionarios y si no la encuentra
 devuelve un valor por defecto.
+
+
+Operador de desempaquetamiento
+
+Este operador permite desempaquetar elemento por elemento de una coleccion o secuencia para asi
+poder trabajar con ellos, esto se hace ya sea combinar listas o en funciones para poder, recibir
+varios argumentos.
+
+
+Filas FIFO
+
+Las siglas de fifo son first in y first of, esto hace referencia que en el momento que el objeto
+es considerado acabado se descarta.
