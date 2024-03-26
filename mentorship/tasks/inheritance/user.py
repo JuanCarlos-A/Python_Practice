@@ -8,34 +8,54 @@ class User:
         self.__name = name #Atributo privado __name indica que no se puede acceder desde fuera de la clase o conocido como name mangling
         self.__active = active
 
-    def __str__(self) -> str:
-        return f'User:\nNombre: {self.__name}\nActivo: {self.__active}'
-    
-    def get_name(self) -> str:
+    def get_name(self):
         return self.__name
     
-    def set_name(self, name:str) -> None:
-        self.__name = name
 
-    @staticmethod #Metodo estatico
-    def imprimir_mensaje() -> None:
-        print('Hola mundo')
-    
-    def imprimir_despedida() -> None:
-        print('Adios mundo')
-    
-    imprimir_despedida = staticmethod(imprimir_despedida) #Tambien podemos crear un metodo estatico de esta forma
-    
+    @staticmethod
+    def log() -> None:
+        print('Usuario logeado')
+
+    def log_id(self) -> None:
+        print(f'Id: {self._id}')
+
+    @staticmethod
+    def mask(id, name):
+        return f'x{id}x{name}x'
+
+    def sent_credentials(self):
+        id = self._id
+        name = self.__name
+
+        hashed = self.mask(id, name)
+
+    def __private(self):
+        pass
 
 usuario = User(1, 'Juan', True)
 
-print(usuario)
+# User.otra_funcion()
+
+# usuario.otra_funcion()
 
 print(usuario.get_name())
 
-print(usuario._id) #Error
+print(usuario._User__name)
 
-User.imprimir_mensaje()
+print(usuario._User__private)
 
-User.imprimir_despedida()
+
+
+
+
+
+# print(usuario)
+
+# print(usuario.get_name())
+
+# print(usuario._id) #Error
+
+# User.imprimir_mensaje()
+
+# User.imprimir_despedida()
 

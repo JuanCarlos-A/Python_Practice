@@ -6,7 +6,7 @@ class Admin(User):
         self.position = position
 
     def __str__(self) -> str:
-        return f'{super().__str__()}\nPosicion: {self.position}'
+        return f'{super().__str__()}\nPosicion: {self.position} {self.__name}'
     
 
 admin = Admin(2, 'Pedro', True, 'Admin')
