@@ -4,3 +4,18 @@ Cuando se habla de una clase, esta es la estructura que tendra un objeto, es el 
 un objeto de esa clase se estructurara con sus atributos y metodos. Todo en python son clases y 
 objetos de dichas clases, cuando creamos una variable, lo que creamos es una instancia de una clase
 ya definida en python, o tambien podemos crear nuestras propias clases.
+
+Las clases tienen su propia convencion o regla no estricta que indica el modo de escribir su nombre
+que luego se utilizara para referenciar y este modo es el PascalCase o UpperCamelCase.
+
+Estas clases estan sujetas al paradigma de la OOP o Object Oriented Programming, eso indica que 
+las clases pueden ser heredadas, estar protegidas por el encapsulamiento, poder ser usadas en distintas
+situaciones como lo son en el polimorfismo y ser generales para distintas situaciones, como lo es
+la abstraccion.
+
+
+Metodos y atributos
+
+Estas son las caracteristicas que definen a un objeto de una clase, cuando declaramos un objeto
+de la clase y necesitamos llamar a un metodo de la clase, nosotros necesitamos especificar que 
+los atributos con los que va a trabajar sean del objeto con la palabra self.
