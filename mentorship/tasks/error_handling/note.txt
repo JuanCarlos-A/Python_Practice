@@ -1,0 +1,13 @@
+Handling Exceptions or Errors
+
+Python permite manejar los errores dentro de una declaracion try en la cual prueba todo el codigo
+dentro del bloque y si ocurre una exceptions imprimira un mensaje que nosotros elijamos.
+
+El flujo de ejecucion ese el siguiente:
+
+El try ejecuta todo el cogigo que contrnga y si todo se ejecuta correctamente, no pasara nada mas 
+y se seguira el codigo. Si dentro de la ejecucion del cogido ocurre un error la clausula de 
+except evaluara si esa exception es controlada he imprimira un mensaje. Si no se controla la excepcion que ocurrio,
+python imrpimira el mensaje de error por defecto.
+
+Existen dos tipos de errores en Python, los sintax errors y las exceptions
