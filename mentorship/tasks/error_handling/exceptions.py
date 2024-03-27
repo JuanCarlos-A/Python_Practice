@@ -45,7 +45,7 @@ class C(ExampleError):
 class D(C):
     pass
 
-for cls in [ExampleError, C, D]:
+for cls in [C, D, ExampleError]:
     try:
         raise cls()
     except D:
