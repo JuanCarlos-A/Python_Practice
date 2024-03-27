@@ -1,0 +1,6 @@
+Clases en Python
+
+Cuando se habla de una clase, esta es la estructura que tendra un objeto, es el plano con el cual
+un objeto de esa clase se estructurara con sus atributos y metodos. Todo en python son clases y 
+objetos de dichas clases, cuando creamos una variable, lo que creamos es una instancia de una clase
+ya definida en python, o tambien podemos crear nuestras propias clases.
