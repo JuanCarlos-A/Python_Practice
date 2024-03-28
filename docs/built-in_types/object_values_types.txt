@@ -10,3 +10,21 @@ an object in python we have the id() method which return a value integer.
 
     CPython implementation detail: For CPython, id(x) is the memory address where x is stored.
 
+Los tipos mas comunes en python son los:
+    str
+    numbers (complex, float, int)
+    Booleans (bool)
+    None (None Type)
+    Lists []
+    Tuples ()
+    Sets {}
+    Dictionaries {key:value}
+
+
+Carateristicas
+
+Dentro de python los objetos de las clases str y tuple pueden ser concatenados de tal forma que los objetos de la izquierda
+son sumados a la derecha, tambien es posible multiplicar estos objetos.
+
+Las listas, diccionarios y sets o conjuntos son mutables, ya que nos permiten cambiar los valores de los elementos 
+que contiene.

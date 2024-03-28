@@ -1,6 +1,5 @@
 Operators
 
-
 Booleans o Logicos
 
 There are three Booleans Operators, for example:

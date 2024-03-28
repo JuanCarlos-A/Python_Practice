@@ -1,0 +1,4 @@
+The Python tutorial
+
+Python is an easy to learn, powerful programming language. It has a efficent highg level data structure and a simple but effective 
+aproach to OOP. If we want to learn python we must understand how python treats with data.
