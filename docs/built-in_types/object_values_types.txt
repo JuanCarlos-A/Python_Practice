@@ -28,3 +28,14 @@ son sumados a la derecha, tambien es posible multiplicar estos objetos.
 
 Las listas, diccionarios y sets o conjuntos son mutables, ya que nos permiten cambiar los valores de los elementos 
 que contiene.
+
+Los strings, numeros y tuplas son inmutables.
+
+Las strings, tuplas, listas y diccionarios son subscriptable lo que significa que se puede acceder mediante un id dentro
+de los objetos que contienen. En python se usa el metodo de __getitem__() para traer un item.
+
+
+Cadena de caracteres
+
+Las cadenas de caracteres son agrupaciones de caracteres las cuales son inmutables, aun asi se puede
+traer elementos de este array asi como se puede saber el indice de donde se encuentran los elementos.
