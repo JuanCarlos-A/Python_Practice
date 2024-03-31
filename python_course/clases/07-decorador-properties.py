@@ -19,6 +19,6 @@ perro = Perro("John")
 
 print(perro.nombre)
 
-perro.nombre = "Perro"
+perro.nombre = "Different Name"
 
 print(perro.nombre)
