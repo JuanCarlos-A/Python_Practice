@@ -50,3 +50,13 @@ El ejemplo es el siguiente usando el decorador de @classmethod.
 def contructor_alternativo(cls) -> "Clase":
     return cls("Argumentos")
 
+
+Atributos Privados
+
+Estos atributos son privados ya que la clase los esconde para que las instancias de la
+clase no puedan acceder a ellos sino tienen un metodo que les permita trabajar con ellos,
+esto es la encapsulacion de la OOP.
+
+La forma para poder declarar un atributo o propiedad de manera privadas es usando un 
+doble undersocer antes del nombre de la propiedad, de esta manera nosotros vamos a poder decirle
+al interprete que use mangling con la propiedad.
