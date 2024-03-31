@@ -26,3 +26,11 @@ Existen los metodos magicos o dunder
 Estos metodos seran ejecutados implicitamente cuando la instancia de un objeto haga uso de ciertas caracteristicas que posee como objeto de una clase,
 por ejemplo la mas conocida es el contructor de __init__() este es un constructor que como primer argumento to self, el argumento
 de self es una convencion de los metodos no estaticos la cual permite hacer una referencia a la instancia de la clase.
+
+
+atributos de clase
+
+En python no solo existen los atributos de objetos o instancias, los atributos tambien pueden 
+ser de clase. Estos atributos o propiedades desde la vista de logica significa que todos los 
+objetos de una clase estan en todas las instancias.
+

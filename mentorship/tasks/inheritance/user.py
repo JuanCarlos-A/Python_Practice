@@ -27,7 +27,7 @@ class User:
         id = self._id
         name = self.__name
 
-        hashed = self.mask(id, name)
+        hashed = self.mask(id, name)  # noqa: F841
 
     def __private(self):
         pass
