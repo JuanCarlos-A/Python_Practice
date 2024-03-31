@@ -18,3 +18,7 @@ class Perro:
 perro = Perro("John")
 
 print(perro.nombre)
+
+perro.nombre = "Perro"
+
+print(perro.nombre)
