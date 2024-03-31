@@ -102,7 +102,14 @@ La cantidad de metodos dunder es muy grande pero nosotros podemos usar el polimo
 el comportamiento de lso metodos como el  __str__ o el __repr__
 
 
-Metodo destructor
+Metodo destructor __del__
 
 Un metodo dunder que se ejecuta cuando destruimos un objeto de una clase, esto eliminara el comportamiento
 del objeto de la clase.
+
+
+Metodos de comparacion __lt__() __ne__() __le__()
+
+Estos metodos son infereidos como una propiedad de los objetos que cuando se
+utilizan operadores de comparacion por debajo se llaman a los dunder methods de
+comparacion.
