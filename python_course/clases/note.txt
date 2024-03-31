@@ -113,3 +113,10 @@ Metodos de comparacion __lt__() __ne__() __le__()
 Estos metodos son infereidos como una propiedad de los objetos que cuando se
 utilizan operadores de comparacion por debajo se llaman a los dunder methods de
 comparacion.
+
+
+Herencia
+
+La propiedad de la herencia es uno de los pilares de la programacion orientada a objetos y esto permite
+que una clase y sus instancias hereden las caracteristicas de otra clase. En python la herencia se 
+implementa cuando declaramos una clase y luego ponemos el nombre de otra clase dentro de un parentesis.
