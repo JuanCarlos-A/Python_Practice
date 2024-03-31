@@ -120,3 +120,6 @@ Herencia
 La propiedad de la herencia es uno de los pilares de la programacion orientada a objetos y esto permite
 que una clase y sus instancias hereden las caracteristicas de otra clase. En python la herencia se 
 implementa cuando declaramos una clase y luego ponemos el nombre de otra clase dentro de un parentesis.
+
+    Herencia Mult-Nivel: La herencia multi-nivel es cuando una clase hereda de otra clase que al 
+    mismo tiemplo heredaba de otra clase.
