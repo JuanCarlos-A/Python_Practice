@@ -84,3 +84,19 @@ def nombre(self):
 def nombre(self):
     #Logica de setter
     pass
+
+
+Metodos magicos o dunder metodos
+
+Son metodos que se caracterizan por tener como nombre __name__ un double underscore dentro de su sintaxis,
+pero eso es solo a nivel de sintaxis ya que a nivel de funcionalidad los dunder methods son metodos
+que se llaman de manera autonoma al nosotros ejecuatar ciertas funciones de las clases.
+
+El metodo __init__ por ejemplo es un metodo que se llama por debajo cuando nosotros necesitamos crear
+o construir un objeto con sus atributos.
+
+La herencia juega un papel importante del porque aunque nosotros no hayamos declarado algunos
+dunder metodos antes, estos ya los tienen los objetos.
+
+La cantidad de metodos dunder es muy grande pero nosotros podemos usar el polimorfismo para vorlver a editar
+el comportamiento de lso metodos como el  __str__ o el __repr__
