@@ -71,3 +71,16 @@ Este metodo muestra como es el mangling dentro de python con las variables, ya q
 
 
 Decorador @Property
+
+Con el decorador nosostros podemos declarar una funcion que trabaje como un getter y setter para una propiedad,
+con esto nosotros podemos ocultar los metodos de setter y getter de una propiedad o atributo. Un ejemplo:
+
+@property
+def nombre(self):
+    #Logica de getter
+    pass 
+
+@nombre.setter
+def nombre(self):
+    #Logica de setter
+    pass
