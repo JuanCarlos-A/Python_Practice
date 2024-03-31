@@ -34,3 +34,19 @@ En python no solo existen los atributos de objetos o instancias, los atributos t
 ser de clase. Estos atributos o propiedades desde la vista de logica significa que todos los 
 objetos de una clase estan en todas las instancias.
 
+
+Metodos de clase
+
+Estos metodos son metodos que son posibles para cualquier instancia de las clases, metodos que sean posibles para todas las
+instancias.
+
+
+Metodo de Fabrica o un constructor alternativo
+
+Este ejemplo de contructor alternativo permite crear una instancia de una clase de forma diferente al crear un metodo de clase.
+El ejemplo es el siguiente usando el decorador de @classmethod.
+
+@classmethod
+def contructor_alternativo(cls) -> "Clase":
+    return cls("Argumentos")
+
