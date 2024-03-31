@@ -100,3 +100,9 @@ dunder metodos antes, estos ya los tienen los objetos.
 
 La cantidad de metodos dunder es muy grande pero nosotros podemos usar el polimorfismo para vorlver a editar
 el comportamiento de lso metodos como el  __str__ o el __repr__
+
+
+Metodo destructor
+
+Un metodo dunder que se ejecuta cuando destruimos un objeto de una clase, esto eliminara el comportamiento
+del objeto de la clase.
