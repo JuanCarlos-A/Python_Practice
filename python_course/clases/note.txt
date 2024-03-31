@@ -24,4 +24,5 @@ los atributos con los que va a trabajar sean del objeto con la palabra self.
 Existen los metodos magicos o dunder
 
 Estos metodos seran ejecutados implicitamente cuando la instancia de un objeto haga uso de ciertas caracteristicas que posee como objeto de una clase,
-por ejemplo la mas conocida es el contructor de __init__() este es un constructor que como primer argumento to self, el 
+por ejemplo la mas conocida es el contructor de __init__() este es un constructor que como primer argumento to self, el argumento
+de self es una convencion de los metodos no estaticos la cual permite hacer una referencia a la instancia de la clase.
