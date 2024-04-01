@@ -47,10 +47,21 @@ class D(C):
 
 for cls in [C, D, ExampleError]:
     try:
-        raise cls()
+        raise cls("Esto es un error")
     except D:
         print("D")
     except C:
         print("C")
-    except ExampleError:
-        print("ExampleError")
+    except ExampleError as e:
+        print(f"ExampleError {e}")
+
+
+def dividir(n=0):
+    if n == 0:
+        raise ZeroDivisionError("No se puede dividir entre cero", f"el numero es {n}")
+    return 5 / n
+
+try:
+    dividir()
+except ZeroDivisionError as e:
+    print(e)
