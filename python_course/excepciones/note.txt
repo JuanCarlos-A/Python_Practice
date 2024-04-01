@@ -14,3 +14,6 @@ almacenarlo dentro de una variable. Un ejemplo es:
         numero = int(input("Ingresa un numero: "))
     exception ValueError as ve:
         print(f"Ocorruio un error: {ve}") 
+
+En la keywords de Exception nosotros podemos poner cualuier clase que herede de Exception, esto permite crear tus propias clases
+de errores.
