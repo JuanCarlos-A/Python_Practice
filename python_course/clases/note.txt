@@ -129,3 +129,8 @@ implementa cuando declaramos una clase y luego ponemos el nombre de otra clase d
 
 Los metodos que aparecen en multiples lugares necesitan ser tenidos en cuenta ya que el metodo que dominara
 sera el metodo de la primera clase que se herede.
+
+
+Metodo de super()
+
+Nos permite accceder a los artibutos y propiedades de unq clase que son heredados a una sub clase.
