@@ -123,3 +123,6 @@ implementa cuando declaramos una clase y luego ponemos el nombre de otra clase d
 
     Herencia Mult-Nivel: La herencia multi-nivel es cuando una clase hereda de otra clase que al 
     mismo tiemplo heredaba de otra clase.
+
+    Herencia Multiple: La herencia multiple es cuando en python una clase hereda no solo de una clase,
+    sino que hereda de multiples clases.
