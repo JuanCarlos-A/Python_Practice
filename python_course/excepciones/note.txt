@@ -34,3 +34,9 @@ Dentro de python nosotros podemos invocar las excepciones que nosotros queramos
 asi como podemos especificar el mensaje que llegara al bloque de excepcion. Esto se realizara con 
 la keyword de raise.
 
+
+Custmizar Excepciones
+
+La customizacion de algunas excepciones es util cuando necesitamos especificar como se tratan los 
+errores o excepciones dentro de python. Podemos definir una clase que herede de Exception o de 
+cualquier otra excepcion, haciendo posible una herencia de caracteristicas.
