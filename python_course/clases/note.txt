@@ -126,3 +126,6 @@ implementa cuando declaramos una clase y luego ponemos el nombre de otra clase d
 
     Herencia Multiple: La herencia multiple es cuando en python una clase hereda no solo de una clase,
     sino que hereda de multiples clases.
+
+Los metodos que aparecen en multiples lugares necesitan ser tenidos en cuenta ya que el metodo que dominara
+sera el metodo de la primera clase que se herede.
