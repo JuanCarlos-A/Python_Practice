@@ -26,3 +26,11 @@ de errores.
     Bloque finally:
 
     Los bloques de finally se ejecutaran siempre, no importa si ocurre un error o no.
+
+
+Invocar excepciones
+
+Dentro de python nosotros podemos invocar las excepciones que nosotros queramos
+asi como podemos especificar el mensaje que llegara al bloque de excepcion. Esto se realizara con 
+la keyword de raise.
+
