@@ -133,4 +133,13 @@ sera el metodo de la primera clase que se herede.
 
 Metodo de super()
 
-Nos permite accceder a los artibutos y propiedades de unq clase que son heredados a una sub clase.
+Nos permite accceder a los artibutos y propiedades de una clase que son heredados a una sub clase. Esto
+permite tener las propiedades de la clase padre.
+
+Se pueden llamar los metodos de una clase padre dentro de una clase.
+
+
+Anulacion de metodos o Overrides
+
+Esto es cuando reescribimos un metodo de una clase padre, haciendo una anulacion del metodo de la clase
+padre. 
