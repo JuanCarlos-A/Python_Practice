@@ -158,3 +158,10 @@ Con ayyuda del polimorfismo, nosotros no necesitamos saber la implementacion de 
 una clase, est es ya que el POO se centra en los datos y no en la funcionalidad del programa. Asi que
 la implementacion interna del metodo no es importante, solo importa el tipo de objeto que ejecuta ese 
 metodo.
+
+
+Duck Typing
+
+Python es un lenguaje de tipado dinamico, esto significa que python no necesita buscar de que tipo 
+es el objeto, ya que el solo verifica el valor, en otras palabras, si camamina como pato y suena
+como un pato entonces es un pato.
