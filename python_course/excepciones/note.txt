@@ -17,3 +17,12 @@ almacenarlo dentro de una variable. Un ejemplo es:
 
 En la keywords de Exception nosotros podemos poner cualuier clase que herede de Exception, esto permite crear tus propias clases
 de errores.
+
+    Bloque else:
+
+    Los bloques de else son bloques que se ejecutaran siempre y cuando no se cometan errores que la 
+    exception atrape.
+
+    Bloque finally:
+
+    Los bloques de finally se ejecutaran siempre, no importa si ocurre un error o no.
