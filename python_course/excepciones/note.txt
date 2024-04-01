@@ -1,0 +1,16 @@
+Excepciones en Python
+
+En python existen diferentes errores, mayormente calsificados es dos conjuntos, sintax errors y las excepsions,
+el deber de un programador es manejar estas excepciones y que al usuario le aparezcan mensajes que entienda.
+
+Para manejar una excepcion en python nosotros tenemos los statements de try y exception, estas keywords permiten
+encerrar un bloque de codigo dentro de un nivel diferente, este nivel lo manejara el try y si este mismo detecta
+un error, este error es mandado al bloque de exception.
+
+Nosotros podemos especificar que error quiere que atrape el exception o podemos tomar el mensaje de error y 
+almacenarlo dentro de una variable. Un ejemplo es:
+
+    try:
+        numero = int(input("Ingresa un numero: "))
+    exception ValueError as ve:
+        print(f"Ocorruio un error: {ve}") 
