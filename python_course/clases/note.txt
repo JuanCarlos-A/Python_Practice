@@ -143,3 +143,18 @@ Anulacion de metodos o Overrides
 
 Esto es cuando reescribimos un metodo de una clase padre, haciendo una anulacion del metodo de la clase
 padre. 
+
+
+Abstract Classes
+
+Los metodos abstractos en python nos permiten tener un metodo que implementar en varias clases, estas 
+clases se importan con el modulo de abc Abstract Class y estas clases no pueden tener una instancia,
+tambien pueen haber Abstract attributes.
+
+
+Polimorfismo 
+
+Con ayyuda del polimorfismo, nosotros no necesitamos saber la implementacion de un metodo o funcion de
+una clase, est es ya que el POO se centra en los datos y no en la funcionalidad del programa. Asi que
+la implementacion interna del metodo no es importante, solo importa el tipo de objeto que ejecuta ese 
+metodo.
