@@ -1,0 +1,6 @@
+Incrementanto tu intere en python
+
+Python es un lenguaje de alto nivel, por lo que no es necesario declarar el tipo de variable que se va a utilizar.
+Tambien te permite automizar tareas repetitivas, como incrementar una variable en un ciclo, o eliminar elementos de una lista.
+
+Python es un lenguaje de programación interpretado, lo que significa que el código se ejecuta línea por línea, en lugar de ser compilado en un archivo ejecutable.

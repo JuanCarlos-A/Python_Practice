@@ -1,0 +1,13 @@
+Interprete de Python
+
+El interprete de python es una herramienta que permite ejecutar código en python de manera interactiva. Es decir, podemos escribir una línea de código 
+y obtener el resultado inmediatamente. Este interprete se puede ejecutar desde la terminal de linux o desde la consola de windows.
+
+Los comandos para ejecutar esta herramienta son:
+    py : Este comando se utiliza en la consola de windows para ejecutar el interprete de python. Si tienes una version de python especifica,
+    debes utilizar el comando py -x.x, donde x.x es la versión de python que deseas ejecutar.
+
+    python : Este comando se utiliza en la terminal de linux para ejecutar el interprete de python. Si tienes una version de python especifica,
+    debes utilizar el comando pythonx.x, donde x.x es la versión de python que deseas ejecutar.
+
+    py --list : Este comando se utiliza en la consola de windows para ver las versiones de python que tienes instaladas en tu computadora.
