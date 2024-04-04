@@ -21,8 +21,11 @@ try:
     texto = "Hola"
     suma = numero + texto
     print(suma)
-except TypeError:
+except (TypeError):
     print("No puedes sumar un numero con un texto")
+except AttributeError:
+    print("Error")
+
 finally:
     print("Fin del programa")
 
