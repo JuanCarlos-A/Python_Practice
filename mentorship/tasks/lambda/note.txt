@@ -1,0 +1,28 @@
+Funciones lambda
+
+Estas funciones son conocidas como las funiones anonimas, a comparacion de las funciones normales, 
+estas funciones no cuentan con un nombre.
+
+Su sintaixs es la siguiente: lambda [arguments] : expresion
+
+Las funciones lambda pueden tener cualquier cantidad de parametros pero solo pueden tener una expresion
+la cual es la que devuelven
+
+Las lambdas estan categorizadas como expresiones dentro de python, tambien conocidas como funciones de 
+primera clase. Son conocidas por ser funciones que pueden ser pasadas como argumentos a otras funciones
+o ser retornadas como valores de otras funciones. Tambien son buenas en casos de que necesites una funcion
+concisa y rapida.
+
+Dentro de las razones por las cuales se usan las funciones lambda estan:
+
+Concision: Estas funciones son muy concisas y faciles de leer.
+
+Menos errores: Al ser funciones mas cortas, hay menos posibilidad de cometer errores.
+
+Funciones de orden superior: Las funciones de orden superior son funciones que reciben otras funciones como
+parametros o que devuelven funciones. Las funciones lambda son muy utiles en estos casos.
+
+Programacion funcional: Las funciones lambda son muy utiles en programacion funcional. La programacion
+funcional es un paradigma de la programacion que trata de resolver problemas de forma declarativa, es decir
+que se enfoca en que se debe hacer y no en como se debe hacer. Se basa en la composicion de funciones y
+evita el uso de estados y datos mutables.
