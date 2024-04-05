@@ -1,0 +1,8 @@
+MRO (Method Resolution Order)
+
+Es un concepto asociado a la herencia de clases, debido a que python tiene la
+caracteristica de poder heredar de multiples clases, es necesario definir un 
+orden en el cual se van a buscar los metodos y atributos de las clases padres.
+
+El MRO es el conjunto de reglas que definen linealización de clases, es decir
+el orden en el cual se van a buscar los metodos y atributos de las clases padres.
