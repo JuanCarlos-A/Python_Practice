@@ -1,0 +1,8 @@
+Mixin en python
+
+El mixin en python es una tecnica que se utilizar para reutilizar codigo en diferentes clases
+a travez de clases base que no se instancian por si solas, sino que se heredan en otras clases
+para reutilizar su codigo.
+
+Con esta tecnica se puede mezclar clases que esten siendo heredadas por otras clases, para
+reutilizar su codigo sin tener que instanciarlas.
