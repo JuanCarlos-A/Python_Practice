@@ -1,0 +1,9 @@
+Clases Abstractas
+
+Estas clases se pueden utilizar para definir una clase base que no se puede instanciar, 
+pero que puede ser utilizada para definir subclases. Las clases abstractas pueden contener 
+métodos abstractos, que son métodos que deben ser implementados en las subclases. Para definir 
+una clase abstracta en python se hace uso de un módulo llamado abc (Abstract Base Classes).
+
+Una clase abstarcta es un plano para otras clases, con ayuda de las ABC podemos definir 
+una serie de metodos que deberan ser implementados por las subclases.
