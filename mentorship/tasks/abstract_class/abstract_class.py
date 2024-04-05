@@ -52,11 +52,11 @@ class ClaseB(ClaseA):
 
 objeto = ClaseB()
 
-objeto.imprimir()
+objeto.saludar()
 
 # # No podemos crear una instancia de una clase Abstracta con un metodo Abstracto
 # objeto = ClaseA()
 
-# objeto.imprimir2()
+# objeto.imprimir()
 
 
