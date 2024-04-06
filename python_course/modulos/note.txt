@@ -1,0 +1,16 @@
+Los Modulos en Python
+
+Estos tiene el objetivo de poder brindar una mayor organiazación al código, 
+pudiendo reutilizar codigo de manera eficiente.
+
+Estos modulos organizan el contenido en archivos .py, los cuales pueden ser 
+importados en otros archivos .py
+
+Dentro de los modulos podemos encontrar funciones, clases, variables, etc.
+Estos modulos deben ser importados usando la keyword de from <module> import <function>
+
+
+Carpeta __pycache__ : Esta carpeta se crea automaticamente cuando se importa un modulo
+                      y se encarga de almacenar los archivos .pyc que son los archivos
+                      compilados de los archivos .py
+                      Estos archivos .pyc son los que se ejecutan en el interprete de python
