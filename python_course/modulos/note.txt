@@ -10,7 +10,18 @@ Dentro de los modulos podemos encontrar funciones, clases, variables, etc.
 Estos modulos deben ser importados usando la keyword de from <module> import <function>
 
 
-Carpeta __pycache__ : Esta carpeta se crea automaticamente cuando se importa un modulo
-                      y se encarga de almacenar los archivos .pyc que son los archivos
-                      compilados de los archivos .py
-                      Estos archivos .pyc son los que se ejecutan en el interprete de python
+Carpeta __pycache__ : 
+    Esta carpeta se crea automaticamente cuando se importa un modulo
+    y se encarga de almacenar los archivos .pyc que son los archivos
+    compilados de los archivos .py
+    Estos archivos .pyc son los que se ejecutan en el interprete de python
+
+    La imlementación de los archivos .pyc es para que el interprete de python
+    no tenga que compilar el archivo .py cada vez que se importa, sino que
+    simplemente ejecute el archivo .pyc
+
+    Cada vez que un archivo cambie de nombre o de ubicacion, el archivo .pyc
+    volvera a ser compilado por el interprete de python, si el archivo solo 
+    es actualizado el interprete comparara la fecha de compilacion con la 
+    fecha de modificacion del archivo .py, si son diferentes el archivo ._pyc
+    sera recompilado.
