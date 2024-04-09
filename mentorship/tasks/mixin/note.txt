@@ -6,3 +6,9 @@ para reutilizar su codigo.
 
 Con esta tecnica se puede mezclar clases que esten siendo heredadas por otras clases, para
 reutilizar su codigo sin tener que instanciarlas.
+
+El mixin es util cuando necesitamos añadir funcionalidades a una clase que no tiene nada que ver
+con la jerarquia de clases, por ejemplo, si tenemos una clase que se encarga de la conexion a un
+servidor, y queremos añadirle funcionalidades de logueo, podemos crear un mixin que se encargue
+de añadirle estas funcionalidades a la clase de conexion. Pero son especialmente funcionalidades
+opcionales
