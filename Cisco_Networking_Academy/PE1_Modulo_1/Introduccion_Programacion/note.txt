@@ -1,0 +1,96 @@
+Introduccion a la Programacion  
+
+    - ¿Cómo funciona un programa de computadora?
+
+    Un programa hace que una computadora sea usable. Sin un programa, una computadora es solo un montón de piezas inútiles.
+    Sin ala ayuda de un programa una computadora no podria realizar tarea alguna. Un programa es una secuencia de 
+    instrucciones que le dice a la computadora que hacer.
+
+    Hasta para poder realizar la tarea mas sencilla, es necesario obtener un programa que le diga a la computadora,
+    la clave es el lengueje de programacion.
+
+
+    - Lenguajes naturales vs lenguajes de programación
+
+    Los lenguajes son una herramienta para poder expresar ideas y pensammientos. Los lenguajes naturales son aquellos
+    que utilizamos para comunicarmos con otros seres vivos, existiendo gran cantidad de lenguajes como el materno,
+    lenguaje corporal, lenguaje de señas, etc. El lenguaje de una computadora es muy rudimentario, es conocido por 
+    el nombre de lenguaje de máquina, el cual es un conjunto de instrucciones que una computadora puede entender.
+
+
+    - ¿Qué compone a un lenguaje?
+
+        * Alfabeto : Es un conjunto de simbolos que se juntan para dar una palabra o signifcado.
+        * Lexico : Un conjunto de reglas que definen como se pueden combinar los simbolos para formar palabras.
+        * Sintaxis : Un conjunto de reglas que definen como se pueden combinar las palabras para formar oraciones.
+        * Semantica : Un conjunto de reglas que dictan si una frase guarda sentido o no.
+
+    - Lenguaje máquina vs. lenguaje de alto nivel
+    
+    La comunicacion entre un humano y una computadora es muy dificil, ya que el lenguaje de maquina utiliza un lexico y un 
+    alfabeto muy distinto al de un humano ... para poder solucionar este inconveniente es necesario utilizar un lenguaje que sea
+    tan simple como el lenguaje maquina pero tambien que sea complejo como el lenguaje humano, para esto nacio el lnguaje de 
+    programacion, y los lenguajes que cumplen esta caracteristica son conocidos como lenguajes de alto nivel; estos lenguajes
+    son faciles de entender para los humanso y faciles de traducir para las computadoras.
+
+    Un programa escrito en un lenguaje de alto nivel se llama codigo fuente, y para que una computadora pueda entenderlo es
+    necesario traducirlo a lenguaje de maquina, para esto se utiliza un programa llamado compilador o interprete.
+
+    - Compilación vs. Interpretación
+
+    La programacion informatica es el acto de componer programas informaticos que especifiquen el comportamiento de una
+    computadora. Cuando genera un programa, el programador necesita poder pasar ese codigo de programacion a un lengueje
+    de maquina, para esto se utilizan dos metodos, la compilacion y la interpretacion. 
+
+        Compilacion : El programa funte se traduce una vez a lenguaje de maquina, y el resultado se guarda en un archivo
+        llamado archivo objeto. Este archivo objeto se puede ejecutar en cualquier momento sin necesidad de volver a
+        traducir el programa fuente. PERO cada vez que se realice un cambio en el programa fuente, es necesario volver a
+        compilar el programa.
+
+        Interpretación : El programa debe ser traducido en cada vez que se ejecute el programa. El interprete lee el
+        programa fuente y lo traduce a lenguaje de maquina, y luego ejecuta el programa. Tambien significa que nos 
+        solo puedes compartir el codigo fuente, sino tambien el programa interpretado.
+
+
+    - ¿Qué hace el intérprete?
+
+    El interprete lo que hace es verificar liena por lineaa el codigo descrito en el programa fuente y lo traduce a
+    lenguaje de maquina, y luego ejecuta el programa. El interprete lee el codigo fuente o lenguaje de programacion
+    de forma occidental, esto dicta que de izquierda a derecha y de arriba a abajo. Si el interprete encuentra el 
+    error este lo que hara es detener la ejecucion del programa y mostrara un mensaje de error.
+
+    El interprete manejara el error de tal forma que idica la causa del error asi como su origen, debemos tener en
+    cuenta que el interprete podria mostar una ubicacion o un error que no sea el correcto, por lo que es necesario
+    leer la logica que afecta al programa.
+
+    Cada liena de codigo sigue un ciclo de leer-evaluear-imprimir-repetir, esto se conoce como REPL, Read-Eval-Print-Loop.
+
+
+    - Compilación vs. Interpretación – Ventajas y Desventajas
+
+    Compilacion : 
+        Ventajas : 
+            - La ejecucion del codigo traducido es mas rapida que la interpretacion.
+            - solo el usuario debe tener el compilador; el usuario final puede usar el código sin él;
+            - el código traducido se almacena usando lenguaje máquina; como es muy difícil de entender, 
+            es probable que tus propios inventos y trucos de programación sigan siendo tu secreto.
+        Desventajas :
+            - la compilación en sí puede ser un proceso que consume mucho tiempo; es posible que no puedas ejecutar 
+            su código inmediatamente después de realizar una modificación;
+            - debes tener tantos compiladores como plataformas de hardware donde desees que se ejecute tu código.
+            - El programa objeto solo se puede ejecutar en la misma version del sistema operativo que se compilo.
+
+    Interpretacion :
+        Ventajas :
+            - puedes ejecutar el código tan pronto como lo completes; no hay fases adicionales de traducción;
+            - el código se almacena usando un lenguaje de programación, no un lenguaje máquina; esto significa que se puede ejecutar en 
+            computadoras que usan diferentes lenguajes máquina; no compila tu código por separado para cada arquitectura diferente.
+        Desventajas :
+            - no esperes que la interpretación acelere tu código a alta velocidad: tu código compartirá el poder de la computadora con el 
+            intérprete, por lo que no puede ser realmente rápido;
+            - tanto tu como el usuario final deben tener el intérprete para ejecutar tu código.
+
+
+    A menudo los lenguajes de programacion interpretados son denomidanos como lenguajes de scripting, ya que se utilizan para
+    automatizar tareas, como la creacion de paginas web, la administracion de sistemas, etc. Los lenguajes de programacion
+    compilados se utilizan para crear aplicaciones de escritorio, juegos, etc.
