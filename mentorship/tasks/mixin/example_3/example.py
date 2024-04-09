@@ -1,3 +1,4 @@
+"""Example 3: Mixin para verificar permisos de acceso."""
 from urllib.parse import urlparse
 
 from django.conf import settings
@@ -44,6 +45,9 @@ class AccessMixin:
         return self.redirect_field_name
 
     def handle_no_permission(self):
+        """
+        Override this method to customize the response for permission_denied.
+        """
         if self.raise_exception or self.request.user.is_authenticated:
             raise PermissionDenied(self.get_permission_denied_message())
 
@@ -68,6 +72,9 @@ class LoginRequiredMixin(AccessMixin):
     """Verify that the current user is authenticated."""
 
     def dispatch(self, request, *args, **kwargs):
+        """
+        Override this method to customize the way the user is checked.
+        """
         if not request.user.is_authenticated:
             return self.handle_no_permission()
         return super().dispatch(request, *args, **kwargs)
@@ -104,6 +111,9 @@ class PermissionRequiredMixin(AccessMixin):
         return self.request.user.has_perms(perms)
 
     def dispatch(self, request, *args, **kwargs):
+        """
+        Override this method to customize the way the user is checked.
+        """
         if not self.has_permission():
             return self.handle_no_permission()
         return super().dispatch(request, *args, **kwargs)
@@ -116,6 +126,10 @@ class UserPassesTestMixin(AccessMixin):
     """
 
     def test_func(self):
+        """
+        Override this method. Must return True if the request should be granted access,
+        and False otherwise.
+        """
         raise NotImplementedError(
             "{} is missing the implementation of the test_func() method.".format(
                 self.__class__.__name__
@@ -129,6 +143,9 @@ class UserPassesTestMixin(AccessMixin):
         return self.test_func
 
     def dispatch(self, request, *args, **kwargs):
+        """
+        Override this method to customize the way the user is checked.
+        """
         user_test_result = self.get_test_func()()
         if not user_test_result:
             return self.handle_no_permission()
