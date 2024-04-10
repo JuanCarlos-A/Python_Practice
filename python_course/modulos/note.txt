@@ -100,3 +100,11 @@ Los Modulos en Python
         modulo3.funcion3()
 
         De esta manera se pueden importar los modulos que se necesiten de un subpaquete
+
+
+    Metodo dir()
+
+    Este metodo nos permite ver los metodos, atributos, funciones, etc. que tiene un modulo por el lado de los paquetes
+    podemos ver los dunder metodos que tiene un paquete asi como los modulos que tiene el paquete o los subpaquetes que tiene.
+
+    Nos da un listado de todo lo anterior mencionado.
