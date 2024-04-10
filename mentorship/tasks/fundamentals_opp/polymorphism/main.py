@@ -29,4 +29,4 @@ class Persona:
 
 p = Persona("Juan")
 
-print(p)
+print(p.__dict__)
