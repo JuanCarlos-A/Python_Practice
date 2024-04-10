@@ -1,27 +1,90 @@
 Los Modulos en Python
 
-Estos tiene el objetivo de poder brindar una mayor organiazación al código, 
-pudiendo reutilizar codigo de manera eficiente.
+    Estos tiene el objetivo de poder brindar una mayor organiazación al código, 
+    pudiendo reutilizar codigo de manera eficiente.
 
-Estos modulos organizan el contenido en archivos .py, los cuales pueden ser 
-importados en otros archivos .py
+    Estos modulos organizan el contenido en archivos .py, los cuales pueden ser 
+    importados en otros archivos .py
 
-Dentro de los modulos podemos encontrar funciones, clases, variables, etc.
-Estos modulos deben ser importados usando la keyword de from <module> import <function>
+    Dentro de los modulos podemos encontrar funciones, clases, variables, etc.
+    Estos modulos deben ser importados usando la keyword de from <module> import <function>
 
 
-Carpeta __pycache__ : 
-    Esta carpeta se crea automaticamente cuando se importa un modulo
-    y se encarga de almacenar los archivos .pyc que son los archivos
-    compilados de los archivos .py
-    Estos archivos .pyc son los que se ejecutan en el interprete de python
+    Carpeta __pycache__ : 
+        Esta carpeta se crea automaticamente cuando se importa un modulo
+        y se encarga de almacenar los archivos .pyc que son los archivos
+        compilados de los archivos .py
+        Estos archivos .pyc son los que se ejecutan en el interprete de python
 
-    La imlementación de los archivos .pyc es para que el interprete de python
-    no tenga que compilar el archivo .py cada vez que se importa, sino que
-    simplemente ejecute el archivo .pyc
+        La imlementación de los archivos .pyc es para que el interprete de python
+        no tenga que compilar el archivo .py cada vez que se importa, sino que
+        simplemente ejecute el archivo .pyc
 
-    Cada vez que un archivo cambie de nombre o de ubicacion, el archivo .pyc
-    volvera a ser compilado por el interprete de python, si el archivo solo 
-    es actualizado el interprete comparara la fecha de compilacion con la 
-    fecha de modificacion del archivo .py, si son diferentes el archivo ._pyc
-    sera recompilado.
+        Cada vez que un archivo cambie de nombre o de ubicacion, el archivo .pyc
+        volvera a ser compilado por el interprete de python, si el archivo solo 
+        es actualizado el interprete comparara la fecha de compilacion con la 
+        fecha de modificacion del archivo .py, si son diferentes el archivo ._pyc
+        sera recompilado.
+
+    La organizacion de los proyectos en python deben ser de la siguiente manera:
+
+        - Carpeta principal del proyecto
+            - Carpeta de modulos
+                - modulo1.py
+                - modulo2.py
+                - modulo3.py
+            - main.py
+
+        En el archivo main.py se importan los modulos que se necesiten para el 
+        proyecto, y se ejecutan las funciones que se necesiten.
+
+        En el archivo main.py se pueden importar los modulos de la siguiente manera:
+
+        from modulos import modulo1, modulo2, modulo3
+
+        modulo1.funcion1()
+        modulo2.funcion2()
+        modulo3.funcion3()
+
+        De esta manera se puede tener un proyecto organizado y escalable, ya que
+        se pueden importar los modulos que se necesiten en el archivo main.py
+
+        Los modulos pueden ser importados de la siguiente manera:
+
+        from modulos import modulo1
+        from modulos import modulo2
+        from modulos import modulo3
+
+        modulo1.funcion1()
+        modulo2.funcion2()
+        modulo3.funcion3()
+
+        O tambien se pueden importar de la siguiente manera:
+
+        import modulos.modulo1
+        import modulos.modulo2
+        import modulos.modulo3
+
+        modulos.modulo1.funcion1()
+        modulos.modulo2.funcion2()
+        modulos.modulo3.funcion3()
+
+        De esta manera se puede tener un proyecto organizado y escalable, ya que
+        se pueden importar los modulos que se necesiten en el archivo main.py
+    
+
+    Keyword import
+
+    En python se pueden importar modulos de la siguiente manera:
+
+        import modulo
+    
+    Tambien podemos especificar que queremos importar de un modulo de la siguiente manera:
+
+        from modulo import funcion1, funcion2, funcion3
+    
+    Tambien podemos importar todo el contenido de un modulo de la siguiente manera:
+    
+            from modulo import *
+            "Pero esto es una mala practica de la programaion en python por varios factores como rendimiento, organizacion, etc."
+
