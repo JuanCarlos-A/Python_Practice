@@ -88,3 +88,15 @@ Los Modulos en Python
             from modulo import *
             "Pero esto es una mala practica de la programaion en python por varios factores como rendimiento, organizacion, etc."
 
+
+    Subpaquetes
+
+    Los subpaquetes son carpetas que contienen modulos, estos subpaquetes pueden ser importados de la siguiente manera:
+
+        from paquete.subpaquete import modulo1, modulo2, modulo3
+
+        modulo1.funcion1()
+        modulo2.funcion2()
+        modulo3.funcion3()
+
+        De esta manera se pueden importar los modulos que se necesiten de un subpaquete
