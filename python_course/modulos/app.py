@@ -1,4 +1,5 @@
-from usuarios.acciones.utilidades import guardar, pagar_impuestos
+from usuarios.gestion.crud import guardar
+from usuarios.impuestos.utilidades import pagar_impuestos
 
 guardar()
 
