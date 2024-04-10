@@ -1,0 +1,46 @@
+Principio de Encapsulacion
+
+La Encapsulacion es uno de los pilares del paradigma de la programacion orientada a objetos. Consiste en limitar el acceso a los atributos 
+de una clase y solo permitir el acceso a traves de metodos de la misma. En Python, se puede restringir el acceso a los atributos de una clase
+mediante el uso de metodos de acceso (metodos Get y Set).
+
+Python no cuenta con modificadores de acceso como en otros lenguajes de programacion, lo mas cercano a un modificador de acceso es el uso de
+un guion bajo antes del nombre del atributo indicando por convenio que este estara prtegido, tambien puedes usar dos guiones bajos para
+indicar que el atributo es privado. Pero esto solo lo hace mas dificil de acceder, no imposible.
+
+Para acceder a los atributos privados podemos usar los metodos getter y setter o podemos usar propieadades con el decorador @property:
+
+class Persona:
+    def __init__(self, nombre, apellido):
+        self._nombre = nombre
+        self._apellido = apellido
+
+    @property
+    def nombre(self):
+        return self._nombre
+
+    @nombre.setter
+    def nombre(self, nombre):
+        self._nombre = nombre
+
+    @property
+    def apellido(self):
+        return self._apellido
+
+    @apellido.setter
+    def apellido(self, apellido):
+        self._apellido = apellido
+
+persona = Persona('Juan', 'Perez')
+print(persona.nombre)
+persona.nombre = 'Karla'
+
+
+En resumen, la encapsulacion es una forma de proteger los datos de una clase, evitando que clases externas 
+puedan modificar el estado de los objetos de la clase directamente. En python no existen los modificadores de acceso
+como en otros lenguajes de programacion, pero se puede simular el comportamiento de atributos privados mediante el uso de guiones bajos
+antes del nombre del atributo. Tambien se pueden usar metodos getter y setter o propiedades para acceder a los atributos de una clase.
+
+La encapsulacion se realiza con el fin de umentar la seguridad y la integridad de los datos de una clase,
+evitando modificaciones indeseadas y asegurando que los datos se mantengan consistentes en todo momento.
+
