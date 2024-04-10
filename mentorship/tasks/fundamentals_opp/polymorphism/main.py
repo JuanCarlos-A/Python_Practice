@@ -29,4 +29,4 @@ class Persona:
 
 p = Persona("Juan")
 
-print(p.__dict__)
+print(p.__dict__) # {'nombre': 'Juan'}
