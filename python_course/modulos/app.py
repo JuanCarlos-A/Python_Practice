@@ -1,4 +1,4 @@
-from usuario_impuestos import guardar, pagar_impuestos
+from packages.acciones import guardar, pagar_impuestos
 
 guardar()
 
