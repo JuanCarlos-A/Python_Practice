@@ -1,0 +1,41 @@
+El Polimorfismo en Python
+
+El polimosrfismo es uno de los pilares de la programacion orientada a objetos, se trata de una 
+caracteristica que nos permite cambiar el comportamiento de los metodos de una clase, es decir,
+que un metodo pueda comportarse de diferentes formas segun la clase que lo este invocando.
+
+El polimorfismo se puede lograr de diferentes formas, en Python se puede lograr de una forma muy sencilla
+gracias a que es un lenguaje de tipado dinamico, es decir, no es necesario declarar el tipo de dato de una variable
+y esto nos permite que una variable pueda cambiar de tipo de dato en tiempo de ejecucion.
+
+Veamos un ejemplo de polimorfismo en Python
+"""
+
+class Perro:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def sonido(self):
+        return "Guau"
+    
+class Gato:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def sonido(self):
+        return "Miau"
+
+def sonido_animal(animal):
+    print(animal.sonido())
+
+perro = Perro("Firulais")
+gato = Gato("Garfield")
+
+sonido_animal(perro)
+sonido_animal(gato)
+
+"""
+
+La palabra polimorfismo viene del griego y significa "muchas formas", en este caso, poly significa "muchas"
+y morpphos significa "forma". En ython que cuenta con el tipado dinamico podemos hacer uso de la caracteristica
+del duck typing para lograr el polimorfismo.
