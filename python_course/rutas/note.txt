@@ -1,0 +1,75 @@
+Paths o Rutas 
+
+    Vamos a hacer uso de la libreria del modulo pathlib para poder trabajar con las rutas de los archivos y directorios de nuestro sistema operativo.
+    Esto nos permitira trabajar con las rutas de una manera mas sencilla y eficiente.
+
+    Rutas Absolutas: Son aquellas que empiezan desde la raiz del sistema operativo.
+
+    Rutas Relativas: Son aquellas que empiezan desde el directorio actual en el que nos encontramos.
+
+    Constructor de la clase Path:
+
+        Podemos creear un objeto de tipo Path de la siguiente manera:
+
+        from pathlib import Path
+
+        path = Path("nombre_del_archivo_o_directorio")
+
+    Metodo cwd():
+
+        Este metodo nos permite obtener la ruta absoluta del directorio en el que nos encontramos.
+
+        path = Path.cwd()
+
+        Tambien podemos crear un objeto de tipo Path de la siguiente manera:
+
+        path = Path.cwd() / "nombre_del_archivo_o_directorio"
+
+    Para saber si un archivo o directorio existe podemos hacer uso del metodo exists() de la siguiente manera:
+
+    path.exists()
+
+
+    Python3 incluye el modulo de pathlib para manipular rutas de sistemas de archivos de forma agnostica en 
+    cualquier sistema operativo. Podemos identificar direcciones de manera jerarquica y manipularlas de
+    manera sencilla.
+
+    Por ejemplo podemos identificar el archivo wave.txt de una manera distinta en windows y en linux.
+
+
+    Constructor de Path:
+
+        La libreria de pathlib tiene multiples clases, que tienen sus jerarquias de clases, pero la clase
+        principal es Path. Para crear un objeto de tipo Path, simplemente importamos la libreria y creamos
+        un objeto de tipo Path.
+
+        El contructor de Path puede recibir cualquier argumento que represente una parte de una ruta, y
+        poder unirlas con el operador / o \ segun el sistema operativo.
+
+    Atributos de Path:
+
+        Path tiene varios atributos que nos permiten obtener informacion de la ruta que representa el objeto.
+
+        - name: Nos permite obtener el nombre del archivo o directorio.
+        - parent: Nos permite obtener el directorio padre.
+        - stem: Nos permite obtener el nombre del archivo sin la extension.
+        - suffix: Nos permite obtener la extension del archivo.
+        - anchor: Nos permite obtener la parte de la ruta que representa la raiz del sistema de archivos.
+
+    
+    Metodos de Path:
+
+        glob: Nos permite buscar archivos que coincidan con un patron. Muy parecido a la funcion glob de la libreria glob.
+        mkdir: Nos permite crear un directorio.
+        rmdir: Nos permite eliminar un directorio.
+        unlink: Nos permite eliminar un archivo.
+        rename: Nos permite renombrar un archivo o directorio.
+        stat: Nos permite obtener informacion del archivo o directorio.
+        read_text: Nos permite leer el contenido de un archivo de texto.
+        write_text: Nos permite escribir el contenido de un archivo de texto.
+        read_bytes: Nos permite leer el contenido de un archivo binario.
+        write_bytes: Nos permite escribir el contenido de un archivo binario.
+        is_dir: Nos permite saber si la ruta representa un directorio.
+        is_file: Nos permite saber si la ruta representa un archivo.
+        is_symlink: Nos permite saber si la ruta representa un enlace simbolico.
+
