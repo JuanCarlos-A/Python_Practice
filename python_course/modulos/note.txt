@@ -108,3 +108,19 @@ Los Modulos en Python
     podemos ver los dunder metodos que tiene un paquete asi como los modulos que tiene el paquete o los subpaquetes que tiene.
 
     Nos da un listado de todo lo anterior mencionado.
+
+
+    Nombres dinamicos (Dunder attributes)
+
+    Dentro de Python existen los dunder methods que son metodos que automaticamente se asignan a los objetos, tambien existen
+    los dunder attributes que son atributos que automaticamente se asignan a los objetos.
+
+    Estos atributos son dinamicos y se pueden acceder de la siguiente manera:
+
+        objeto.__atributo__
+        objeto.__metodo__()
+    
+    El hecho de que sean dinamicos sinifica que no se pueden acceder directamente a ellos, sino que se deben acceder de la
+    manera anteriormente mencionada. El objetivo de estos atributos es que no se puedan modificar directamente, sino que se
+    puedan acceder de manera indirecta. Son atributos que permiten trabajar con los objetos de manera mas eficiente y segura.
+    Perimte tener una forma de depuracion mas eficiente y segura.
