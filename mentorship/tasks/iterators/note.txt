@@ -1,0 +1,29 @@
+Iterators y Iterables en Python
+
+    Iterables:
+
+    Son objeto de python que pueden ser iterados, es decir que son idexables, por ejemplo un array o lista puede ser iterada,
+    un string tambien puede ser iterado, un diccionario tambien puede ser iterado, etc.
+
+
+    Iterators o Iteraores:
+
+    Son objetos de python que hacen referencia a un elemento ya que cuenta con un metodo de next() que permite acceder al siguiente elemento
+    del iterable.
+
+    Un iterable no es un iterador, pero un iterador es un iterable.
+
+    Los iteradores son objetos que hace un a referencia al elemento de un iterable, existen varios tipo de iteradores, por ejemplo:
+
+        - ListIterator  : Iterador de listas
+        - TupleIterator : Iterador de tuplas
+        - StrIterator   : Iterador de strings
+        - DictKeyIterator : Iterador de claves de diccionarios
+        - DictValueIterator : Iterador de valores de diccionarios
+        - DictItemIterator : Iterador de items de diccionarios
+        - SetIterator : Iterador de conjuntos
+
+    Para crear un objeto iterator en python utilizamos el metodo de iter() que recibe como parametro un iterable, por ejemplo:
+
+        Funcion iter(iterable) : 
+            Retorna un objeto iterator, tomando como primer argumento un iterable del cual sera el iterador.
