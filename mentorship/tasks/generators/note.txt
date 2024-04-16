@@ -1,0 +1,75 @@
+Generadores en Python
+
+    Los generadores son una poderosa herramienta de python que nos permite crear iteradores de una manera mas sencilla y eficciente. 
+    Los generadores son funciones que nos permiten iterar sobre una secuencia de elementos sin necesidad de almacenarlos en memoria.
+
+    Se puede observar como una funcion normal, pero maneja un estado interno que permite pausar la ejecucion y luego continuarla que a
+    diferencia de una funcion normal que se ejecuta de principio a fin. El statement o declaracion que utiliza un generador es yield en 
+    lugar de return.
+
+
+    Funciones Generadores:
+        
+        Estas funciones tiene un yiel en lugar de un return, lo que significa que la funcion se pausara y retornara un valor, pero no
+        se cerrara la funcion, por lo que se puede seguir ejecutando. El valor que retornan es un objeto de la clase Generator.
+
+
+        Estas funciones al llegar a un yield se detienen y devuelven el flujo de ejecucion al llamador, pero mantienen el estado 
+        de las variables tal cual como estaban antes de llegar al yield. Al volver a llamar a la funcion generadora, esta continuara
+        su ejecucion justo despues del yield.
+
+
+        Los beneficios de estos generadores es eel ahorro de memoria que pueden proporcionar estos, ya que no generan toda la secuencia de valores
+        y los almacena en memoria, en su lugar, genera los valores uno por uno, solo almacena el anterior a la ejecucion de la funcion y devuelve 
+        ese valor cuando llega al statement de yield.
+
+
+        Los generadores son iterables, por lo que se pueden recorrer con un bucle for, y tambien se pueden convertir a listas con la funcion list().
+
+        Estas funciones permiten devolver lazy iterators, que son iteradores que no almacenan todos los valores en memoria, sino que los generan
+        uno por uno a medida que se necesitan.
+
+
+        Estos statements funcionan como el garbage collector, ya que cuando se llega al final de la funcion generadora, se libera la memoria
+        que se utilizo para almacenar los valores generados.
+
+
+        La problematica de los generators es que son un salvavidas para la memoria, pero son un lastre para la velocidad de ejecucion, ya que
+        al no almacenar los valores en  memeoria es un momento, de deben generar cada vez que se necesiten, lo que puede ser mas lento que
+        tenerlos almacenados en memoria.
+
+    Iteradores generados o generators iterators
+
+        Son los objetos creados por por las generators functions, que permiten controlar el flujo de ejecucion de la funcion generadora.
+
+    Expresion de generadores o Generators expressions
+
+        Son expresiones que permiten crear generadores de una manera sencilla y eficciente en una sola linea de codigo. Se utilizan los parentesis
+        en lugar de los corchetes para crear una lista, y se utiliza como un comprehension, pero con parentesis en lugar de corchetes.
+
+
+Yield Statement
+
+    Esta sentencia se utiliza en las funciones generadoras para controlar el flujo de ejecucion de la funcion. Al llegar a un yield, la funcion
+    se detendra y mantendra el estado de las variables, pero no cerrara la funcion, por lo que permite terminar la funcion en otro momento.
+
+
+Metodos de un objeto Generator
+
+    Los objetos de la clase Generator tienen metodos que permiten controlar el flujo de ejecucion de la funcion generadora. Algunos de estos metodos
+    son:
+
+        - send(): Este metodo permite enviar un valor a la funcion generadora, que sera el valor que se devuelva en el yield. Este metodo
+                  se utiliza para controlar el flujo de ejecucion de la funcion generadora.
+
+        - close(): Este metodo permite cerrar la funcion generadora, lo que significa que no se podra volver a llamar a la funcion generadora
+                   y se liberara la memoria que se utilizo para almacenar los valores generados.
+
+        - throw(): Este metodo permite lanzar una excepcion en la funcion generadora, lo que permite controlar el flujo de ejecucion de la funcion
+                   generadora.
+
+        - __next__(): Este metodo permite obtener el siguiente valor de la funcion generadora, lo que permite controlar el flujo de ejecucion de la
+                      funcion generadora.
+
+        - __iter__(): Este metodo permite obtener un iterador de la funcion generadora, lo que permite controlar el flujo de ejecucion de la funcion
+                      generadora.
