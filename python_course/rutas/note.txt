@@ -85,3 +85,19 @@ Paths o Rutas
         Metodo exists():
             Nos devolvera un valor booleano dependiendo si el archivo o directorio existe.
 
+
+Inyeccion de 
+    La inyeccion de dependencias es un patron de diseno que nos permite desacoplar el codigo de una clase de las dependencias que necesita para funcionar.
+
+    La inyeccion de dependencias se puede hacer de dos maneras:
+
+        - Inyeccion de dependencias por constructor.
+        - Inyeccion de dependencias por metodo.
+
+    Ventajas:
+            
+            - Facilita la prueba de unidades.
+            - Facilita la reutilizacion de codigo.
+            - Facilita la modificacion de codigo.
+            - Facilita la inyeccion de dependencias.
+
