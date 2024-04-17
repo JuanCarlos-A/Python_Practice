@@ -1,0 +1,13 @@
+Libreria de pathlib
+
+    from pathlib import Path 
+
+    Nos permite trabajar con rutas de archivos y directorios de una manera más sencilla y eficiente.
+
+Libreria de time:
+
+    Esta libreria nos proporciona una manera de cambiar de un formato en segundos a un formato en horas, minutos y segundos estandarisado.
+    
+    Metodo ctime():
+        
+            Nos permite convertir un tiempo en segundos a un tiempo en horas, minutos y segundos.
