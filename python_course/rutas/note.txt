@@ -61,7 +61,7 @@ Paths o Rutas
 
         glob: Nos permite buscar archivos que coincidan con un patron. Muy parecido a la funcion glob de la libreria glob.
         mkdir: Nos permite crear un directorio.
-        rmdir: Nos permite eliminar un directorio.
+        rmdir: Nos permite eliminar un directorio. Pero tiene la condicion de que el direcorio debe estar vacio.
         unlink: Nos permite eliminar un archivo.
         rename: Nos permite renombrar un archivo o directorio.
         stat: Nos permite obtener informacion del archivo o directorio.
@@ -72,4 +72,16 @@ Paths o Rutas
         is_dir: Nos permite saber si la ruta representa un directorio.
         is_file: Nos permite saber si la ruta representa un archivo.
         is_symlink: Nos permite saber si la ruta representa un enlace simbolico.
+
+        Metodo cwd():
+            Es un metodo de la clase Path que retorna un objeto representando el directorio actual.
+
+        Metodo home():
+            Es un metodo de clase que retorna un nuevo objeto representando el directorio home del usuario dentro del sistema operativo.
+
+        Metodo stat():
+            Nos permite tener un objeto con informacion del archivo o directorio.
+
+        Metodo exists():
+            Nos devolvera un valor booleano dependiendo si el archivo o directorio existe.
 
