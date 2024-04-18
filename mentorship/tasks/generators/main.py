@@ -1,7 +1,6 @@
 """ Generators 255"""
 
-# import sys
-# import cProfile
+
 
 # Ejemplo 1
 
@@ -54,6 +53,8 @@
 
 
 # Ejemplo 4
+# import sys
+# import cProfile
 
 # list_comprehension = [x for x in range(1000000)]
 

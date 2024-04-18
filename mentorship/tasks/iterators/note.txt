@@ -1,5 +1,10 @@
 Iterators y Iterables en Python
 
+    Es importante aclarar que los iterables y los iteradores son dos conceptos relacionados pero no son iguales, mientras los iterables son objetos 
+    que en su interior contienen elementos que pueden ser iterados, los iteradores son objetos que hacen referencia a uno de los elementos de un 
+    iterable. Ambos deben seguir el protocolo de iteracion de python, es decir, deben contar con un metodo __iter__() que retorne un objeto iterator
+    y un metodo __next__() que retorne el siguiente elemento del iterable.
+
     Iterables:
 
     Son objeto de python que pueden ser iterados, es decir que son idexables, por ejemplo un array o lista puede ser iterada,
@@ -27,3 +32,28 @@ Iterators y Iterables en Python
 
         Funcion iter(iterable) : 
             Retorna un objeto iterator, tomando como primer argumento un iterable del cual sera el iterador.
+
+
+    Los iteradores cumplen con dos funciones impoirtantes que marcan un antes y un despues de un proceso, son implementadas segun un patron de 
+    diseño llamado "Iterator Pattern" que es un patron de diseño de comportamiento que tiene como objetivo proporcionar un mecanismo eficiente
+    para acceder secuencialmente a los elementos de una coleccion de objetos sin exponer la representacion interna de dicha coleccion.
+
+    Las dos funciones importantes que cumplen los iteradores son:
+
+        - __iter__() : 
+            Este es el metodo especial o dunder method que devuelve un objeto iterator, es decir que cuenta con el metodo __next__() que
+            permite acceder al siguiente elemento del iterable.
+        - __next__() : Retorna el siguiente elemento del iterable.
+
+
+    Constantemente son usados los iteradores dentro de python, muchas veces no son visibles pero estan ahi, por ejemplo cuando se hace un ciclo
+    for, python crea un iterador implicitamente, por ejemplo:
+
+        for i in range(10):
+            print(i)
+
+    En este caso python crea un iterador implicitamente para el objeto range(10), el cual es un iterable, y luego itera sobre el objeto
+    iterador creado. Tambien pueden ser utilizads dentro de los comprehensions.
+
+    En el dia a dia un programador no necesita crear un iterador explicitamente, pero es importante conocer como funcionan y como se crean
+    para poder entender mejor el funcionamiento de python.
