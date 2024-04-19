@@ -71,17 +71,17 @@
 
 # Ejemplo 5
 
-def lista_al_cuadrado(nums_list):
-    for num in nums_list:
-        yield (num * num)
+# def lista_al_cuadrado(nums_list):
+#     for num in nums_list:
+#         yield (num * num)
 
-lista = lista_al_cuadrado(x for x in range(10))
+# lista = lista_al_cuadrado(x for x in range(10))
 
-for i in lista:
-    try:
-        if i == 25:
-            lista.throw(ValueError)
-            # lista.close()
-        print(i)
-    except ValueError:
-        print("No se permite el numero 25 dentro de este ciclo")
+# for i in lista:
+#     try:
+#         if i == 25:
+#             lista.throw(ValueError, "No se permite el numero 25 dentro de este ciclo") #Diferencia con raise
+#             # lista.close()
+#         print(i)
+#     except ValueError:
+#         print("No se permite el numero 25 dentro de este ciclo")

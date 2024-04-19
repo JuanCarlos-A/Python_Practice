@@ -58,7 +58,7 @@
 #     def __next__(self):
 #         if self.indice < len(self.coleccion):
 #             self.indice += 1
-#             # print("Hola")
+#             print("Hola")
 #             return self.coleccion[self.indice - 1]
 #         else:
 #             raise StopIteration
@@ -66,18 +66,18 @@
 
 # objeto = IteratorClass([1, 2, 3, 4, 5])
 
-# # for i in objeto:
-# #     print(i)
+# for i in objeto:
+#     print(i)
 
 # iterador = iter(objeto)
 
-# # while True:
-# #     try:
-# #         item = iterador.__next__()
-# #     except StopIteration:
-# #         break
-# #     else:
-# #         print(item)
+# while True:
+#     try:
+#         item = iterador.__next__()
+#     except StopIteration:
+#         break
+#     else:
+#         print(item)
 
 
 # Example 4
