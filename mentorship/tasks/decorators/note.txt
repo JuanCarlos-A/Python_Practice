@@ -1,0 +1,46 @@
+Decorators in python
+
+    Los decoradores en python son una herramienta util que permite cambiar el 
+    comportamiento de una funcion, metodo, o incluso una clase. Los decoradores son funciones que
+    toman una funcion como argumento y devuelven otra funcion. Los decoradores se utilizan
+    comunmente para modificar o extender el comportamiento de las funciones o metodos sin modificar
+    su codigo fuente.
+
+    Aclarar que las funciones son objeto de primera clase en python, lo que significa que pueden
+    ser pasadas como argumentos a otras funciones, devueltas por otras funciones, y asignadas a
+    variables.
+
+    Estas funciones son funciones de orden superior, que son funciones que toman una o mas funciones
+    como argumentos y devuelven una nueva funcion.
+
+    Para que una funcion sea ejecutada es necesario llamarla haciendo uso de los parentesis, pero si 
+    se quiere pasar una funcion como argumento a otra funcion, no se deben usar los parentesis, ya que
+    se estaria llamando a la funcion en lugar de pasarla como argumento. Al usar solo el nombre de la 
+    funcion lo que se usa es una referencia a la funcion.  
+
+    Los decoradores utilizan una funcion anidada, es decir, una funcion dentro de otra funcion. La funcion
+    anidada es la que se encarga de modificar el comportamiento de la funcion que se pasa como argumento.
+
+    Estas funciones anidadas solo existen en el scope del padre, es decir que no pueden existir sin antes 
+    haber instanciado a la funcion padre.
+
+    Para evitar la creacion de un codigo repetitivo, se puede utilizar un decorador, que es una funcion que
+    toma una funcion como argumento y devuelve otra funcion. Los decoradores se utilizan comunmente para
+    modificar o extender el comportamiento de las funciones o metodos sin modificar su codigo fuente.A travez del 
+    uso de la sintaxis @.
+
+
+
+Objetos de Primera Clase (First Class Objects)
+
+    Antes de poder entender los decoradores, es importante conocer a los objetos de primera clase y las propiedades que estos
+    objetos tienen. Una funcion es un Objeto de Primera Clase esto significa que:
+
+        - Puede ser pasado como argumento a una funcion
+        - Puede ser devuelto por una funcion
+        - Puede ser asignado a una variable
+        - Puede ser almacenado en una estructura de datos como una lista
+
+
+    Recordar que las funciones son objetos de primera clase en python, lo que significa que pueden ser pasadas como argumentos, esta caracateristica viene del paradigma de 
+    programacion funcional.
