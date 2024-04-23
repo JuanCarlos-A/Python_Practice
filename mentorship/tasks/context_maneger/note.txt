@@ -1,0 +1,56 @@
+Context Manager 
+
+    Es un Objeto que permite el manejo de recursos de manera eficiente y personalizada. Existe un protocolo que se debe seguir
+    para la creacion del Context Manager, el cual consiste en la implementacion de dos metodos especiales:
+
+        - __enter__ : 
+            Metodo que se ejecuta al inicio del bloque with.
+        - __exit__ : Metodo que se ejecuta al final del bloque with
+
+
+    Con ayuda del context manager el programador puede manipular la vida de un recurso, pudiendo eliminar los recursos
+    que ya no son necesarios o reutilizar los recursos que ya han sido creados.
+
+
+Bloque o Declaracion with
+
+    Es una estructura de control que permite la ejecucion de un bloque de codigo dentro de un contexto determinado. 
+    Al finalizar la ejecucion del bloque de codigo, se ejecuta el metodo __exit__ del Context Manager.
+    
+
+    with ContextManager() as alias:
+        # Bloque de codigo
+        pass
+
+
+    Es una herranienta de ayuda para el manejo de recursos, ya que garantiza que los recursos se liberaran al finalizar
+    la ejecucion del bloque de codigo. Este statement hace uso de los metodos __enter__ y __exit__ del Context Manager.
+
+
+    El context manager es un tipo de objeto que se encuentra Build-in en Python, por lo que no es necesario importar
+    ningun modulo para hacer uso de el.
+
+
+Memory Leack
+
+    Un problema comun en la programacion es el uso inadecuado de los recursos, lo que puede llevar a la saturacion de la
+    memoria. Un Memory Leack es un problema que se presenta cuando un programa no libera los recursos que ha utilizado,
+    lo que puede llevar a la saturacion de la memoria. Para evitar este problema, se debe liberar los recursos que no se
+    estan utilizando, lo que se puede hacer de manera manual o automatica.
+
+
+    Estos recursos pueden ser conexiones a bases de datos, archivos, sockets, entre otros. Para evitar este problema, se
+    puede hacer uso de Context Manager, el cual permite liberar los recursos de manera automatica al finalizar la ejecucion
+    del bloque de codigo.
+
+
+    Ejemplos de un Memory Leack:
+        - No cerrar un archivo despues de haberlo abierto
+        - No cerrar una conexion a una base de datos
+        - No cerrar un socket despues de haberlo abierto
+        - No liberar la memoria despues de haberla utilizado
+
+
+    Por ejemplo al realizar la lectura de un archivo, se puede hacer uso de un Context Manager para garantizar que el archivo
+    se cerrara al finalizar la ejecucion del bloque de codigo. Ya que si en mitad de la lectura del archivo se presenta un
+    error, el archivo quedara abierto y no se liberara la memoria.
