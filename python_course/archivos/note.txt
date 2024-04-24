@@ -41,3 +41,62 @@ Objetos de Tipo string
 
         Nos permite unir los elementos de un iterable en un solo string separando los elementos por un string en especifico. Esto nos permite
         unir los elementos de una lista en un solo string. El string que le ingresamos nos dice por que caracter deberia separar los elementos.
+
+
+Modulo io:
+
+    Este modulo nos permite trabajar con archivos de texto en memoria. Es decir que podemos leer y escribir archivos de texto en memoria
+    sin tener que hacer uso de archivos fisicos.
+
+    Metodo open( string, modo, encoding, newline, errors, closefd, opener ):
+
+        Nos permite abrir un archivo de texto en memoria. Podemos pasar como argumento el string que queremos que se abra en memoria y el
+        modo en el que queremos que se abra el archivo. Este metodo devuelve un objeto de tipo TextIOWrapper. Es importante recordar que
+        este metodo no crea un archivo fisico, sino que crea un archivo en memoria. Si el archivo ya existe, este metodo lo sobreescribira,
+        pero si el archivo no existe, este metodo lo creara.
+
+        Retorna un objeto de tipo TextIOWrapper.
+
+    Metodo close():
+    
+        Nos permite cerrar un archivo de texto en memoria. Es importante recordar que si no cerramos un archivo de texto en memoria, este
+        seguira ocupando espacio en memoria. Para entender esto es necesario conocer del context manager.
+
+    Metodo read():
+
+        Nos permite leer el contenido de un archivo de texto en memoria y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea.
+
+    Metodo write(texto):
+    
+        Este metodo nos permite escribir un string en un archivo de texto en memoria. Podemos pasar como argumento el string que queremos
+        escribir en el archivo. Puedes usar cualquier funcion que devuelva un string como argumento. Este metodo reescribe el archivo
+        por completo. Es decie que debemos usarlos con precaucion.
+
+    Metodo readlines():
+
+        Nos permite leer el contenido de un archivo de texto en memoria y devolverlo como una lista de strings. Esta funcion por si sola
+        devuelve el contenido del archivo como una lista de strings teneiendo en cuenta los saltos de linea.
+
+    Al usar el metodo de open, este retorna un objeto de tipo TextIOWrapper. Este objeto es un objeto de tipo archivo que nos permite
+    trabajar con archivos de texto en memoria. Este objeto tiene memoria del ultimo lugar de donde fue llamao, por lo que si lo llamamos
+    de nuevo, este empezara a leer desde donde se quedo la ultima vez. Utiliza el metodo __iter__ para hacer esto y el metodo __next__ para
+    leer el siguiente elemento. Podemos utilizar un metodo de seek para cambiar la posicion de lectura del archivo.
+
+    Metodo de seek( posicion, desde_donde):
+
+        Nos permite cambiar la posicion de lectura de un archivo de texto en memoria. Podemos pasar como argumento la posicion en la que
+        queremos que se lea el archivo. Es decir que si queremos leer el archivo desde el principio, debemos pasar como argumento 0. Tener en
+        cuenta que este metodo distingue entre caracteres y bytes, por lo que si queremos leer desde el principio, debemos pasar como argumento
+        0. Si queremos leer desde el final, debemos pasar como argumento -1. Si queremos leer desde la mitad, debemos pasar como argumento la
+        mitad del archivo. El segundo argumento nos permite especificar desde donde queremos que se lea el archivo. Si queremos leer desde el
+        principio, debemos pasar como argumento 0. Si queremos leer desde la mitad, debemos pasar como argumento 1. Si queremos leer desde el
+        final, debemos pasar como argumento 2.
+
+    
+    Metodo writelines(iterable):
+
+        Este metodo toma un iterable de strings y los escribe en un archivo de texto en memoria. Es decir que podemos pasar una lista de
+        strings y este metodo los escribira en el archivo. Este metodo no escribe saltos de linea, por lo que debemos agregarlos manualmente.
+        Ademas este reemplaza el contenido del archivo desde donde nosotro le avisemos.
+
