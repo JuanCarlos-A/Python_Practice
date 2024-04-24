@@ -100,3 +100,18 @@ Modulo io:
         strings y este metodo los escribira en el archivo. Este metodo no escribe saltos de linea, por lo que debemos agregarlos manualmente.
         Ademas este reemplaza el contenido del archivo desde donde nosotro le avisemos.
 
+Modulo csv:
+
+    Este modulo nos permite trabajar con archivos csv. Es decir que podemos leer y escribir archivos csv de una manera más sencilla y eficiente.
+
+    Archivos de extencion csv:
+    
+        Los archivos csv son archivos de texto que contienen datos separados por comas. Es decir que cada linea del archivo contiene un
+        conjunto de datos separados por comas. Estos archivos son muy utilizados en el mundo de la programacion y la ciencia de datos.
+    
+    Metodo writer(archivo, dialecto, **fmtparams):
+
+        Nos permite escribir en un archivo csv. Podemos pasar como argumento el archivo en el que queremos escribir, el dialecto que queremos
+        que se use para escribir el archivo y los parametros que queremos que se usen para escribir el archivo. Este metodo devuelve un objeto
+        de tipo writer.
+
