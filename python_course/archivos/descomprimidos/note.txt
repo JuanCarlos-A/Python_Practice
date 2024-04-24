@@ -1,0 +1,145 @@
+Libreria de pathlib
+
+    from pathlib import Path 
+
+    Nos permite trabajar con rutas de archivos y directorios de una manera más sencilla y eficiente. Permietiendo hacer referencia a archivos
+    dentro de objetos de python, sin tener que hacer uso de strings.
+
+    Metodo read_text(codificacion):
+
+        Nos permite leer el contenido de un archivo de texto y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea.
+
+        Podemos pasar como argumento la codificacion que queremos que se use para leer el archivo. Es decir que si el archivo esta
+        en un formato diferente al estandar, podemos especificar que codificacion queremos que se use para leer el archivo.
+
+    Metodo write_text(texto, codificacion):
+
+        Este metodo nos permite escribir un string en un archivo de texto. Podemos pasar como argumento el string que queremos escribir
+        en el archivo y la codificacion que queremos que se use para escribir el archivo. Puedes usar cualquier funcion que devuelva un 
+        string como argumento.
+
+Libreria de time:
+
+    Esta libreria nos proporciona una manera de cambiar de un formato en segundos a un formato en horas, minutos y segundos estandarisado.
+    
+    Metodo ctime():
+        
+            Nos permite convertir un tiempo en segundos a un tiempo en horas, minutos y segundos.
+
+
+Objetos de Tipo string
+
+    Metodo .split(caracter):
+
+        Nos permite dividir un string en una lista de strings, separando los elementos por un caracter en especifico. Esto nos permite
+        dividir un string en una lista de palabras. El caracter que le ingresamos nos dice porque caracter deberia separar los elementos.
+
+        Devuelve un iterable con los elementos de un string.
+
+    Metodo .join(iterable):
+
+        Nos permite unir los elementos de un iterable en un solo string separando los elementos por un string en especifico. Esto nos permite
+        unir los elementos de una lista en un solo string. El string que le ingresamos nos dice por que caracter deberia separar los elementos.
+
+
+Modulo io:
+
+    Este modulo nos permite trabajar con archivos de texto en memoria. Es decir que podemos leer y escribir archivos de texto en memoria
+    sin tener que hacer uso de archivos fisicos.
+
+    Metodo open( string, modo, encoding, newline, errors, closefd, opener ):
+
+        Nos permite abrir un archivo de texto en memoria. Podemos pasar como argumento el string que queremos que se abra en memoria y el
+        modo en el que queremos que se abra el archivo. Este metodo devuelve un objeto de tipo TextIOWrapper. Es importante recordar que
+        este metodo no crea un archivo fisico, sino que crea un archivo en memoria. Si el archivo ya existe, este metodo lo sobreescribira,
+        pero si el archivo no existe, este metodo lo creara.
+
+        Retorna un objeto de tipo TextIOWrapper.
+
+    Metodo close():
+    
+        Nos permite cerrar un archivo de texto en memoria. Es importante recordar que si no cerramos un archivo de texto en memoria, este
+        seguira ocupando espacio en memoria. Para entender esto es necesario conocer del context manager.
+
+    Metodo read():
+
+        Nos permite leer el contenido de un archivo de texto en memoria y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea.
+
+    Metodo write(texto):
+    
+        Este metodo nos permite escribir un string en un archivo de texto en memoria. Podemos pasar como argumento el string que queremos
+        escribir en el archivo. Puedes usar cualquier funcion que devuelva un string como argumento. Este metodo reescribe el archivo
+        por completo. Es decie que debemos usarlos con precaucion.
+
+    Metodo readlines():
+
+        Nos permite leer el contenido de un archivo de texto en memoria y devolverlo como una lista de strings. Esta funcion por si sola
+        devuelve el contenido del archivo como una lista de strings teneiendo en cuenta los saltos de linea.
+
+    Al usar el metodo de open, este retorna un objeto de tipo TextIOWrapper. Este objeto es un objeto de tipo archivo que nos permite
+    trabajar con archivos de texto en memoria. Este objeto tiene memoria del ultimo lugar de donde fue llamao, por lo que si lo llamamos
+    de nuevo, este empezara a leer desde donde se quedo la ultima vez. Utiliza el metodo __iter__ para hacer esto y el metodo __next__ para
+    leer el siguiente elemento. Podemos utilizar un metodo de seek para cambiar la posicion de lectura del archivo.
+
+    Metodo de seek( posicion, desde_donde):
+
+        Nos permite cambiar la posicion de lectura de un archivo de texto en memoria. Podemos pasar como argumento la posicion en la que
+        queremos que se lea el archivo. Es decir que si queremos leer el archivo desde el principio, debemos pasar como argumento 0. Tener en
+        cuenta que este metodo distingue entre caracteres y bytes, por lo que si queremos leer desde el principio, debemos pasar como argumento
+        0. Si queremos leer desde el final, debemos pasar como argumento -1. Si queremos leer desde la mitad, debemos pasar como argumento la
+        mitad del archivo. El segundo argumento nos permite especificar desde donde queremos que se lea el archivo. Si queremos leer desde el
+        principio, debemos pasar como argumento 0. Si queremos leer desde la mitad, debemos pasar como argumento 1. Si queremos leer desde el
+        final, debemos pasar como argumento 2.
+
+    
+    Metodo writelines(iterable):
+
+        Este metodo toma un iterable de strings y los escribe en un archivo de texto en memoria. Es decir que podemos pasar una lista de
+        strings y este metodo los escribira en el archivo. Este metodo no escribe saltos de linea, por lo que debemos agregarlos manualmente.
+        Ademas este reemplaza el contenido del archivo desde donde nosotro le avisemos.
+
+Modulo csv:
+
+    Este modulo nos permite trabajar con archivos csv. Es decir que podemos leer y escribir archivos csv de una manera más sencilla y eficiente.
+
+    Archivos de extencion csv:
+    
+        Los archivos csv son archivos de texto que contienen datos separados por comas. Es decir que cada linea del archivo contiene un
+        conjunto de datos separados por comas. Estos archivos son muy utilizados en el mundo de la programacion y la ciencia de datos.
+    
+    Metodo writer(archivo, dialecto, **fmtparams):
+
+        Nos permite escribir en un archivo csv. Podemos pasar como argumento el archivo en el que queremos escribir, el dialecto que queremos
+        que se use para escribir el archivo y los parametros que queremos que se usen para escribir el archivo. Este metodo devuelve un objeto
+        de tipo writer.
+
+Modulo json:
+
+    Este modulo nos permite trabajar con archivos json. Es decir que podemos leer y escribir archivos json de una manera más sencilla y eficiente.
+
+
+    Metodo dumps( diccionario, indent):
+
+        Nos permite convertir un diccionario en un string en formato json. Es decir que podemos pasar un diccionario como argumento y este
+        metodo nos devolvera un string en formato json. Tambien podemos mandar un iterable con el argumento indent=4 para que el string
+        devuelto tenga un formato más legible. O podemos guardar varios diccionarios dentro de una lista.
+
+
+Modulo de pathlib con la clase de Path
+
+    Metodo .write_text(texto, codificacion):
+
+        Este metodo nos permite escribir un string en un archivo de texto. Podemos pasar como argumento el string que queremos escribir
+        en el archivo y la codificacion que queremos que se use para escribir el archivo. Puedes usar cualquier funcion que devuelva un 
+        string como argumento. Si no existe el archivo, este metodo lo creara. 
+
+
+    Metodo .read_text(codificacion):
+    
+        Nos permite leer el contenido de un archivo de texto y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea. Si el archivo no existe, este metodo lanzara un error.
+
+    
+
