@@ -178,6 +178,13 @@
 # print(funcion.__doc__)
 
 
+#Ejemplo 7
 
-        
+# import decoradores 
 
+# @decoradores.decorator_func
+# def example_function(cantidad):
+#     for _ in range(cantidad):
+#         sum([number**2 for number in range(10000)])
+
+# example_function(100)
