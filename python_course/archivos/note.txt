@@ -115,3 +115,31 @@ Modulo csv:
         que se use para escribir el archivo y los parametros que queremos que se usen para escribir el archivo. Este metodo devuelve un objeto
         de tipo writer.
 
+Modulo json:
+
+    Este modulo nos permite trabajar con archivos json. Es decir que podemos leer y escribir archivos json de una manera más sencilla y eficiente.
+
+
+    Metodo dumps( diccionario, indent):
+
+        Nos permite convertir un diccionario en un string en formato json. Es decir que podemos pasar un diccionario como argumento y este
+        metodo nos devolvera un string en formato json. Tambien podemos mandar un iterable con el argumento indent=4 para que el string
+        devuelto tenga un formato más legible. O podemos guardar varios diccionarios dentro de una lista.
+
+
+Modulo de pathlib con la clase de Path
+
+    Metodo .write_text(texto, codificacion):
+
+        Este metodo nos permite escribir un string en un archivo de texto. Podemos pasar como argumento el string que queremos escribir
+        en el archivo y la codificacion que queremos que se use para escribir el archivo. Puedes usar cualquier funcion que devuelva un 
+        string como argumento. Si no existe el archivo, este metodo lo creara. 
+
+
+    Metodo .read_text(codificacion):
+    
+        Nos permite leer el contenido de un archivo de texto y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea. Si el archivo no existe, este metodo lanzara un error.
+
+    
+
