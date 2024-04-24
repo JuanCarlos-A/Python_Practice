@@ -2,7 +2,22 @@ Libreria de pathlib
 
     from pathlib import Path 
 
-    Nos permite trabajar con rutas de archivos y directorios de una manera más sencilla y eficiente.
+    Nos permite trabajar con rutas de archivos y directorios de una manera más sencilla y eficiente. Permietiendo hacer referencia a archivos
+    dentro de objetos de python, sin tener que hacer uso de strings.
+
+    Metodo read_text(codificacion):
+
+        Nos permite leer el contenido de un archivo de texto y devolverlo como un string. Esta funcion por si sola devuelve el 
+        contenido del archivo como un string teneiendo en cuenta los saltos de linea.
+
+        Podemos pasar como argumento la codificacion que queremos que se use para leer el archivo. Es decir que si el archivo esta
+        en un formato diferente al estandar, podemos especificar que codificacion queremos que se use para leer el archivo.
+
+    Metodo write_text(texto, codificacion):
+
+        Este metodo nos permite escribir un string en un archivo de texto. Podemos pasar como argumento el string que queremos escribir
+        en el archivo y la codificacion que queremos que se use para escribir el archivo. Puedes usar cualquier funcion que devuelva un 
+        string como argumento.
 
 Libreria de time:
 
@@ -11,3 +26,18 @@ Libreria de time:
     Metodo ctime():
         
             Nos permite convertir un tiempo en segundos a un tiempo en horas, minutos y segundos.
+
+
+Objetos de Tipo string
+
+    Metodo .split(caracter):
+
+        Nos permite dividir un string en una lista de strings, separando los elementos por un caracter en especifico. Esto nos permite
+        dividir un string en una lista de palabras. El caracter que le ingresamos nos dice porque caracter deberia separar los elementos.
+
+        Devuelve un iterable con los elementos de un string.
+
+    Metodo .join(iterable):
+
+        Nos permite unir los elementos de un iterable en un solo string separando los elementos por un string en especifico. Esto nos permite
+        unir los elementos de una lista en un solo string. El string que le ingresamos nos dice por que caracter deberia separar los elementos.
