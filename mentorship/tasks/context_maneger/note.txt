@@ -5,7 +5,8 @@ Context Manager
 
         - __enter__ : 
             Metodo que se ejecuta al inicio del bloque with.
-        - __exit__ : Metodo que se ejecuta al final del bloque with
+        - __exit__ : 
+            Metodo que se ejecuta al final del bloque with
 
 
     Con ayuda del context manager el programador puede manipular la vida de un recurso, pudiendo eliminar los recursos
