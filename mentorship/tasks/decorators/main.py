@@ -188,3 +188,23 @@
 #         sum([number**2 for number in range(10000)])
 
 # example_function(100)
+
+
+# Ejemplo 8
+
+class EjemploDecorador:
+    def __init__(self, func) -> None:
+        self.func = func
+    
+    def __call__(self, *args, **kwargs):
+        print("Antes de la ejecucion")
+        valor = self.func(*args, **kwargs)
+        print("Despues de la ejecucion")
+
+        return valor
+    
+@EjemploDecorador
+def saludo():
+    print("Hola")
+
+saludo()
