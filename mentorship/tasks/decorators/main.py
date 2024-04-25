@@ -188,3 +188,40 @@
 #         sum([number**2 for number in range(10000)])
 
 # example_function(100)
+
+
+## Ejemplo 8
+
+# class ExampleDecorator:
+#     def __init__(self, func):
+#         self.func = func
+
+#     def __call__(self, *args, **kwargs):
+#         print(f'Llamando {self.func.__name__}')
+#         return self.func(*args, **kwargs)
+
+
+## Example 9
+
+import functools
+
+def repetir(funcion = None, *, veces = 2):
+    def decorador(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            for _ in range(veces):
+                value = func(*args, **kwargs)
+            return value
+        return wrapper
+
+    if funcion is None:
+        return decorador
+    else:
+        return decorador(funcion)
+    
+
+@repetir(veces=4)
+def hola():
+    print("Hola")
+
+hola()
