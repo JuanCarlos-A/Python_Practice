@@ -4,30 +4,30 @@
 
 # Ejemplo 1
 
-try: 
-    file = open("Mentorship/tasks/context_maneger/example.txt", "w")
-    file.write("Hello World!")
-finally:
-    file.close()
+# try: 
+#     file = open("Mentorship/tasks/context_maneger/example.txt", "w")
+#     file.write("Hello World!")
+# finally:
+#     file.close()
 
-with open("Mentorship/tasks/context_maneger/example.txt", "w") as file:
-    file.write("Hello World!")
+# with open("Mentorship/tasks/context_maneger/example.txt", "w") as file:
+#     file.write("Hello World!")
 
 
 # Ejemplo 2
 
-class ContextManager:
-    def __enter__(self):
-        print("Entrando al Context Manager")
-        return self
+# class ContextManager:
+#     def __enter__(self):
+#         print("Entrando al Context Manager")
+#         return self
     
-    def __exit__(self, exc_type, exc_value, traceback):
-        print("Salida del Context Manager")
-        return True
+#     def __exit__(self, exc_type, exc_value, traceback):
+#         print("Salida del Context Manager")
+#         return True
     
-with ContextManager() as manager:
-    print("Dentro del Context Manager")
-    print(manager)
+# with ContextManager() as manager:
+#     print("Dentro del Context Manager")
+#     print(manager)
 
 
 ## Ejemplo 3
