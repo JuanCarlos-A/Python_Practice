@@ -1,102 +1,102 @@
 Variables 
 
-En python las variables son espacios de memoria establecidos para almacenar un valor, si una varaible tiene el mismo valor que otra variable
-entonces son almacenadas en el mismo espacio de memoria.
+    En python las variables son espacios de memoria establecidos para almacenar un valor, si una varaible tiene el mismo valor que otra variable
+    entonces son almacenadas en el mismo espacio de memoria.
 
-Estas variables son almacenadas en la memoria RAM, este espacio es referido mediante el nombre de la variable.
+    Estas variables son almacenadas en la memoria RAM, este espacio es referido mediante el nombre de la variable.
 
-No se puede comenzar el nombre de la variable con un numero
+    No se puede comenzar el nombre de la variable con un numero
 
 
 Tipos de Datos
 
-Estos tipos son definidos principalmente por python
+    Estos tipos son definidos principalmente por python
 
-    Los Numeros: Dentro de esta categoria estan los int, float y los complejos
+        Los Numeros: Dentro de esta categoria estan los int, float y los complejos
 
-    Booleans: Estos tipos de datos implican una comparación o evaluación logica, esta True y False
+        Booleans: Estos tipos de datos implican una comparación o evaluación logica, esta True y False
 
-    Secuencias: Son los datos ordenados. Aqui estan los:
-        str o Strings = son cadenas de texto
-        list = Con colecciones ordenadas y mutables []
-        tuple = Son tuplas y su caracteristica es ser inmutables y ordenadas ()
+        Secuencias: Son los datos ordenados. Aqui estan los:
+            str o Strings = son cadenas de texto
+            list = Con colecciones ordenadas y mutables []
+            tuple = Son tuplas y su caracteristica es ser inmutables y ordenadas ()
 
-    Conjuntos: Son colecciones de datos no ordenados
-        Sets: Son colecciones de datos no ordenados {1,3,4},{"sasdad", "sa"}
-        frozenSet: Son colecciones de datos no ordenadas e inmutables
-            frozenset([1,2,4])
+        Conjuntos: Son colecciones de datos no ordenados
+            Sets: Son colecciones de datos no ordenados {1,3,4},{"sasdad", "sa"}
+            frozenSet: Son colecciones de datos no ordenadas e inmutables
+                frozenset([1,2,4])
 
-    Diccionarios: Son mapeos, tienen una llave y un valor que es representado por la llave
-        dict = {}
+        Diccionarios: Son mapeos, tienen una llave y un valor que es representado por la llave
+            dict = {}
 
-    NoneType: Representa la ausencia del valor o valores nulos
+        NoneType: Representa la ausencia del valor o valores nulos
 
 
 Argumentos
 
-Los argumentos son los valores que le entregamos a una funcion y que esta pueda utilizarlos para devolver o ejecutar una accion
+    Los argumentos son los valores que le entregamos a una funcion y que esta pueda utilizarlos para devolver o ejecutar una accion
 
 
 Slicing
 
-Es una herramienta de python que permite traer subpartes de una secuencia.list[::2]
+    Es una herramienta de python que permite traer subpartes de una secuencia.list[::2]
 
 
 Strings
 
-Recordar que un string es un array de caracteres, significa que podemos extraer el caracter con el indice []
+    Recordar que un string es un array de caracteres, significa que podemos extraer el caracter con el indice []
 
 Format 
 
-Esta es una herramienta que permite mostrar los strings de una manera agradable, evitando la tipica concatenacion con +
+    Esta es una herramienta que permite mostrar los strings de una manera agradable, evitando la tipica concatenacion con +
 
 
 Comprehensions
 
-Es una forma que tiene python en la cual te permite precesar todos o una parte de de los iterables de un objeto
+    Es una forma que tiene python en la cual te permite precesar todos o una parte de de los iterables de un objeto
 
 
 Listas
 
-Las listas en python son colecciones ordenadas de datos que pueden ser alteradas, estos elementos dentro de una lista 
-tienen un indice loque te dice que tienen una posicion dentro de la lista, la enumeracion es en orden ascendente comenzando
-desde el numero 0.
+    Las listas en python son colecciones ordenadas de datos que pueden ser alteradas, estos elementos dentro de una lista 
+    tienen un indice loque te dice que tienen una posicion dentro de la lista, la enumeracion es en orden ascendente comenzando
+    desde el numero 0.
 
 
 Strings
 
-Al ser los strings cadens de caracters, esta cuenta con funciones o metodos ya que python no utiliza la terminologia de funcion
-sino la de metodo. Dentro de estos metodos se encuentran los siguientes:
-    upper() : Toma la cadena de String y devuelve un String en mayuscula
-    lower() : Toma la cadena de Strings y devuelve un String en minuscula
-    capitalize() : Toma la cadena de String y devuelve un String con el primer caracter en mayuscula
-    title() : Toma una secuencia de String y por cada comienzo de palabra la devuelve en mayuscula la primera letra
-    strip() : Elimina todos los espacios a la izquierda y derecha del string
+    Al ser los strings cadens de caracters, esta cuenta con funciones o metodos ya que python no utiliza la terminologia de funcion
+    sino la de metodo. Dentro de estos metodos se encuentran los siguientes:
+        upper() : Toma la cadena de String y devuelve un String en mayuscula
+        lower() : Toma la cadena de Strings y devuelve un String en minuscula
+        capitalize() : Toma la cadena de String y devuelve un String con el primer caracter en mayuscula
+        title() : Toma una secuencia de String y por cada comienzo de palabra la devuelve en mayuscula la primera letra
+        strip() : Elimina todos los espacios a la izquierda y derecha del string
 
 
 Modulos
 
-Un modulo es un archivo externo a python con codigo que se puede utilizar en otro modulo mediante una importacion.
+    Un modulo es un archivo externo a python con codigo que se puede utilizar en otro modulo mediante una importacion.
 
 
 Castear
 
-Se realiza un casteo teniendo una variable de un tipo y pasandola a otro tipo de variable.
+    Se realiza un casteo teniendo una variable de un tipo y pasandola a otro tipo de variable.
 
 
 Metodo input()
 
-Un metodo de python el cual permite interactuar a travez de la consola, los datos que toma regresan como un String o cadena de caracteres
+    Un metodo de python el cual permite interactuar a travez de la consola, los datos que toma regresan como un String o cadena de caracteres
 
 
 Metodos Nativos
 
-Estos metodos se encuentran implicitos en los modulos estandar de python, esto siginifica que no es necesrio implementarlos en un modulo ya que python
-te permite usarlos de manera simple
+    Estos metodos se encuentran implicitos en los modulos estandar de python, esto siginifica que no es necesrio implementarlos en un modulo ya que python
+    te permite usarlos de manera simple
 
 
 Metodo Nativo bool()
 
-Este metodo Nativo de python tiene un problema ya que separa los datos en dos clases o representaciones, las cuales son truthy and Falsy
-    Falsy : Todos los datos que se reconoscan como falsy retornan false, como lo son cadenas vacias "" {} o Numeros 0 y los objetos de tipo none
-    Truthy : El resto de datos son tomados como truthy
+    Este metodo Nativo de python tiene un problema ya que separa los datos en dos clases o representaciones, las cuales son truthy and Falsy
+        Falsy : Todos los datos que se reconoscan como falsy retornan false, como lo son cadenas vacias "" {} o Numeros 0 y los objetos de tipo none
+        Truthy : El resto de datos son tomados como truthy
