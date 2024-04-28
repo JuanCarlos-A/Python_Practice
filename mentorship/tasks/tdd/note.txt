@@ -1,0 +1,90 @@
+Test Driven Development (TDD)
+
+    Es una metodologia de Desarrollo de Software para la creacion de pruebas 
+    unitarias antes de escribir el codigo de produccion. Esto es para asegurar 
+    que el sistema cumpla con los requerimientos del cliente y que el codigo
+    sea de calidad.
+
+    Involucra el proceso de crear pruebas unitarias que definiran un comportamiento
+    esperado del sistema esta es ejecutada y saldra incorrecta, luego se escribe
+    un codigo que cumpla con la prueba y se ejecuta nuevamente la prueba, si esta
+    sale correcta se procede a refactorizar el codigo y se vuelve a ejecutar la prueba
+    si esta sale correcta se procede a escribir una nueva prueba y se repite el proceso.
+
+    La diferencia con el desarrollo tradicional es que en una metodologia TDD, el 
+    codigo de produccion es escrito para cumplir con las pruebas unitarias y no al
+    reves, asegurando una calidad en el codigo y un comportamiento esperado del sistema.
+
+    Las ventajas de esta Metoologia:
+
+        - Ayuda a asegurar que el codigo conozca los requerimientos del cliente.
+        - Ayuda a detectar bugs en una etapa temprana del desarrollo
+        - Facilit\ la refactorizacion del codigo sin comprometer la funcionalidad
+
+    Las desventajas de esta metodologia:
+
+        - Puede ser dificil imlementar pruebas a ciertas caracteristicas.
+        - Puede ser dificil de implementar en equipos que no estan acostumbrados a ella
+        - Puede ser dificil de implementar en proyectos que no tienen requerimientos claros
+        - Puede ser dificil de implementar en proyectos que tienen requerimientos cambiantes
+
+
+    Herramientas de Testeo:
+
+        La libreria de Testeo mas comun en Python es unittest, esta libreria
+        permite crear pruebas unitarias para el codigo de produccion.
+
+        Ejemplo de una prueba unitaria (unittest) en Python:
+
+            import unittest
+
+            def suma(a, b):
+                return a + b
+
+            class TestSuma(unittest.TestCase):
+
+                def test_suma(self):
+                    self.assertEqual(suma(1, 2), 3)
+
+            if __name__ == '__main__':
+                unittest.main()
+
+
+        Ejemplo de una prueba unitaria (pytest) en Python:
+
+            Pytest es un framework de testeo que permite crear pruebas unitarias
+            que son mas faciles de escribir y leer que unittest. Es una poderosa 
+            libreria que facilita la creacion de pruebas unitarias. Facilita la 
+            creacion de pruebas con funciones y declaraciones assert
+
+            import pytest
+
+            def suma(a, b):
+                return a + b
+
+            def test_suma():
+                assert suma(1, 2) == 3
+
+            Estas son las diferencias entre unittest y pytest:
+
+                - Unittest es una libreria de testeo que viene incluida en Python
+                - Pytest es una libreria de testeo que es mas facil de escribir y leer
+                - Pytest es mas poderoso que unittest
+                - Pytest es mas popular que unittest
+                - Pytest es mas facil de configurar que unittest
+                - Pytest es mas facil de ejecutar que unittest
+
+            Para instalar pytest se puede hacer con el siguiente comando:
+                
+                    pip install pytest
+
+            Para ejecutar las pruebas se puede hacer con el siguiente comando dentro de una consola:
+                
+                        pytest test_suma.py
+
+            Al ejecutar este comando se ejecutaran todas las funciones que tengan el prefijo
+            test_ en el archivo test_suma.py
+
+                def test_suma(x :int):
+                    assert x + 5 == 10
+        
