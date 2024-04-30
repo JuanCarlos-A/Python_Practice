@@ -10,4 +10,3 @@ with sqlite3.connect('./python_course/sqlite/app.db') as con:
         )
     print("Table created")
     con.commit()
-
