@@ -44,7 +44,8 @@ Motor de Base de Datos SQLite
 
 
         Tambien podemos utilizar el context manager que utiliza with statement, de esta manera no es necesario cerrar
-        la base de datos de manera explicita ya que se cerrara de manera implicita.
+        la base de datos de manera explicita ya que se cerrara de manera implicita. Tambien realizara un commit de manera
+        implicita.
 
 
         Metodos del Modulo sqli3:
