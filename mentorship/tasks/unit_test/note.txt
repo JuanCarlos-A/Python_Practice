@@ -162,3 +162,18 @@ Pruebas unitarias
         Assert(Afirmar) : Verificar si el resultado es el esperado.
 
 
+    
+    Buenas Practicas:
+
+        Las pruebas unitarias deben ser independientes, no deben depeder de elementos externos del sistema.
+        Esto indica que a cualquier cambio las pruebas deben seguir funcionando.
+
+        Solo prueba un codigo a la vez.
+
+        Se claro al nombrar cuaquier prueba unitaria.
+
+        Acostumbrate a realizar pruebas mienstras programas.
+
+
+
+
