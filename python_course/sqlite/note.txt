@@ -1,0 +1,4 @@
+Motor de Base de Datos SQLite
+
+    Es un motor de bases de datos que e utilizado para proyecto no muy grandes en el cual se necesita almacenar datos
+    de manera local, es muy utilizado para dispositivos moviles, ya que es muy ligero y no hece uso de un servidor.
