@@ -62,3 +62,103 @@ Pruebas unitarias
             - Documentation: Nos permite documentar y agregar una clasridad de lo que se puede
             esperar del codigo.
             - Testing : Asegura que lso requerimientos sean cumplidos 
+
+
+    Las pruebas unitarias es el proceso de testear pequeñas partes de un programa para asegurarse
+    de que cumplan con el proposito del desarrollo. El software de testeo ayuda a mejorar la calidad 
+    del codigo y a asegurar que el codigo funcione correctamente.
+
+
+    Una buena practica es desarrollar las pruebas unitarias antes de escribir el codigo, esto asegurando
+    que el codigo producido y desarrollado cumpla con las especificaciones.
+
+
+    Una unit test es un bloque de codigo que se encarga de aislar una parte del codigo, por lo general 
+    metodos o funciones para verificar que la ejecucion sea la esperada. Es mas recomendable realizar 
+    pruebas a funcions o metodos que no necesitan datos externos ya que para su ejecucion se necesita un 
+    ambiente aislado.
+
+
+    Beneficios del Testing
+
+        Deteccion de Errores : Los unit testing pueden ayudar a detectar errores en etapa temprana evitando 
+        que llegen a la produccion del codigo. Ademas de que cada vez que un codigo cambia los test son 
+        ejecutados.
+
+
+        Documentacion: Los unit test permiten tener una mejor Documentacion del codigo al demostrar de forma
+        clara lo que se espera como resultado. Cuando otro programador ve el test puede saber el proposito
+        del codigo y asi mismo puede reformular el codigo.
+
+
+    Como trabajan los desarrolladores con las pruebas unitarias:
+
+        Los desarrolladores utilizan la metodologia de TDD la cual especifica que los test son realizados 
+        antes de la produccion del codigo permitiendo uan claridad en el proposotop del codigo.
+
+
+        Se utiliza como primera fase del desarrollo de un sistema para poder entrar en la produccion.
+
+
+    Cuando no utilizar pruebas de codigo:
+
+        No son necesarios cuando el tiempo de produccion es escaso y se necesita entregar el codigo en un
+        tiempo corto. Aunque se utilice un framework las pruebas de codigo puede tomar demasiado tiempo 
+        y distraccion.
+
+
+        Cuando el sistema se centra en la presentacion al usuario como los sistemas de UI o UX.
+
+
+        Cuando el testing sera para una funcionalidad que no sera utilizada en la produccion.
+
+
+        Cuando el test es muy complejo o se requiere de mas de una cantidad de recursos para su ejecucion.
+
+        Cuando los requerimientos del proyecto cambian constantemente o no se tienen muy claros cuales son.
+
+    
+    Mejores Practicas
+
+        Es uso de un framework es realmente necesario para poder realizar pruebas de manera mas eficiente
+        y rapida.
+
+        Las pruebas unitarias pueden ser ejecutadas dentro de un horario o antes de realizar un commit en 
+        un sistema de control de versiones.
+
+        Las pruebas deben ser aplicadas a tan solo un caso que tenga un resultado falso o verdadero, tener multiples
+        casos verdaderos pueden llevar a la confusion.
+
+        Implementacion de pruebas unitarias con el objetivo de facilitar el ciclo de vida  de un proyecto.
+
+
+    Principales diferencias entre las unit test y otros tipos de prueba:
+
+        Integratin Testing: Pruebas de Integracion que prueban la interaccion entre dos o mas componentes de un sistema
+        para verificar que funcionan correctamente.
+
+        Funcional Testing: Pruebas que verifican el sistema completo para asegurarse que cumplan con los requerimientos 
+        antes de ser creados.
+
+        Acceptance Testing: Pruebas que se realizan para verificar que el sistema cumple con los requerimientos del cliente
+        antes de ser entregado. Por lo general es creado con el objetivo de verificar si un sistema cumple con la necesidad, 
+        es probado por el grupo de usuarios.
+
+        Security Testing: Pruebas con el objetivo de verificar la seguridad del sistema y asegurarse que las vulnerabilidades
+        sean minimas y asi conocer las amenazas que pueden afectar al sistema.
+
+
+    Dentro de las indicaciones para poder realizar pruebas unitarias existe un concepto llamado Mocking, el cual es una
+    tecnica que se utiliza para simular el comportamiento de un objeto real en un entorno controlado. Esta tecnica se utiliza
+    para aislar el codigo que se esta probando y asi poder verificar si el codigo funciona correctamente.
+
+
+    Tambien estan las tres As al momento de realizar pruebas unitarias:
+
+        Arrange(Organizar) : Plantear los requerimientos exactos o los requisitos que evaluara el test.
+
+        Act(Actuar) : Realizar la accion que se desea probar.
+
+        Assert(Afirmar) : Verificar si el resultado es el esperado.
+
+
