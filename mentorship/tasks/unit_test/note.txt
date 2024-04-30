@@ -1,0 +1,64 @@
+Pruebas unitarias
+
+    Las pruebas unitarias son pruebas que se realizan a nivel de código, es decir, 
+    se prueban las funciones y métodos de una clase de forma aislada. Para realizar 
+    pruebas unitarias en Python se utiliza el módulo unittest. Para ello, se debe 
+    importar la clase TestCase del módulo unittest y crear una clase que herede de TestCase. 
+    Dentro de esta clase se definen los métodos de prueba, los cuales deben comenzar con la 
+    palabra test. Para ejecutar las pruebas se utiliza el método main() del módulo unittest. 
+    
+    Tambien existe otro framework que nos permite realizar dichas pruebas unitarias, esta 
+    herramienta es el modulo de pytest, el cual es mas sencillo de utilizar y nos permite
+    realizar pruebas de una manera mas sencilla y rapida.
+
+    Ahora mostrare un ejemplo utilizando cada framework:
+
+        import unittest
+
+        class CasoPrueba(unittest.TestCase):
+
+            def test_suma(self):
+                self.assertEqual(2 + 2, 4)
+
+            def test_resta(self):
+                self.assertEqual(5 - 3, 2)
+
+        if __name__ == '__main__':
+            unittest.main()
+
+
+        
+        import pytest
+
+        def test_suma():
+            assert 2 + 2 == 4
+
+        def test_resta():
+            assert 5 - 3 == 2
+
+        
+        Para ejecutar las pruebas con pytest, se debe ejecutar el siguiente comando en la terminal:
+
+        pytest nombre_archivo.py
+
+    
+    Assert Keyword
+
+        Es una palabra clave que se utiliza en el debugging de codigo, esta palabra clave
+        se utiliza para verificar si una expresion es verdadera o falsa, si la expresion es
+        verdadera, no se hace nada, pero si la expresion es falsa, se lanza una excepcion
+        de tipo AssertionError. Esta palabra toma como argumento un valor boleano.
+
+        Este statement se utiliza principalmente en el desarrollo de pruebas de codigo, ya que
+        se utiliza para verificar si el codigo esta funcionando correctamente conociendo los 
+        requerimientos que debe cumplir el codigo.
+
+        Es una poderosa herramiente que nos permite verificar si el codigo esta funcionando,
+        permiteindo conocer que tipo de errorres puden presentarse en un codigo.
+
+        Los beneficios de usar el assert:
+
+            - Debugging: Nos permite verificar si el codigo esta funcionando correctamente.
+            - Documentation: Nos permite documentar y agregar una clasridad de lo que se puede
+            esperar del codigo.
+            - Testing : Asegura que lso requerimientos sean cumplidos 
