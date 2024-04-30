@@ -1,4 +1,4 @@
-Test Driven Development (TDD)
+Test Driven Development (TDD) Desarrollo Guiado por Pruebas
 
     Es una metodologia de Desarrollo de Software para la creacion de pruebas 
     unitarias antes de escribir el codigo de produccion. Esto es para asegurar 
@@ -19,7 +19,7 @@ Test Driven Development (TDD)
 
         - Ayuda a asegurar que el codigo conozca los requerimientos del cliente.
         - Ayuda a detectar bugs en una etapa temprana del desarrollo
-        - Facilit\ la refactorizacion del codigo sin comprometer la funcionalidad
+        - Facilit la refactorizacion del codigo sin comprometer la funcionalidad
 
     Las desventajas de esta metodologia:
 
