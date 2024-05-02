@@ -1,7 +1,100 @@
-Paquetes Nativos de Python 
+Paquetes Nativos de Python
 
-    Concepto WebScraping
+    Paquete webbrowser
 
-        Este concepto trata de un script con la capacidad de extraer información
-        de una pagina web, ya sea para almacenarla en una base de datos o para
-        realizar un análisis de la misma.
+        Este paquete nos permite abrir una pagina web en el navegador predeterminado
+        de nuestro sistema operativo.
+
+        Ejemplo:
+
+        import webbrowser
+
+        webbrowser.open('https://www.google.com')
+
+
+        Concepto WebScraping
+
+            Este concepto trata de un script con la capacidad de extraer información
+            de una pagina web, ya sea para almacenarla en una base de datos o para
+            realizar un análisis de la misma.
+
+
+    Paquete time
+
+        Este paquete nos permite trabajar con el tiempo en Python.
+
+        Ejemplo:
+
+        import time
+
+        print('Hola')
+        time.sleep(2)
+        print('Mundo')
+
+
+        Concepto TimeStamp
+
+            Este concepto hace referencia a la cantidad de segundos que han pasado
+            desde el 1 de enero de 1970 hasta la fecha actual.
+
+        Concepto UTC (Corrdinado Universal del tiempo)
+
+            Este concepto hace referencia a la hora actual en el meridiano de Greenwich
+            en Londres, Inglaterra.
+
+        Concepto de Directives
+
+            Este concepto hace referencia a las letras que se utilizan para dar formato
+            a la fecha y hora en Python.
+
+            Ejemplo:
+
+            %Y - Año
+            %m - Mes
+            %d - Día
+            %H - Hora
+            %M - Minutos
+            %S - Segundos
+
+            Ejemplo:
+
+            import time
+
+            print(time.strftime('%Y-%m-%d %H:%M:%S'))
+
+            Basicamente es la forma de como especificamos ante python los formatos de fecha cuando queremos trabajar
+            con ellas.
+    
+
+        Metodo strftime() 
+        
+            Este metodo nos permite trabajar con fechas y horas en python cuando lo que se tiene es un string. Tambien
+            podemos darle un formato a esa fecha y hora.
+
+    
+    Modulo datetime
+    
+            Este modulo nos permite trabajar con fechas y horas en Python.
+    
+            Ejemplo:
+    
+            import datetime
+    
+            print(datetime.datetime.now())
+    
+            Concepto de Objeto de la Clase datetime
+    
+                Los objetos de la clase datetime son objetos que nos permiten trabajar con fechas y horas en Python.
+    
+                Ejemplo:
+    
+                import datetime
+    
+                fecha = datetime.datetime.now()
+    
+                print(fecha.year)
+                print(fecha.month)
+                print(fecha.day)
+                print(fecha.hour)
+                print(fecha.minute)
+                print(fecha.second)
