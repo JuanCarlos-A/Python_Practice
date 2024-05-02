@@ -54,7 +54,7 @@ Pruebas unitarias
         requerimientos que debe cumplir el codigo.
 
         Es una poderosa herramiente que nos permite verificar si el codigo esta funcionando,
-        permiteindo conocer que tipo de errorres puden presentarse en un codigo.
+        permitiendo conocer que tipo de errorres puden presentarse en un codigo.
 
         Los beneficios de usar el assert:
 
