@@ -84,3 +84,13 @@ Motor de Base de Datos SQLite
 
                 Este metodo nos permite ejecutar una query con varios valores, es muy util cuando se necesita insertar
                 varios valores en una tabla.
+
+            metodo.cursor.fethone() -> Obtiene un solo registro
+
+                Este metodo nos permite obtener un solo registro de la base de datos, es muy util cuando se necesita
+                obtener un solo registro.
+
+            metodo.cursor.fetchall() -> Obtiene todos los registros 
+                
+                    Este metodo nos permite obtener todos los registros de la base de datos, es muy util cuando se necesita
+                    obtener todos los registros de una tabla.
