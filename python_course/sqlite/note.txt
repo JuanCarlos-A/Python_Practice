@@ -73,3 +73,9 @@ Motor de Base de Datos SQLite
                 Este metodo guarda los cambios que se han realizado en la base de datos, como insertar datos, eliminar datos,
                 etc. Es necesario hacer un commit para que los cambios se guarden de manera permanente. Es el metodo mas importante
                 ya que si este no es ejecutaado entonces la BD no presentara cambios.
+
+            metodo.execute() -> Ejecuta una query
+
+                Podemos realixar una peticion sql, pero es necesario saber que es mejor utilizar un formateo
+                para pasar los valores de la query, ya que si se pasa de manera directa se puede ser victima de
+                un ataque de inyeccion sql.
