@@ -116,4 +116,44 @@ Paquetes Nativos de Python
 
 
         Clase timedelta()
+
+            Basicamente lo que hace es sumar o restar dias, horas, minutos, segundos, etc a una fecha dada. Es una clase 
+            usada para poder realizar operaciones con fechas y horas.
+
+    
+    Modulo random
+
+        Este modulo es utilizado para poder obtener resultados aleatorios en Python. Podemos obtener numeros aleatorios,
+        items de sequencias en orden diferente.
+
+
+        Metodo random():
+
+            Este metodo retorna un numero aleatorio entre 0 y 1. No se limita a los enteros.
+
+        Metodo randint():
+
+            Este metodo nos permite obtener un numero aleatorio entre dos numeros dados. En si toma un valor que va a ser el valor de 
+            inicio y otro valor que va a ser el valor final en el cual se va a generar el numero aleatorio.
+
+        Metodo choice( MutableSequence ):
+
+            Este metodo permite traer UN item de una sequencia de forma aleatoria.
+
+        Metodo choices( MutableSequence, k ):
+
+            Este metodo permite traer VARIOS items de una sequencia de forma aleatoria. Es devuelto en una lista.
+
+        
+        Metodo shuffle( MutableSequence ):
+
+            Este metodo toma una seccuencia de items y los reordena de forma aleatoria. No devuelve nada, solo reordena la lista.
+
+
+    Modulo string 
+
+        Un modulo que nos permite trabajar con cadenas de texto en Python. Podemos trabajar con letras de la cadena de ASCII,
+        letras minusculas, letras mayusculas, digitos, etc.
+
+    
         
