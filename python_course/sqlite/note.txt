@@ -79,3 +79,8 @@ Motor de Base de Datos SQLite
                 Podemos realixar una peticion sql, pero es necesario saber que es mejor utilizar un formateo
                 para pasar los valores de la query, ya que si se pasa de manera directa se puede ser victima de
                 un ataque de inyeccion sql.
+
+            metodo.executemany() -> Ejecuta una query con varios valores
+
+                Este metodo nos permite ejecutar una query con varios valores, es muy util cuando se necesita insertar
+                varios valores en una tabla.
