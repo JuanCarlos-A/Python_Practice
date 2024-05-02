@@ -74,14 +74,29 @@
 
 # Ejmplo 5
 
-class ContextManager:
-    def __init__(self, path_file) -> None:
-        self.path_file = path_file
+# class ContextManager:
+#     def __init__(self, path_file) -> None:
+#         self.path_file = path_file
     
-    def __enter__(self):
-        self.file = open(self.path_file, "w")
-        return self.file
+#     def __enter__(self):
+#         self.file = open(self.path_file, "w")
+#         return self.file
     
-    def __exit__(self, exc_type, exc_value, exc_tb):
-        if self.file:
-            self.file.close()
+#     def __exit__(self, exc_type, exc_value, exc_tb):
+#         if self.file:
+#             self.file.close()
+
+
+# Example 6
+
+from contextlib import contextmanager
+
+@contextmanager
+def funcion_generator():
+    try:
+        print("Entando al Context Manager")
+        file = open("Mentorship/tasks/context_maneger/example.txt", "w")
+        yield file
+    finally:
+        file.close()
+        print("Saliendo del Context Manager")
