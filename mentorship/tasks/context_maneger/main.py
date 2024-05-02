@@ -1,6 +1,8 @@
 # Memory Leak del Context Maneger
 
+
 # Añadido en el PEP 343
+
 
 # Ejemplo 1
 
@@ -21,9 +23,11 @@
 #         print("Entrando al Context Manager")
 #         return self
     
-#     def __exit__(self, exc_type, exc_value, traceback):
+#     def __exit__(self, exc_type, exc_value, exc_tb):
 #         print("Salida del Context Manager")
-#         return True
+#         print(f"Tipo de excepcion: {exc_type}")
+#         print(f"Valor de excepcion: {exc_value}")
+#         print(f"Traceback: {exc_tb}")
     
 # with ContextManager() as manager:
 #     print("Dentro del Context Manager")
@@ -44,10 +48,40 @@
 # # Nos aseguramos de cerrar el recuros despues de la ejecucion asi ocurra un error
 #     file.close()
 
+
 # Ejemplo 4
 
-# expresion = open("Mentorship/tasks/context_maneger/example.txt", "w")
+# class ExampleConstexManager:
+#     def __enter__(self):
+#         print("Entrando al metodo __enter__ del Context Manager Protocol")
+#         return "Soy un Objeto tipo String"
+    
+#     def __exit__(self, exc_type, exc_value, exc_tb):
+#         print("Dejando el context manager")
 
-# enter = type(expresion).__enter__
+#         if isinstance(exc_value, IndexError):
+#             print("Error de Indice")
+#             print(f'Tipo de Exception {exc_type}')
+#             print(f'Message Exception {exc_value}')
+#             print(f'Traceback {exc_tb}')
+#             return True
+        
 
-# exit = type(expresion).__exit__
+# with ExampleConstexManager() as manager:
+#     print(manager)
+#     manager[100]
+
+
+# Ejmplo 5
+
+class ContextManager:
+    def __init__(self, path_file) -> None:
+        self.path_file = path_file
+    
+    def __enter__(self):
+        self.file = open(self.path_file, "w")
+        return self.file
+    
+    def __exit__(self, exc_type, exc_value, exc_tb):
+        if self.file:
+            self.file.close()
