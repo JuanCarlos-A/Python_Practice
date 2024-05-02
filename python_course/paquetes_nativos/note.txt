@@ -74,27 +74,46 @@ Paquetes Nativos de Python
     
     Modulo datetime
     
-            Este modulo nos permite trabajar con fechas y horas en Python.
-    
+        Este modulo nos permite trabajar con fechas y horas en Python.
+
+        Ejemplo:
+
+        import datetime
+
+        print(datetime.datetime.now())
+
+        Concepto de Objeto de la Clase datetime
+
+            Los objetos de la clase datetime son objetos que nos permiten trabajar con fechas y horas en Python.
+
             Ejemplo:
-    
+
             import datetime
-    
-            print(datetime.datetime.now())
-    
-            Concepto de Objeto de la Clase datetime
-    
-                Los objetos de la clase datetime son objetos que nos permiten trabajar con fechas y horas en Python.
-    
-                Ejemplo:
-    
-                import datetime
-    
-                fecha = datetime.datetime.now()
-    
-                print(fecha.year)
-                print(fecha.month)
-                print(fecha.day)
-                print(fecha.hour)
-                print(fecha.minute)
-                print(fecha.second)
+
+            fecha = datetime.datetime.now()
+
+            print(fecha.year)
+            print(fecha.month)
+            print(fecha.day)
+            print(fecha.hour)
+            print(fecha.minute)
+            print(fecha.second)
+
+        Concepto de Metodo strftime()
+
+            Este metodo nos permite dar formato a una fecha y hora en Python.
+
+            Ejemplo:
+
+            import datetime
+
+            fecha = datetime.datetime.now()
+
+            print(fecha.strftime('%Y-%m-%d %H:%M:%S'))
+
+            Basicamente es la forma de como especificamos ante python los formatos de fecha cuando queremos trabajar
+            con ellas.
+
+
+        Clase timedelta()
+        
