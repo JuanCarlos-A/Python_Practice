@@ -1,0 +1,7 @@
+Paquetes Nativos de Python 
+
+    Concepto WebScraping
+
+        Este concepto trata de un script con la capacidad de extraer información
+        de una pagina web, ya sea para almacenarla en una base de datos o para
+        realizar un análisis de la misma.
