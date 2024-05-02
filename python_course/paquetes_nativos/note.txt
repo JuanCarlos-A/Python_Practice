@@ -156,4 +156,54 @@ Paquetes Nativos de Python
         letras minusculas, letras mayusculas, digitos, etc.
 
     
+    Modulo sys
+
+        Este modulo nos permite trabajar con el sistema operativo en Python. Podemos obtener informacion del sistema operativo,
+        de la version de Python que estamos utilizando, etc.
+
+        Ejemplo:
+
+        import sys
+
+        print(sys.platform)
+        print(sys.version)
+
+        Concepto de sys.argv
+
+            Este concepto hace referencia a los argumentos que se pasan a un script de Python desde la terminal.
+
+            Ejemplo:
+
+            import sys
+
+            print(sys.argv)
+
+            Basicamente es una lista que contiene los argumentos que se pasan a un script de Python desde la terminal.
+
+    
+    Modulo os 
+
+        Este modulo nos permite trabajar con el sistema operativo en Python. Podemos obtener informacion del sistema operativo,
+        crear carpetas, borrar carpetas, etc.
+
+        Ejemplo:
+
+        import os
+
+        print(os.getcwd())
+        print(os.listdir())
+
+        Concepto de os.path
+
+            Este concepto hace referencia a la ruta de un archivo o carpeta en Python.
+
+            Ejemplo:
+
+            import os
+
+            print(os.path.abspath('archivo.txt'))
+
+            Basicamente es la forma de como especificamos ante python la ruta de un archivo o carpeta.
+
+    
         
