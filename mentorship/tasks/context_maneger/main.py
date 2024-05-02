@@ -89,14 +89,14 @@
 
 # Example 6
 
-from contextlib import contextmanager
+# from contextlib import contextmanager
 
-@contextmanager
-def funcion_generator():
-    try:
-        print("Entando al Context Manager")
-        file = open("Mentorship/tasks/context_maneger/example.txt", "w")
-        yield file
-    finally:
-        file.close()
-        print("Saliendo del Context Manager")
+# @contextmanager
+# def funcion_generator():
+#     try:
+#         print("Entando al Context Manager")
+#         file = open("Mentorship/tasks/context_maneger/example.txt", "w")
+#         yield file
+#     finally:
+#         file.close()
+#         print("Saliendo del Context Manager")
