@@ -206,4 +206,67 @@ Paquetes Nativos de Python
             Basicamente es la forma de como especificamos ante python la ruta de un archivo o carpeta.
 
     
-        
+    Concepto SMTP (Simple Mail Transfer Protocol)
+
+        Este concepto hace referencia a un protocolo de red utilizado para enviar correos electronicos. Es el protocolo mas 
+        comun, pero no es el unico que existe.
+
+        Ejemplo:
+
+        import smtplib
+
+        servidor = smtplib.SMTP('smtp.gmail.com', 587)
+        servidor.starttls()
+        servidor.login('','')
+        servidor.sendmail('','',[''])
+        servidor.quit()
+
+        Basicamente es la forma de como podemos enviar correos electronicos desde Python.
+
+
+    Concepto de Mime (Multipurpose Internet Mail Extensions)
+
+        Este concepto hace referencia a un estandar de internet que extiende el formato de los correos electronicos para 
+        soportar texto enriquecido, archivos adjuntos, etc.
+
+        Ejemplo:
+
+        import smtplib
+        from email.mime.text import MIMEText
+
+        mensaje = MIMEText('Hola, este es un mensaje de prueba')
+
+        servidor = smtplib.SMTP('smtp.gmail.com', 587)
+        servidor.starttls()
+        servidor.login('','')
+        servidor.sendmail('','',['', mensaje.as_string()])
+        servidor.quit()
+
+        Basicamente es la forma de como podemos enviar correos electronicos con texto enriquecido desde Python. 
+
+    
+    Modulo mime.multipart
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+
+
+    Modulo mime.text
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+    
+
+    Modulo smtplib
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+
+        Metodo SMTP()
+
+            Este metodo nos permite crear un servidor SMTP en Python.
+
+        Obejto SMTP
+
+            Podemos tomar el mensaje creado con MIMEText y enviarlo con el metodo sendmail(). Asi como tambien podemos 
+            cerrar la conexion con el metodo quit(), podemos codificar el mensaje con el metodo starttls().
