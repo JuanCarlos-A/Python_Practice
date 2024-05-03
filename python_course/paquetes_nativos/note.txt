@@ -6,8 +6,8 @@ Paquetes Nativos de Python
         de nuestro sistema operativo.
 
         Ejemplo:
-
-        import webbrowser
+        
+        import webbrowser 
 
         webbrowser.open('https://www.google.com')
 
