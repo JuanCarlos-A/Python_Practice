@@ -13,7 +13,7 @@
 #     file.close()
 
 # with open("Mentorship/tasks/context_maneger/example.txt", "w") as file:
-#     file.write("Hello World!")
+#     file.write("Hello!")
 
 
 # Ejemplo 2

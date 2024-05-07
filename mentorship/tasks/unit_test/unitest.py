@@ -4,13 +4,13 @@ import unittest # Importamos la libreria unittest
 
 class TestSolution(unittest.TestCase):
 
-    @classmethod
-    def setUpClass(self) -> None:
-        self.solucion = Solution()
-
-    ##  Se crea una instancia antes de ejecutar cada test
-    # def setUp(self) -> None:
+    # @classmethod
+    # def setUpClass(self) -> None:
     #     self.solucion = Solution()
+
+    #  Se crea una instancia antes de ejecutar cada test
+    def setUp(self) -> None:
+        self.solucion = Solution()
     
     def test_twoSum(self):
         self.assertEqual(self.solucion.twoSum([2, 7, 11, 15], 9), [0, 1])
