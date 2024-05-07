@@ -1,0 +1,31 @@
+Testeo Unitario
+
+    Es un metodo de testeo de software en el cual unidades de codigo individuales son sometidas 
+    a pruebas para validar que son aptas de uso. Determina la calidad de un codigo.
+
+    Generalmente cuando el proceso de desarrolo esta completado el desarrollador codifica
+    pruebas unitarias y durante este proceso se el framework ejecuta los testeos que encuentre 
+    y devuelve un mensaje personalizado con el resultado ya sea un error o un exito.
+
+
+Testeo Unitario en Python
+
+    El testeo manual de codigo puede ser una tare muy engorrosa y tediosa, por lo que para faciliar
+    la vida del programador existen herramientas como librerias, frameworks que facilitan el proceso
+    de testeo.
+
+    Python y su libreria unittest:
+
+        La mejor forma de codificar un testeo es comenzando desde una unidad de codigo, es decir 
+        una funcion, luego puedes ir evolucionando y testear unidades de codigo mas grandes.
+
+        La libreria de unittest es inspirada en JUnit, es una libreria de testeo de Java, y tiene 
+        caracteristicas similares a otros frameworks de testeo, entre las caracteristicas ofrecidas 
+        esta: 
+
+            *- Testeo Automatico
+            *- Independencia del testeo del framework de testing
+
+        Existen convenciones del llamado de una prueba unitaria, mientras que el nombre del modulo puede ser
+        circle.py, el nombre del testeo para este modulo es test_circle.py o circle_test.py agregando 
+        la palabra test al final o comienzo del nombre
