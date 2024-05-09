@@ -40,3 +40,38 @@ Testeo Unitario en Python
         Existen convenciones del llamado de una prueba unitaria, mientras que el nombre del modulo puede ser
         circle.py, el nombre del testeo para este modulo es test_circle.py o circle_test.py agregando 
         la palabra test al final o comienzo del nombre
+
+    Unittest Module
+
+        Este modulo de python se encuentra integrado dentro de python desde la version 2.1, este modulo 
+        incorpora algunas caracteristicas en el testeo, como lo son una estructura de organizacion en clases,
+        metodos y modulos; contiene una cantidad de metodos propios que reemplazan el uso de la palabra clave
+        assert.
+
+
+    Pytest framework
+
+        Este framework de python especializado en testing es compatible con los casos de uso en unittest,
+        las principales ventajas de pytest son su simplicidad al necesitar de funciones que comiencen con 
+        el sufijo de pytest.
+
+
+Manual Testing vs Automated Testing
+
+    A diferencia de los testing realizados de manera manual dentro del mismo codigo y dentro de las 
+    funcionalidades, los testing Automaticos son tests realizados para una funcionalidad independiente 
+    y podemos agruparlos dentro de una organizacion optima.
+
+
+Integration Testing and Unit Testing
+
+    Las pruebas unitarias son pruebas que verifican una funcionalidad en singular, en su lugar las 
+    pruebas de integracion prueban partes mas grandes de codigo, lo que dificulta encontrar un error 
+    cuando se espere un resultado.
+
+
+Manual Testing without a framework
+
+    El testeo sin el uso de un framework es posible, pero es mucho mas complicado y tardado realizar 
+    los testing de codigos grandes de manera manual que usando un framework que nos provea de 
+    herramientas de debugeo, testeo y documentacion.

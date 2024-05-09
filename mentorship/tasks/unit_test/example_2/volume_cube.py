@@ -1,4 +1,6 @@
 def volume_of_cube(side):
+    if type(side) not in [int, float]:
+        raise TypeError("The type of value is invalid")
     return side ** 3
 
 
