@@ -75,3 +75,13 @@ Manual Testing without a framework
     El testeo sin el uso de un framework es posible, pero es mucho mas complicado y tardado realizar 
     los testing de codigos grandes de manera manual que usando un framework que nos provea de 
     herramientas de debugeo, testeo y documentacion.
+
+
+Escribir un Assertion
+
+    Los assertions son herramientas para evaluar un resultado obtenido de alguna funcionalidad con el 
+    resultado que se espera. Existen algunas referencias de como crear un test:
+
+        *- Asegurarse de que el test se pueda repetir en mas de una ocasion y que siempre de el mismo 
+        resultado esperado.
+        
