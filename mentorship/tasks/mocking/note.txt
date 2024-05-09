@@ -1,0 +1,49 @@
+Mocking en Python
+
+    El mocking es una caracteristica del testeo el cual no permite simular recursos externos al sistema
+    o bloque de codigo que queramos testear esto con el proposito de evitar llamar un recurso multiples 
+    veces lo que puede costar tiempo, dinero, etc.
+
+    Un objeto de Mocking imita y subtituye un elemento real dentro de un entorno de testeo. Una razon 
+    para utilizar mocks es para controlar el conmportamiento durante el testing.
+
+    Tomando como ejemplo el posible llamado de un servicio por medio de una peticion http, entonces tu 
+    testing funciona hasta donde uno sepa como se comporta el servicio, para estos problemas los mocks
+    te ayudan a mantener controlado el camino de ejecucion.
+
+    Otra razon para usar los mocks es para conocer como es realemente la ejecucion de los metodos ya que 
+    los objetos mock pueden conocer todos los procesos que realiza el objeto que imita y editarlos a 
+    convenienca.
+
+    La libreria de objetos de Mock es contenida dentro del core de python desde las versiones 3.3 en 
+    adelante, esta libreria nos permite imitar el comportamiento de un elemento dentro de un objeto Mock,
+    la clase Mock() provee un flexibilidad y mejor entendimiento de los datos.
+
+    Esta libreria tambien provee una funcion llamada patch(), la cual reemplaza los objetos reales en el 
+    codigo con instancias de la clase Mock().
+
+    Creacion de una instancia de la clase Mock()
+
+        from unittest.mock import Mock
+
+        mock = Mock()
+
+    Sustitucion de un objeto real a un objeto mock:
+
+        # Pass mock as an argument to do_something()
+        do_something(mock)
+
+        # Patch the json library
+        json = mock
+
+
+    Cuando se sustituye un objeto en tu codigo este debe tener caracteristicas parecidas al objeto que 
+    esta copiando o de otra forma el codigo no podra trabajar con la copia
+
+Patch 
+
+    En python nosotros podemos utilizar este metodo de la libreria de Mock() como un decorador o como 
+    un context manager dandote el control del limite en el cual el objeto sera imitado o copiado.
+
+    Una vez que el limite del objeto copiado sea vigente, path() se encargara de limpiar el codigo 
+    reemplazando el objeto mock con el objeto real.

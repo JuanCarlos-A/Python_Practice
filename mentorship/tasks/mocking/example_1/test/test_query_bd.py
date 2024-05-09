@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import Mock
-from main import obtener_nombres_usuarios
+from example_1.main import obtener_nombres_usuarios
 
 class QueryBD(unittest.TestCase):
 
