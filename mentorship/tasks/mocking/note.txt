@@ -38,7 +38,14 @@ Mocking en Python
 
 
     Cuando se sustituye un objeto en tu codigo este debe tener caracteristicas parecidas al objeto que 
-    esta copiando o de otra forma el codigo no podra trabajar con la copia
+    esta copiando o de otra forma el codigo no podra trabajar con la copia.
+
+    Por ejemplo si el codigo llama el metodo dump() de json, el objeto de mock debe ener dicho metodo.
+
+    Todos los metodos que se llamen como un mock devolvera un elemento de mock().
+
+    Las instancias de Mock() almacenan la imformacion de como fueron usadas, por ejemplo podempos ver cuando 
+    llamamos un metodo y como llamamos un metodo.
 
 Patch 
 

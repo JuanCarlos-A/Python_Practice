@@ -17,3 +17,6 @@ class TestExample(unittest.TestCase):
 
     json.loads.assert_called_with('{"k" : "v"}')
     # json.loads.assert_not_called()
+
+if __name__ == '__main__':
+    unittest.main()
