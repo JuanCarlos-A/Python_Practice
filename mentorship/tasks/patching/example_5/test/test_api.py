@@ -33,6 +33,6 @@ class TestObtenerClima(unittest.TestCase):
         self.assertEqual(resultado['current']['temp_c'], 20)
         self.assertEqual(resultado['current']['condition']['text'], "Partly cloudy")
 
-# Si este archivo se ejecuta como un script, correr las pruebas
+
 if __name__ == '__main__':
     unittest.main()
