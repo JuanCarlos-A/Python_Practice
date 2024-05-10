@@ -2,14 +2,14 @@ from requests.exceptions import Timeout
 import unittest
 from unittest.mock import Mock
 
+
 requests = Mock()
+
 
 def get_holidays():
     r = requests.get('http://localhost/api/holidays')
-
     if r.status_code == 200:
         return r.json()
-    
     return None
 
 
