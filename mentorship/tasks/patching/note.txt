@@ -1,0 +1,12 @@
+Patch()
+
+    El modulos de unittest.mock nos preovee de una herramienta para copiar objetos llamada patch()
+    la cual tomo un objeto de un modulo y lo reemplaza  con un objeto de Mock.
+
+    Se Puede utiliar como un decordor o un maneador de contexto para proveer un limite al objeto 
+    que sera copiado.
+
+
+    path() Decorator:
+
+        Funciona para mock un objeto o copiar un objeto durante la duracion de un testing.
