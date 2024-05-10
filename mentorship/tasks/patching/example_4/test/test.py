@@ -1,8 +1,8 @@
-import my_calendar
-from unittest.mock import patch
+# import my_calendar
+# from unittest.mock import patch
 
-with patch('my_calendar.is_weekday'):
-    my_calendar.is_weekday()
+# with patch('my_calendar.is_weekday'):
+#     my_calendar.is_weekday()
 
 
 # from my_calendar import is_weekday
