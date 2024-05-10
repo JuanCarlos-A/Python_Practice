@@ -47,6 +47,21 @@ Mocking en Python
     Las instancias de Mock() almacenan la imformacion de como fueron usadas, por ejemplo podempos ver cuando 
     llamamos un metodo y como llamamos un metodo.
 
+    Un motivo de usar el mock es poder controlar el comportamiento durante los testing y una forma de control
+    es saber que valor retornan.
+
+    Cuando realizas un test debes poder tener resultados predecibles pero correctos para eliminra la 
+    incertidumbre de tu codigo.
+
+    Aveces no es facil o suficiente manejar el valor de retorno de un valor, ya que algunas veces el flujo
+    de logica no es sencilla. 
+
+
+    Side_Effects:
+        
+        De esta forma podemos controlar el comportamiento de un objeto Mock() cuando un objeto de estos 
+        es llamado como funcion.
+
 Patch 
 
     En python nosotros podemos utilizar este metodo de la libreria de Mock() como un decorador o como 
