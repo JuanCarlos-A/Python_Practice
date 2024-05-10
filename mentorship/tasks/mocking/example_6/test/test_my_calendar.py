@@ -2,6 +2,7 @@ import requests
 import unittest
 from unittest.mock import Mock
 
+requests = Mock()  # noqa: F811
 
 def get_holidays():
     r = requests.get('http://localhost/api/holidays')
@@ -11,7 +12,6 @@ def get_holidays():
 
 class TestCalendar(unittest.TestCase):
     
-    requests = Mock()    
 
     def log_request(self, url):
         print(f'Making a request to {url}.')
