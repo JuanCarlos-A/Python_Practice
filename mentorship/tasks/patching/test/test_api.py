@@ -1,6 +1,6 @@
 import unittest
 from unittest.mock import patch
-from my_weather_api import obtener_clima_actual
+from test.my_weather_api import obtener_clima_actual
 
 
 class TestObtenerClima(unittest.TestCase):
