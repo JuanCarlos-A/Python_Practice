@@ -1,0 +1,25 @@
+Paquetes Populares de Python
+
+    Variables de Entorno:
+
+        Estas variables son usadas para guardar informacion sensible dentro de variables del entorno de ejecucion,
+        podemos acceder a ellas por medio del modulo os. 
+
+            Variable de environ.get(): Nos permite obtener las variables de entorno que se encuentren dentro de un archivo .env.
+
+        Estas variables se pueden guardar dentro de un archivo de extension .env que sera ignorado dentro de un repositorio
+        de git.
+
+    Paquete de SendGrig:
+
+        Esta libreria nos permite trabajar con una API obteniendola en su sitio web y usandola para poder enviar correos 
+        electronicos. Esta libreria contiene distintas funcionalidades:
+            
+            Clase Mail():
+
+                Dentro de esta clase nosotros podemos crear una instancia de una clase de Email donde podemos dar los atributos
+                de la clase.
+
+            Clase  SendGridAPIClient()
+                Esta clase toma como atributo el apikey que hemos obtenido dentro del sitio web, podemos guardar esta informacion 
+                delicada dentro una variable de entorno
