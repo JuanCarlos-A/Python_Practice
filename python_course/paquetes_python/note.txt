@@ -74,3 +74,34 @@ Paquetes de Python
             la que trabaja.
 
             pipenv unisntall nombredependencia : Desinstalacion de alguna dependencia que ya no sea necesaria.
+
+        
+    Creacion de Paquetes Importables
+
+        Se va a crear un paquete que va a ser posible instalar por otro programador. Es importante conocer las buenas practicas 
+        al crear un modulo.
+
+            Buenas Practiacas : 
+
+                Documentacion de cada paquete, modulo o funcion. Esto es con el fin de dar a conocer de forma explicita el
+                funcionamiento del paquete. Esto es posibe mediante el uso de docstrings con """""" comilla triple.
+
+            Modulo de __init__ : 
+
+                Con este modulo podemos dar documentacion a un paquete y ese mismo sera tomado como un modulo que puede contener
+                submodulos.
+
+            Archivo LICENSE: 
+
+                Para poder crear un paquete que podamos instalar es necesario tener una liscensia que nos autorice algunos elementos.
+
+            Archivo  README.md:
+
+                Un archivo muy utilizado en formato de mark down con el objetivo de poder especificar que archivos son utilizados
+
+            Modulo de setup.py
+
+                Este modulo nos permite configurar las caracteristicas que tendra nuestra publicacion del paquete, aqui podemos especificar
+                que queremos ignorar y lo que queramos que no se ignore, asi como la version el nombre, etc.
+
+            
