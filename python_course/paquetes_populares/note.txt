@@ -23,3 +23,6 @@ Paquetes Populares de Python
             Clase  SendGridAPIClient()
                 Esta clase toma como atributo el apikey que hemos obtenido dentro del sitio web, podemos guardar esta informacion 
                 delicada dentro una variable de entorno
+
+                Metodo de send(): 
+                    Este metodo de send nos permite enviar un email usando el metodo de POST y el servicio de SendGrid.
