@@ -1,0 +1,76 @@
+Paquetes de Python
+
+    PyPI (Python Package Index)
+
+        Un repositorio de proyectos exclusivamente escritos para el lenguaje de python, aqui podemos 
+        encontrar proyectos o librerias que nos pueden dar funcionalidades de python que alguien mas 
+        ya penso y programo. Tener en cuenta que este repositorio tiene codigo tanto de las versiones
+        mas nuevas como de versiones mas obsoletas o antiguas asi que se debe tener cuidado con los 
+        codigos abandonados.
+
+    Pip 
+
+        Es una herramienta de consola que nos permite gestionar los paquetes que se obtienen de PyPi,
+        podemos decidir que version de dependencias tenemos en el desarrollo. Esta herramienta tiene 
+        diferencias a la herramienta del comando de python.
+
+
+        pip list
+
+            Esta comando nos permite crear una lista de los paquetes o dependencias que gestiona pip.
+
+        pip install
+
+            Comando para instalar el paquete dentro de PyPi, podemos usar * para especificar que queremos
+            instalar la ultima version de una version. Ej : 2.* = Ultima version de la version mayor 2.
+
+    
+    Semantica de Versiones de Dependencias o SenVer (Semantic Version)
+
+        Nosotros al momento de observar la version de las dependencias con las que trabajamos, podemos 
+        ver que vienen con una serie de identificadores numericos segun la funcion. Esta es la forma 
+        de como se organizan.
+
+            Version
+
+            2 --> Mayor Version : Que rompe lazos con las versiones anteriores y puede llegar a ser diferente
+            .
+            31 --> Minor Version : Que es usa las mismas funciones, pero agrega nuevas a las que ya tenia
+            .
+            0 --> Patch : Que cuenta con diferentes parches a errores que se hayan presentado
+
+
+    Entornos Virtuales
+
+        Los entornos virtuales son como su nombre los indica son entornos que podemos usar para compartir
+        las dependencias y sus versiones dependiendo del proyecto, solucionando los problemas con el 
+        error de versiones. 
+
+
+    PipEnv 
+
+        Es un entorno virtual que nos permite administrar las dependencias con las que corre un proyecto 
+        esto con el motivo de no generar errores de versiones. Pipenv es una de las herramientas disponibles
+        del lenguaje de python para la administracion de dependencias.
+
+            PipFile :
+
+                Un archivo de pipenv en el cual se especifican de manera simple las dependencias del entorno,
+                no es una especificacion tan detallada.
+
+            PipFile.lock
+
+                Un archivo parecido al pipfile anteriormente mencionado con la diferencia de una especificacion 
+                mas detallada de las versiones de dependencias del proyecto.
+
+
+        Comandos
+            pipenv install : Instalacion de un entorno virtual 
+
+            pipenv install --ignore-nombrearchivo: Instalalcion de un entorno virtual pero ignorando algun archivo que
+            que considere necesario. 
+
+            pipenv graph : Una grafica con las dependencias organizadas con los submodulos que necesito asi como la version con 
+            la que trabaja.
+
+            pipenv unisntall nombredependencia : Desinstalacion de alguna dependencia que ya no sea necesaria.
