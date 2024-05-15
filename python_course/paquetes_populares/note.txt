@@ -36,6 +36,39 @@ Paquetes Populares de Python
         Con estas funciones podemos editar el codigo html obtenido como un string del request. BS4 nos permite manipular 
         el codigo html obtenido como string y manipularlo.
 
+    
+    Paquete openpyxl
+
+        Este es un paquete de python que nos permite trabajar con hojas de calculo de formato .xlsx. Esta libreria nos permite 
+        conocer datos de las hojas de calculo tales como lo son el nombre de las hojas dentro.
+
+        Metodo load_workbook(url_file):
+
+            Toma como argumento el traceback de un archivo y devuelve un objeto que nos permite manipular algunas caracteristicas del
+            archivo de hoja de calculo.
+
+        Property de sheetnames : 
+            Nombres de las hojas dentro del archivo.
+
+        Property active : 
+            Nos devuelve un objeto de indicando la hoja que se encuentra activa.
+
+        Objeto de wb[nombrelista]
+
+            Este objeto es proveniente de la funcion de load_workbook(), contiene la representacion de las hojas de calculo dentro 
+            del archivo.
+
+            Metodo cell()
+                Devuelve un objeto cell como la representacion de una celda.
+
+                Propiedades: 
+                    Los objetos de tipo cell tienen propiedades que les permite extraer los valores de las celdas asi como la direccion de 
+                    las celdas.
+
+        Metodo de save():
+
+            El metodo de save() nos permite crar un nuevo archivo en alguna ubicacion y con el nombre que escogamos.
+
 
 APIs (Application Pogramming Interfaces)
 
