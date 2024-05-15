@@ -109,3 +109,10 @@ HTTP STATUS CODE :
     Estos codigos son utilizados como codigos de respuesta para especificar el estado de la peticion, ya existen 
     codigos especificos para la gestion de peticiones.
 
+
+
+SELENIUM 
+
+    Una herramienta que nos permite automatizar las pruebas de un codigo sin la necesidad de crear nuevas pruebas a un 
+    codigo ya creado. Con esta herramienta podemos automatizar el explorador web.
+
