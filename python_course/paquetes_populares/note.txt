@@ -26,3 +26,44 @@ Paquetes Populares de Python
 
                 Metodo de send(): 
                     Este metodo de send nos permite enviar un email usando el metodo de POST y el servicio de SendGrid.
+
+
+APIs (Application Pogramming Interfaces)
+
+    Una api es uan capa que nos permite interactuar con un servicio por medio de una url y los metodos http mas utilizados,
+    una api hace referencia a una interfaz para programar aplicaciones.
+
+    API REST (Representational State Transfer):
+        Las api REST son una representacion de una api que va a utilizar un servicio con el cual va a intercabiar inormacion,
+        esta api utiliza los metodos http para er informacion.
+
+        Las siglas son Representational State Transfer y hacen referencia que las api REST nos va a permitir transferir
+        estados representacionales, por ejemplo en una url para una api podemos especificar los estados que van a ser 
+        transferidos.
+
+
+    Verbos de Http:
+        Get : Un vervo utilizado para traer un estado de una api REST, en resumen nos permite listar datos.
+
+        Post : Lo usamos para especificar al api rest que debe crear un dato dentro del servicio que interacua con la api diferente
+        a quien lo envia.
+
+        Put/Patch : Se utiliza para actualizar un estado dentro de la API.
+
+        Delete : Eliminar un estado dentro del servicio.
+
+    Endpoints:
+        Los endpoints son las direcciones que especifican el servicio que sera utilizado.
+    
+    API Key: 
+
+        Dentro  del mundo de la programacion nosotros podemos llegar a necesitar un servicio a travez de una api protegida o cerrada, 
+        es decir que necesitamos una llave que nos permita el acceso a una api. Esta llave sera necesaria para cualquier peticion 
+        a la api que se realiza.
+
+
+HTTP STATUS CODE : 
+
+    Estos codigos son utilizados como codigos de respuesta para especificar el estado de la peticion, ya existen 
+    codigos especificos para la gestion de peticiones.
+
