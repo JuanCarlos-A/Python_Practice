@@ -5,8 +5,6 @@ url = "https://stackoverflow.com/questions"
 
 response = requests.get(url=url).text
 
-print(response)
-
 soup = BeautifulSoup(response, "html.parser")
 
 preguntas = soup.select(".s-post-summary") # Este metodo retorna una lista

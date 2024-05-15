@@ -27,6 +27,15 @@ Paquetes Populares de Python
                 Metodo de send(): 
                     Este metodo de send nos permite enviar un email usando el metodo de POST y el servicio de SendGrid.
 
+    
+    Paquete de BeautifulSoup4:
+
+        Este paquete de libreria nos permite extraer el codigo html de una pagina we y manipular la informacion dentro del codigo,
+        con este modulo obtenemos una clase con la que podemos crear un objeto con distintas funcionalidades.
+
+        Con estas funciones podemos editar el codigo html obtenido como un string del request. BS4 nos permite manipular 
+        el codigo html obtenido como string y manipularlo.
+
 
 APIs (Application Pogramming Interfaces)
 
