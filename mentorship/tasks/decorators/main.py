@@ -18,7 +18,7 @@
 
 # funcion_2("hola", variable)
 
-#Ejemplo 3
+# Ejemplo 3
 # def create_adder(x): 
 #     def adder(y): 
 #         return x-y 
@@ -164,7 +164,7 @@
 #         variable =  func(*args, **kwargs)
 
 #         return variable
-#     return inner\
+#     return inner
     
 
 # @decorator
@@ -187,24 +187,45 @@
 #     for _ in range(cantidad):
 #         sum([number**2 for number in range(10000)])
 
-# example_function(100)
+#     return
 
+
+
+# print(example_function(100))
 
 # Ejemplo 8
 
-class EjemploDecorador:
-    def __init__(self, func) -> None:
-        self.func = func
-    
-    def __call__(self, *args, **kwargs):
-        print("Antes de la ejecucion")
-        valor = self.func(*args, **kwargs)
-        print("Despues de la ejecucion")
+# class ExampleDecorator:
+#     def __init__(self, func):
+#         self.func = func
 
-        return valor
+#     def __call__(self, *args, **kwargs):
+#         print(f'Llamando {self.func.__name__}')
+#         return self.func(*args, **kwargs)
+
+
+## Example 9
+
+import functools
+
+def repetir(funcion = None, *, veces = 2):
+    def decorador(func):
+        @functools.wraps(func)
+        def wrapper(*args, **kwargs):
+            for _ in range(veces):
+                func(*args, **kwargs)
+
+        return wrapper
+
+    if funcion is None:
+        return decorador
+    else:
+        return decorador(funcion)
     
-@EjemploDecorador
-def saludo():
+
+@repetir(veces=3)
+
+def hola():
     print("Hola")
 
-saludo()
+hola()

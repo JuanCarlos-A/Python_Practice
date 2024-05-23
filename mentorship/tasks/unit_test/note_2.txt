@@ -1,0 +1,87 @@
+Testeo Unitario
+
+    Es un metodo de testeo de software en el cual unidades de codigo individuales son sometidas 
+    a pruebas para validar que son aptas de uso. Determina la calidad de un codigo.
+
+    Generalmente cuando el proceso de desarrolo esta completado el desarrollador codifica
+    pruebas unitarias y durante este proceso se el framework ejecuta los testeos que encuentre 
+    y devuelve un mensaje personalizado con el resultado ya sea un error o un exito. Estos mensajes son
+    resumidos segun los criterios del programador.
+
+    Indudablemente en algun momento nuestro codigo se enfrentara a servicios "sucios" los cuales 
+    en terminos mas claros son servicios que son indispensables pero su aplicacion genera resultados
+    o efectos no deseados.
+
+
+Testeo Unitario en Python
+
+    El testeo manual de codigo puede ser una tare muy engorrosa y tediosa, por lo que para faciliar
+    la vida del programador existen herramientas como librerias, frameworks que facilitan el proceso
+    de testeo.
+
+    La necsidad de tester tu codigo es hacerlo inmune a la mayoria de errores que puede presentar a distancia,
+    obviamente va a estar protegido de cada posible error pero es necesario prepararlo para la mayoria de casos 
+    posibles.
+
+    Python y su libreria unittest:
+
+        La mejor forma de codificar un testeo es comenzando desde una unidad de codigo, es decir 
+        una funcion, luego puedes ir evolucionando y testear unidades de codigo mas grandes.
+
+        La libreria de unittest es inspirada en JUnit, es una libreria de testeo de Java, y tiene 
+        caracteristicas similares a otros frameworks de testeo, entre las caracteristicas ofrecidas 
+        esta: 
+
+            *- Testeo Automatico
+            *- Independencia del testeo del framework de testing
+            *- Compartir un setUp y shutdown o Compartir similares configuraciones iniciales asi como terminar dichas 
+            configuraciones.
+
+        Existen convenciones del llamado de una prueba unitaria, mientras que el nombre del modulo puede ser
+        circle.py, el nombre del testeo para este modulo es test_circle.py o circle_test.py agregando 
+        la palabra test al final o comienzo del nombre
+
+    Unittest Module
+
+        Este modulo de python se encuentra integrado dentro de python desde la version 2.1, este modulo 
+        incorpora algunas caracteristicas en el testeo, como lo son una estructura de organizacion en clases,
+        metodos y modulos; contiene una cantidad de metodos propios que reemplazan el uso de la palabra clave
+        assert.
+
+
+    Pytest framework
+
+        Este framework de python especializado en testing es compatible con los casos de uso en unittest,
+        las principales ventajas de pytest son su simplicidad al necesitar de funciones que comiencen con 
+        el sufijo de pytest.
+
+
+Manual Testing vs Automated Testing
+
+    A diferencia de los testing realizados de manera manual dentro del mismo codigo y dentro de las 
+    funcionalidades, los testing Automaticos son tests realizados para una funcionalidad independiente 
+    y podemos agruparlos dentro de una organizacion optima.
+
+
+Integration Testing and Unit Testing
+
+    Las pruebas unitarias son pruebas que verifican una funcionalidad en singular, en su lugar las 
+    pruebas de integracion prueban partes mas grandes de codigo, lo que dificulta encontrar un error 
+    cuando se espere un resultado.
+
+
+Manual Testing without a framework
+
+    El testeo sin el uso de un framework es posible, pero es mucho mas complicado y tardado realizar 
+    los testing de codigos grandes de manera manual que usando un framework que nos provea de 
+    herramientas de debugeo, testeo y documentacion.
+
+
+Escribir un Assertion
+
+    Los assertions son herramientas para evaluar un resultado obtenido de alguna funcionalidad con el 
+    resultado que se espera. Existen algunas referencias de como crear un test:
+
+        *- Asegurarse de que el test se pueda repetir en mas de una ocasion y que siempre de el mismo 
+        resultado esperado.
+        

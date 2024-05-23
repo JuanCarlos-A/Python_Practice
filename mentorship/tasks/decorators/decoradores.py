@@ -7,7 +7,7 @@ def decorator_func(func):
         tiempo_inicio = time.perf_counter()
         value = func(*args, **kwargs)
         tiempo_fin = time.perf_counter()
-        tiempo_ejec = tiempo_inicio - tiempo_fin
+        tiempo_ejec = tiempo_fin - tiempo_inicio
         print(f'Finished {func.__name__}() in {tiempo_ejec:.4f} secs')
 
         return value

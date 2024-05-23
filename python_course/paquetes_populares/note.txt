@@ -1,0 +1,118 @@
+Paquetes Populares de Python
+
+    Variables de Entorno:
+
+        Estas variables son usadas para guardar informacion sensible dentro de variables del entorno de ejecucion,
+        podemos acceder a ellas por medio del modulo os. 
+
+            Variable de environ.get(): Nos permite obtener las variables de entorno que se encuentren dentro de un archivo .env.
+
+        Estas variables se pueden guardar dentro de un archivo de extension .env que sera ignorado dentro de un repositorio
+        de git.
+
+    Paquete de SendGrig:
+
+        Esta libreria nos permite trabajar con una API obteniendola en su sitio web y usandola para poder enviar correos 
+        electronicos. Esta libreria contiene distintas funcionalidades:
+            
+            Clase Mail():
+
+                Dentro de esta clase nosotros podemos crear una instancia de una clase de Email donde podemos dar los atributos
+                de la clase.
+
+            Clase  SendGridAPIClient()
+                Esta clase toma como atributo el apikey que hemos obtenido dentro del sitio web, podemos guardar esta informacion 
+                delicada dentro una variable de entorno
+
+                Metodo de send(): 
+                    Este metodo de send nos permite enviar un email usando el metodo de POST y el servicio de SendGrid.
+
+    
+    Paquete de BeautifulSoup4:
+
+        Este paquete de libreria nos permite extraer el codigo html de una pagina we y manipular la informacion dentro del codigo,
+        con este modulo obtenemos una clase con la que podemos crear un objeto con distintas funcionalidades.
+
+        Con estas funciones podemos editar el codigo html obtenido como un string del request. BS4 nos permite manipular 
+        el codigo html obtenido como string y manipularlo.
+
+    
+    Paquete openpyxl
+
+        Este es un paquete de python que nos permite trabajar con hojas de calculo de formato .xlsx. Esta libreria nos permite 
+        conocer datos de las hojas de calculo tales como lo son el nombre de las hojas dentro.
+
+        Metodo load_workbook(url_file):
+
+            Toma como argumento el traceback de un archivo y devuelve un objeto que nos permite manipular algunas caracteristicas del
+            archivo de hoja de calculo.
+
+        Property de sheetnames : 
+            Nombres de las hojas dentro del archivo.
+
+        Property active : 
+            Nos devuelve un objeto de indicando la hoja que se encuentra activa.
+
+        Objeto de wb[nombrelista]
+
+            Este objeto es proveniente de la funcion de load_workbook(), contiene la representacion de las hojas de calculo dentro 
+            del archivo.
+
+            Metodo cell()
+                Devuelve un objeto cell como la representacion de una celda.
+
+                Propiedades: 
+                    Los objetos de tipo cell tienen propiedades que les permite extraer los valores de las celdas asi como la direccion de 
+                    las celdas.
+
+        Metodo de save():
+
+            El metodo de save() nos permite crar un nuevo archivo en alguna ubicacion y con el nombre que escogamos.
+
+
+APIs (Application Pogramming Interfaces)
+
+    Una api es uan capa que nos permite interactuar con un servicio por medio de una url y los metodos http mas utilizados,
+    una api hace referencia a una interfaz para programar aplicaciones.
+
+    API REST (Representational State Transfer):
+        Las api REST son una representacion de una api que va a utilizar un servicio con el cual va a intercabiar inormacion,
+        esta api utiliza los metodos http para er informacion.
+
+        Las siglas son Representational State Transfer y hacen referencia que las api REST nos va a permitir transferir
+        estados representacionales, por ejemplo en una url para una api podemos especificar los estados que van a ser 
+        transferidos.
+
+
+    Verbos de Http:
+        Get : Un vervo utilizado para traer un estado de una api REST, en resumen nos permite listar datos.
+
+        Post : Lo usamos para especificar al api rest que debe crear un dato dentro del servicio que interacua con la api diferente
+        a quien lo envia.
+
+        Put/Patch : Se utiliza para actualizar un estado dentro de la API.
+
+        Delete : Eliminar un estado dentro del servicio.
+
+    Endpoints:
+        Los endpoints son las direcciones que especifican el servicio que sera utilizado.
+    
+    API Key: 
+
+        Dentro  del mundo de la programacion nosotros podemos llegar a necesitar un servicio a travez de una api protegida o cerrada, 
+        es decir que necesitamos una llave que nos permita el acceso a una api. Esta llave sera necesaria para cualquier peticion 
+        a la api que se realiza.
+
+
+HTTP STATUS CODE : 
+
+    Estos codigos son utilizados como codigos de respuesta para especificar el estado de la peticion, ya existen 
+    codigos especificos para la gestion de peticiones.
+
+
+
+SELENIUM 
+
+    Una herramienta que nos permite automatizar las pruebas de un codigo sin la necesidad de crear nuevas pruebas a un 
+    codigo ya creado. Con esta herramienta podemos automatizar el explorador web.
+

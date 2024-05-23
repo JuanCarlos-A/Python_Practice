@@ -1,0 +1,78 @@
+Operadores 
+
+    //Operadores de asignación
+    //Operador de asignación simple
+    $a = 5;
+    //Operador de asignación por suma
+    $a += 5;
+    //Operador de asignación por resta
+    $a -= 5;
+    //Operador de asignación por multiplicación
+    $a *= 5;
+    //Operador de asignación por división
+    $a /= 5;
+    //Operador de asignación por módulo
+    $a %= 5;
+    //Operador de asignación por concatenación
+    $a .= 5;
+
+    //Operadores de comparación
+    //Operador de igualdad
+    $a == $b;
+    //Operador de identidad
+    $a === $b;
+    //Operador de desigualdad
+    $a != $b;
+    //Operador de no identidad
+    $a !== $b;
+    //Operador de comparación por menor que
+    $a < $b;
+    //Operador de comparación por mayor que
+    $a > $b;
+    //Operador de comparación por menor o igual que
+    $a <= $b;
+    //Operador de comparación por mayor o igual que
+    $a >= $b;
+    //Operador de comparación por nave espacial
+    $a <=> $b;
+
+    //Operadores de incremento y decremento
+    //Operador de incremento
+    $a++;
+    //Operador de decremento
+    $a--;
+
+    //Operadores lógicos
+    //Operador de negación
+    !$a;
+    //Operador de conjunción
+    $a && $b;
+    //Operador de disyunción
+    $a || $b;
+    //Operador de conjunción lógica
+    $a and $b;
+    //Operador de disyunción lógica
+    $a or $b;
+    //Operador de disyunción exclusiva
+    $a xor $b;
+
+    //Operadores de cadenas
+    //Operador de concatenación
+    $a . $b;
+
+    //Operadores de arrays
+    //Operador de unión
+    $a + $b;
+    //Operador de igualdad
+    $a == $b;
+
+    Existen los Operadores Binaros, Unarios y Ternarios:
+
+        Operadores binarios: son los que necesitan dos operandos para funcionar.
+            Ejemplo: a + b
+
+        Operadores unarios: son los que necesitan un solo operando para funcionar.
+            Ejemplo: -a
+
+        Operadores ternarios: son los que necesitan tres operandos para funcionar.
+            Ejemplo: a ? b : c

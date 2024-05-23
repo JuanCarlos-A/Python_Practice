@@ -1,0 +1,272 @@
+Paquetes Nativos de Python
+
+    Paquete webbrowser
+
+        Este paquete nos permite abrir una pagina web en el navegador predeterminado
+        de nuestro sistema operativo.
+
+        Ejemplo:
+        
+        import webbrowser 
+
+        webbrowser.open('https://www.google.com')
+
+
+        Concepto WebScraping
+
+            Este concepto trata de un script con la capacidad de extraer información
+            de una pagina web, ya sea para almacenarla en una base de datos o para
+            realizar un análisis de la misma.
+
+
+    Paquete time
+
+        Este paquete nos permite trabajar con el tiempo en Python.
+
+        Ejemplo:
+
+        import time
+
+        print('Hola')
+        time.sleep(2)
+        print('Mundo')
+
+
+        Concepto TimeStamp
+
+            Este concepto hace referencia a la cantidad de segundos que han pasado
+            desde el 1 de enero de 1970 hasta la fecha actual.
+
+        Concepto UTC (Corrdinado Universal del tiempo)
+
+            Este concepto hace referencia a la hora actual en el meridiano de Greenwich
+            en Londres, Inglaterra.
+
+        Concepto de Directives
+
+            Este concepto hace referencia a las letras que se utilizan para dar formato
+            a la fecha y hora en Python.
+
+            Ejemplo:
+
+            %Y - Año
+            %m - Mes
+            %d - Día
+            %H - Hora
+            %M - Minutos
+            %S - Segundos
+
+            Ejemplo:
+
+            import time
+
+            print(time.strftime('%Y-%m-%d %H:%M:%S'))
+
+            Basicamente es la forma de como especificamos ante python los formatos de fecha cuando queremos trabajar
+            con ellas.
+    
+
+        Metodo strftime() 
+        
+            Este metodo nos permite trabajar con fechas y horas en python cuando lo que se tiene es un string. Tambien
+            podemos darle un formato a esa fecha y hora.
+
+    
+    Modulo datetime
+    
+        Este modulo nos permite trabajar con fechas y horas en Python.
+
+        Ejemplo:
+
+        import datetime
+
+        print(datetime.datetime.now())
+
+        Concepto de Objeto de la Clase datetime
+
+            Los objetos de la clase datetime son objetos que nos permiten trabajar con fechas y horas en Python.
+
+            Ejemplo:
+
+            import datetime
+
+            fecha = datetime.datetime.now()
+
+            print(fecha.year)
+            print(fecha.month)
+            print(fecha.day)
+            print(fecha.hour)
+            print(fecha.minute)
+            print(fecha.second)
+
+        Concepto de Metodo strftime()
+
+            Este metodo nos permite dar formato a una fecha y hora en Python.
+
+            Ejemplo:
+
+            import datetime
+
+            fecha = datetime.datetime.now()
+
+            print(fecha.strftime('%Y-%m-%d %H:%M:%S'))
+
+            Basicamente es la forma de como especificamos ante python los formatos de fecha cuando queremos trabajar
+            con ellas.
+
+
+        Clase timedelta()
+
+            Basicamente lo que hace es sumar o restar dias, horas, minutos, segundos, etc a una fecha dada. Es una clase 
+            usada para poder realizar operaciones con fechas y horas.
+
+    
+    Modulo random
+
+        Este modulo es utilizado para poder obtener resultados aleatorios en Python. Podemos obtener numeros aleatorios,
+        items de sequencias en orden diferente.
+
+
+        Metodo random():
+
+            Este metodo retorna un numero aleatorio entre 0 y 1. No se limita a los enteros.
+
+        Metodo randint():
+
+            Este metodo nos permite obtener un numero aleatorio entre dos numeros dados. En si toma un valor que va a ser el valor de 
+            inicio y otro valor que va a ser el valor final en el cual se va a generar el numero aleatorio.
+
+        Metodo choice( MutableSequence ):
+
+            Este metodo permite traer UN item de una sequencia de forma aleatoria.
+
+        Metodo choices( MutableSequence, k ):
+
+            Este metodo permite traer VARIOS items de una sequencia de forma aleatoria. Es devuelto en una lista.
+
+        
+        Metodo shuffle( MutableSequence ):
+
+            Este metodo toma una seccuencia de items y los reordena de forma aleatoria. No devuelve nada, solo reordena la lista.
+
+
+    Modulo string 
+
+        Un modulo que nos permite trabajar con cadenas de texto en Python. Podemos trabajar con letras de la cadena de ASCII,
+        letras minusculas, letras mayusculas, digitos, etc.
+
+    
+    Modulo sys
+
+        Este modulo nos permite trabajar con el sistema operativo en Python. Podemos obtener informacion del sistema operativo,
+        de la version de Python que estamos utilizando, etc.
+
+        Ejemplo:
+
+        import sys
+
+        print(sys.platform)
+        print(sys.version)
+
+        Concepto de sys.argv
+
+            Este concepto hace referencia a los argumentos que se pasan a un script de Python desde la terminal.
+
+            Ejemplo:
+
+            import sys
+
+            print(sys.argv)
+
+            Basicamente es una lista que contiene los argumentos que se pasan a un script de Python desde la terminal.
+
+    
+    Modulo os 
+
+        Este modulo nos permite trabajar con el sistema operativo en Python. Podemos obtener informacion del sistema operativo,
+        crear carpetas, borrar carpetas, etc.
+
+        Ejemplo:
+
+        import os
+
+        print(os.getcwd())
+        print(os.listdir())
+
+        Concepto de os.path
+
+            Este concepto hace referencia a la ruta de un archivo o carpeta en Python.
+
+            Ejemplo:
+
+            import os
+
+            print(os.path.abspath('archivo.txt'))
+
+            Basicamente es la forma de como especificamos ante python la ruta de un archivo o carpeta.
+
+    
+    Concepto SMTP (Simple Mail Transfer Protocol)
+
+        Este concepto hace referencia a un protocolo de red utilizado para enviar correos electronicos. Es el protocolo mas 
+        comun, pero no es el unico que existe.
+
+        Ejemplo:
+
+        import smtplib
+
+        servidor = smtplib.SMTP('smtp.gmail.com', 587)
+        servidor.starttls()
+        servidor.login('','')
+        servidor.sendmail('','',[''])
+        servidor.quit()
+
+        Basicamente es la forma de como podemos enviar correos electronicos desde Python.
+
+
+    Concepto de Mime (Multipurpose Internet Mail Extensions)
+
+        Este concepto hace referencia a un estandar de internet que extiende el formato de los correos electronicos para 
+        soportar texto enriquecido, archivos adjuntos, etc.
+
+        Ejemplo:
+
+        import smtplib
+        from email.mime.text import MIMEText
+
+        mensaje = MIMEText('Hola, este es un mensaje de prueba')
+
+        servidor = smtplib.SMTP('smtp.gmail.com', 587)
+        servidor.starttls()
+        servidor.login('','')
+        servidor.sendmail('','',['', mensaje.as_string()])
+        servidor.quit()
+
+        Basicamente es la forma de como podemos enviar correos electronicos con texto enriquecido desde Python. 
+
+    
+    Modulo mime.multipart
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+
+
+    Modulo mime.text
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+    
+
+    Modulo smtplib
+
+        Este modulo nos permite trabajar con correos electronicos en Python. Podemos enviar correos electronicos con texto
+        enriquecido, archivos adjuntos, etc.
+
+        Metodo SMTP()
+
+            Este metodo nos permite crear un servidor SMTP en Python.
+
+        Obejto SMTP
+
+            Podemos tomar el mensaje creado con MIMEText y enviarlo con el metodo sendmail(). Asi como tambien podemos 
+            cerrar la conexion con el metodo quit(), podemos codificar el mensaje con el metodo starttls().

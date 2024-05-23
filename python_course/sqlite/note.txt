@@ -1,0 +1,96 @@
+Motor de Base de Datos SQLite
+
+    Es un motor de bases de datos que e utilizado para proyecto no muy grandes en el cual se necesita almacenar datos
+    de manera local, es muy utilizado para dispositivos moviles, ya que es muy ligero y no hece uso de un servidor.
+
+
+    Existen varias formas para poder trabajar con sqlite dentro de python, una de ellas es utilizando el modulo
+    sqlite3 que viene por defecto en python.
+
+
+    Modulo SQLite3:
+
+        Este modulo nos permite trabajar con bases de datos SQLite de una manera muy sencilla, ya que nos permite
+        realizar operaciones como crear una base de datos, o metodos CRUD (Create, Read, Update, Delete) de una manera
+        muy sencilla.
+
+        Los pasos para trabajar con este modulo:
+
+            import sqlite3
+
+            # Crear una conexion a la base de datos
+
+            conexion = sqlite3.connect('nombre_base_de_datos.db')
+
+            # Crear un cursor
+
+            cursor = conexion.cursor()
+
+            # Crear una tabla
+
+            cursor.execute('CREATE TABLE nombre_tabla (columna1 tipo, columna2 tipo)')
+
+            # Insertar datos
+
+            cursor.execute('INSERT INTO nombre_tabla VALUES (valor1, valor2)')
+
+            # Enviamos estos cambios a la base de datos
+
+            conexion.commit()
+
+            # Cerrar la conexion
+
+            conexion.close()
+
+
+        Tambien podemos utilizar el context manager que utiliza with statement, de esta manera no es necesario cerrar
+        la base de datos de manera explicita ya que se cerrara de manera implicita. Tambien realizara un commit de manera
+        implicita.
+
+
+        Metodos del Modulo sqli3:
+
+            metodo.connect('nombre_base_de_datos.db') -> Crea una conexion a la base de datos
+
+                Este metodo asigna una conexion a una base de dats que se encuentre en el directorio actual,
+                si la base de datos especificada no existe entonces se creara de manera automatica. Esto es guardado
+                dentro de un objeto.
+
+            metodo.cursor() -> Crea un cursor
+
+                Este metodo crea un cursor que nos permite realizar operaciones en la base de datos, como crear tablas,
+                insertar datos, eliminar datos, etc. La funcion de este cursor es especificar donde podemos realizar
+                operaciones en la base de datos.
+
+            metodo.execute('query') -> Ejecuta una query
+
+                Este metodo nos permite realizar peticiones dentro de la base da datos, como crear una base de datos, crear
+                tabalas, registros y muchas otras cosas. Cabe mencionar que este metodo no interactura con la base de datos 
+                a  menos que se haga un commit con el objeto de conexion a la BD.
+
+            metodo.commit() -> Guarda los cambios
+
+                Este metodo guarda los cambios que se han realizado en la base de datos, como insertar datos, eliminar datos,
+                etc. Es necesario hacer un commit para que los cambios se guarden de manera permanente. Es el metodo mas importante
+                ya que si este no es ejecutaado entonces la BD no presentara cambios.
+
+            metodo.execute() -> Ejecuta una query
+
+                Podemos realixar una peticion sql, pero es necesario saber que es mejor utilizar un formateo
+                para pasar los valores de la query, ya que si se pasa de manera directa se puede ser victima de
+                un ataque de inyeccion sql.
+
+            metodo.executemany() -> Ejecuta una query con varios valores
+
+                Este metodo nos permite ejecutar una query con varios valores, es muy util cuando se necesita insertar
+                varios valores en una tabla.
+
+            metodo.cursor.fethone() -> Obtiene un solo registro
+
+                Este metodo nos permite obtener un solo registro de la base de datos, es muy util cuando se necesita
+                obtener un solo registro.
+
+            metodo.cursor.fetchall() -> Obtiene todos los registros 
+                
+                    Este metodo nos permite obtener todos los registros de la base de datos, es muy util cuando se necesita
+                    obtener todos los registros de una tabla.
