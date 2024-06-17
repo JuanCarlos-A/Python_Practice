@@ -1,0 +1,37 @@
+Metodos de Despliege
+
+    Es una herramienta muy utilizada para poder desplegar aplicaciones en la nube, ya que 
+    permite automatizar el proceso de despliegue de aplicaciones en servidores, ya sea en
+    la nube o en servidores propios.
+
+    Servidor(VPS)
+        - Servidor Virtual Privado
+        - Servidor dedicado
+        - Servidor compartido
+
+    PaaS 
+        - Plataforma como servicio
+        - Heroku
+        - Google App Engine
+        - AWS Elastic Beanstalk
+        - Azure App Service
+
+
+    Herramientas de Despliege (CI-Continuos Integration /CD - Continous Deployment)
+        - Jenkins
+        - Travis CI
+        - Circle CI
+        - GitLab CI
+        - GitHub Actions
+        - VPS
+        - SSH (Secure Shell) -> Llaves publicas y privadas
+        - Docker
+        - Kubernetes
+        - Heroku
+        - DNS (Domain Name System)
+
+
+    Pasos para un Despliegue segun curso de Python:
+
+        1- Comprar un DNS (Domain Name System) -> www.midominio.com
+        2- Adquirir un VPS (Virtual Private Server) -> Digital Ocean, Linode, AWS, Google Cloud, Hostinger
